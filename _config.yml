@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Clark's Blog
+title: Hexo
 subtitle:
-description: "These violent delights have violent ends."
-author: Clark Zhou
-language: zh-CN
+description:
+author: John Doe
+language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://zhoushidong.cc
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -63,21 +63,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
-
-# RSS订阅支持
-plugin:
-- hexo-generator-feed
-
-# Feed Atom
-feed:
-type: atom
-path: atom.xml
-limit: 20
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: ssh://git@github.com/clarkzsd/clarkzsd.github.io.git
-  branch: master
+  branch: gh-pages
