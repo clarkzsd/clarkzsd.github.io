@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Clark&#39;s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zhoushidong.cc/"/>
+  <updated>2017-04-02T14:10:22.675Z</updated>
+  <id>http://zhoushidong.cc/</id>
+  
+  <author>
+    <name>Clark Zhou</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017年04月02日</title>
+    <link href="http://zhoushidong.cc/2017/04/02/2017-04-02/"/>
+    <id>http://zhoushidong.cc/2017/04/02/2017-04-02/</id>
+    <published>2017-04-02T12:17:33.000Z</published>
+    <updated>2017-04-02T14:10:22.675Z</updated>
+    
+    <content type="html"><![CDATA[<p>清明，宅于家。</p>
+<p>其实，我现在回家的频率比以前少很多，一是因为换了校区之后回家变得没有以前方便，二是在学校能更加自由地做我自己的事。但是，每到清明这样的节日，我能回家还是会回家的。最主要的原因就是为了陪陪家人。</p>
+<p>一回家，就碰上了亲戚家的饭局，然后父母就又把开车的机会让给了我。一个半月没开车的我，本以为一上车会不知所措，但是我不知不觉地就（真·）轻车熟路了。</p>
+<p>其他时间，本想看看“龙书”把《编译原理》作业给写完，不知怎的，这书在家里就变得着实“烫手”，我一拿起就想放下，实在看不下去。我只好<code>hexo new post</code>一下，写写流水账，好显得我没辜负这初春好时光。</p>
+<p>偶尔再查查邮箱，看看有没有新的人报名。 啊，这感觉怎么跟等女神回复一样……</p>
+<p>前几日，一位高中好友的宠物猫去世，跟她聊天时不小心勾起了她的悲伤回忆，我也不知道怎么安慰她，有可能还说错了话……其实，作为一名爱猫人士，她的悲伤我是感同身受的。</p>
+<p>很多关于情感方面的东西，我不懂得如何表达出来。</p>
+<p>我很少对人敞开心扉。我仍旧不是阳光开朗的，黑色仍旧是我的专属色。（Cuz I’am batman!）现在的我开始觉得跟别人打交道很累。这是一个很危险的信号，因为人类是群体动物，与他人打交道是无法避免的，是一项必备技能。少一些套路，多一些真诚。对，这是我对自己说的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;清明，宅于家。&lt;/p&gt;
+&lt;p&gt;其实，我现在回家的频率比以前少很多，一是因为换了校区之后回家变得没有以前方便，二是在学校能更加自由地做我自己的事。但是，每到清明这样的节日，我能回家还是会回家的。最主要的原因就是为了陪陪家人。&lt;/p&gt;
+&lt;p&gt;一回家，就碰上了亲戚家的饭局，然后父
+    
+    </summary>
+    
+      <category term="♥" scheme="http://zhoushidong.cc/categories/%E2%99%A5/"/>
+    
+    
+      <category term="流水账" scheme="http://zhoushidong.cc/tags/%E6%B5%81%E6%B0%B4%E8%B4%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无题 2017年3月19日</title>
+    <link href="http://zhoushidong.cc/2017/03/19/%E6%97%A0%E9%A2%98-2017%E5%B9%B43%E6%9C%8819%E6%97%A5/"/>
+    <id>http://zhoushidong.cc/2017/03/19/无题-2017年3月19日/</id>
+    <published>2017-03-19T15:15:13.000Z</published>
+    <updated>2017-03-19T15:20:07.895Z</updated>
+    
+    <content type="html"><![CDATA[<p>藏在笼子中的灰暗时光啊，它是多么需要一点别样的色彩。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;藏在笼子中的灰暗时光啊，它是多么需要一点别样的色彩。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="言语" scheme="http://zhoushidong.cc/categories/%E8%A8%80%E8%AF%AD/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自定义checkbox、radio样式</title>
+    <link href="http://zhoushidong.cc/2017/02/28/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%E3%80%81radio%E6%A0%B7%E5%BC%8F/"/>
+    <id>http://zhoushidong.cc/2017/02/28/自定义checkbox、radio样式/</id>
+    <published>2017-02-28T07:35:49.000Z</published>
+    <updated>2017-03-12T04:42:25.471Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Task"><a href="#Task" class="headerlink" title="Task"></a>Task</h2><p><a href="http://ife.baidu.com/course/detail/id/23" target="_blank" rel="external">自定义checkbox、radio样式</a></p>
+<h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><h2 id="一-伪元素与伪类"><a href="#一-伪元素与伪类" class="headerlink" title="一.伪元素与伪类"></a>一.伪元素与伪类</h2><p>CSS伪类是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 将在用户悬停在选择器指定的元素上时应用样式。</p>
+<p>而伪元素并不指定所选择元素的特殊状态，它指定的是所选择元素的某些部分，相当于是指定一个虚拟的DOM元素的样式，例如<code>::first-line</code>指定该元素的第一行的样式。</p>
+<p><img src="https://ooo.0o0.ooo/2017/02/28/58b52dea12c11.png" alt="所有的伪元素"></p>
+<p>为了更好的区分伪元素和伪类，CSS3中伪元素使用两个冒号(::)表示，伪类使用一个冒号(:)。</p>
+<h2 id="二-雪碧图"><a href="#二-雪碧图" class="headerlink" title="二.雪碧图"></a>二.雪碧图</h2><p>CSS雪碧图的基本原理是把你的网站上用到的一些图片整合到一张单独的图片中，从而减少你的网站的HTTP请求数量。该图片使用CSS <code>background</code>和<code>background-position</code>属性渲染。</p>
+<h2 id="三-需求实现"><a href="#三-需求实现" class="headerlink" title="三.需求实现"></a>三.需求实现</h2><h2 id="伪元素实现"><a href="#伪元素实现" class="headerlink" title="伪元素实现"></a>伪元素实现</h2><ol>
+<li>实现原理：隐藏原生<code>input</code>标签，给与其关联的<code>label</code>添加样式，实现自定义控件。</li>
+<li>代码：</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo1"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"radio1"</span> <span class="attr">type</span>=<span class="string">"radio"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"radio_label demo1_radio"</span> <span class="attr">for</span>=<span class="string">"radio1"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"checkbox1"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"checkbox_label demo1_checkbox"</span> <span class="attr">for</span>=<span class="string">"checkbox1"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">label</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">cursor</span>: pointer;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">margin-left</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-right</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">13px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.demo1</span> &gt; <span class="selector-tag">label</span><span class="selector-pseudo">::before</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">content</span>:<span class="string">""</span>;</div><div class="line">  <span class="attribute">width</span>:<span class="number">20px</span>;</div><div class="line">  <span class="attribute">height</span>:<span class="number">20px</span>;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid darkgray;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.radio_label</span><span class="selector-pseudo">::before</span> &#123;</div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.demo1_radio</span><span class="selector-pseudo">::before</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">"\25CF"</span>;</div><div class="line">  <span class="attribute">color</span>:red;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border-color</span>: red;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.demo1_checkbox</span><span class="selector-pseudo">::before</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">"\2714"</span>;</div><div class="line">  <span class="attribute">color</span>: red;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border-color</span>: red;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>坑：<ul>
+<li><code>content</code>属性用于在<code>::before</code>和<code>::after</code>伪元素中插入内容，其内容都是匿名的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external">可替换元素</a>。在这里为了实现控件的选中效果，使用的是16进制 unicode 编码（计算机中每个字符都对应一个 unicode 编码）。</li>
+<li>在指定控件在被选中时的状态样式时，需要根据<code>input:checked</code>与<code>label</code>的相邻关系来对其应用样式，这时需要用到相邻同胞选择器<code>+</code>（用于定位同一个父元素之下某个元素之后的元素）。</li>
+</ul>
+</li>
+</ol>
+<h2 id="雪碧图实现"><a href="#雪碧图实现" class="headerlink" title="雪碧图实现"></a>雪碧图实现</h2><ol>
+<li><p>实现原理：隐藏<code>input</code>，给<code>label</code>加背景图片。使用<code>background</code>和<code>background-position</code>属性分别渲染出所需要的图片。（所以你点的可能是个假控件）。</p>
+</li>
+<li><p>代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo2"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"radio2"</span> <span class="attr">type</span>=<span class="string">"radio"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"radio_label demo2_radio"</span> <span class="attr">for</span>=<span class="string">"radio2"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"checkbox2"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"checkbox_label demo2_checkbox"</span> <span class="attr">for</span>=<span class="string">"checkbox2"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.demo2</span> &gt; <span class="selector-tag">label</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">width</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">20px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(http://p1.bqimg.com/567571/99322cf8c3283e42.png) no-repeat;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span> + <span class="selector-class">.demo2_radio</span> &#123;</div><div class="line">  <span class="attribute">background-position</span>: -<span class="number">23px</span> -<span class="number">10px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span> + <span class="selector-class">.demo2_checkbox</span> &#123;</div><div class="line">  <span class="attribute">background-position</span>: -<span class="number">25px</span> -<span class="number">32px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.demo2_radio</span> &#123;</div><div class="line">  <span class="attribute">background-position</span>: -<span class="number">58px</span> -<span class="number">10px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.demo2_checkbox</span> &#123;</div><div class="line">  <span class="attribute">background-position</span>: -<span class="number">60px</span> -<span class="number">32px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>坑：找出精确的<code>background-position</code>需要借助 Photoshop……</p>
+</li>
+</ol>
+<h2 id="优劣比较"><a href="#优劣比较" class="headerlink" title="优劣比较"></a>优劣比较</h2><ul>
+<li>使用伪元素不产生http请求，性能较高。代码量较多。</li>
+<li>使用雪碧图代码量较少。<code>background-position</code>的值需要十分精确，不然点击时会产生bug。但是，用雪碧图能更方便地实现自定义的元素样式。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      CSS伪类是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 将在用户悬停在选择器指定的元素上时应用样式。
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
+    
+      <category term="ife" scheme="http://zhoushidong.cc/tags/ife/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 函数中的apply()、call()和bind()</title>
+    <link href="http://zhoushidong.cc/2017/02/19/JavaScript-%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84apply-%E3%80%81call-%E5%92%8Cbind/"/>
+    <id>http://zhoushidong.cc/2017/02/19/JavaScript-函数中的apply-、call-和bind/</id>
+    <published>2017-02-19T09:15:21.000Z</published>
+    <updated>2017-02-22T10:09:07.806Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。</p>
+<h1 id="函数属性和方法"><a href="#函数属性和方法" class="headerlink" title="函数属性和方法"></a>函数属性和方法</h1><p>ECMAScript 中的函数是对象，因此函数也有属性和方法。每个函数包含两个属性：length 和 prototype。length 表示函数的参数个数：</p>
+<figure class="highlight scilab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1,num2)</span> &#123;</span></div><div class="line">  <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.<span class="built_in">log</span>(sum.<span class="built_in">length</span>); <span class="comment">// 2</span></div></pre></td></tr></table></figure>
+<p>而 prototype 所对应的就是该对象传说中的原型了。对于 ECMAScript 中的引用类型而言，prototype 保存着它们所有实例方法，对于函数来讲，其 prototype 中就包括 apply()、call() 和 bind()。</p>
+<h1 id="apply-与-call"><a href="#apply-与-call" class="headerlink" title="apply() 与 call()"></a>apply() 与 call()</h1><p>这两个方法的用途都是在特定的作用域中调用函数。换句话说就是设置函数体中的 this 的值。</p>
+<h2 id="apply"><a href="#apply" class="headerlink" title="apply()"></a>apply()</h2><p>apply() 接受两个参数，第一个是要设定的作用域，另一个是参数数组（arguments 对象亦可）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1,num2</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1,num2</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>,<span class="built_in">arguments</span>);</div><div class="line"> <span class="comment">// or: return sum.apply(this,[num1,num2]);</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(callSum1(<span class="number">10</span>,<span class="number">10</span>)); <span class="comment">// 20</span></div></pre></td></tr></table></figure>
+<p>在此处是在全局作用域环境下调用的 callSum1,则 apply() 传入的 this 便是 window 对象（浏览器环境）。</p>
+<p>另一个例子，扩充函数赖以运行的作用域：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.word = <span class="string">"Hello"</span>;</div><div class="line"><span class="keyword">const</span> o = &#123;<span class="attr">word</span>:<span class="string">"World"</span>&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">saySomething</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.color);</div><div class="line">&#125;</div><div class="line"></div><div class="line">saySomething(); <span class="comment">// Hello</span></div><div class="line">saySomething.apply(<span class="built_in">window</span>); <span class="comment">// Hello</span></div><div class="line">saySomething.apply(o); <span class="comment">// World</span></div></pre></td></tr></table></figure>
+<p>在第三次调用 saySomething() 时，该函数的执行环境变了，this 指向了 o，所以打印出来的是 “World”。</p>
+<p>使用 apply() 和 call() 来扩充函数赖以运行的作用域的好处是，对象不需要与方法有任何耦合关系，这样能大大增加代码的复用性。</p>
+<h2 id="call"><a href="#call" class="headerlink" title="call()"></a>call()</h2><p>call() 与 apply() 大同小异，它的作用与 apply() 是相同的。只是传递给 call() 的参数必须逐个列举出来：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span><span class="params">(num1,num2)</span> </span>&#123;</div><div class="line">  <span class="keyword">return</span> sum.call(<span class="keyword">this</span>,num1,num2);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="bind"><a href="#bind" class="headerlink" title="bind()"></a>bind()</h1><p>bind() 方法会新建一个函数的实例，这个函数实例的 this 值会被绑定到传给 bind() 函数的值。</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const obj = &#123;&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span></span>() &#123;</div><div class="line">  console.log(<span class="built_in">this</span> === obj);</div><div class="line">&#125;</div><div class="line"></div><div class="line">const <span class="keyword">new</span><span class="type">Test</span> = test.bind(obj);</div><div class="line">test(); <span class="comment">// false</span></div><div class="line"><span class="keyword">new</span><span class="type">Test</span>(); <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<p>newTest() 函数中的 this 始终指向 obj，无论在哪里调用，其输出结果始终是 true。</p>
+<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>JS 中 this 是动态指向的，而 bind() 便可以把 this 固定住。我们来看一个具体例子：</p>
+<h3 id="click-事件处理"><a href="#click-事件处理" class="headerlink" title="click 事件处理"></a>click 事件处理</h3><p>定义一个日志对象来记录 click 的次数：</p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">let logger = &#123;</div><div class="line">  <span class="built_in">count</span>:<span class="number">0</span>,</div><div class="line">  increment: <span class="function"><span class="keyword">function</span><span class="params">()</span></span> &#123;</div><div class="line">    this.<span class="built_in">count</span>++;</div><div class="line">    console.<span class="built_in">log</span>(<span class="built_in">count</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然后在点击事件的回调函数中调用该对象的 increment() 方法:</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">document</span><span class="selector-class">.getElementById</span>(<span class="string">'btn'</span>)<span class="selector-class">.addEventListener</span>(<span class="string">'click'</span>, logger.increment);</div></pre></td></tr></table></figure>
+<p>这里要注意的是，如果直接像上述代码这么写，那么 increment() 函数中的 this 指向的是 id 为 ‘btn’ 的 DOM 对象，而非 logger。这时就需要靠 bind() 出场了：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">document</span><span class="selector-class">.getElementById</span>(<span class="string">'btn'</span>)<span class="selector-class">.addEventListener</span>(<span class="string">'click'</span>, logger.increment.bind(logger));</div></pre></td></tr></table></figure>
+<p>如果你用 ES6 写 React 的话，上述场景你一定不会陌生。在写事件函数时，我们经常需要 bind() 一下来保证 this 一直指向组件实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">constructor</span>(props) &#123;</div><div class="line">    <span class="keyword">super</span>(props);</div><div class="line">    <span class="keyword">this</span>.handleClick = <span class="keyword">this</span>.handleClick.bind(<span class="keyword">this</span>)</div><div class="line">&#125;</div><div class="line">handleClick(e) &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></div><div class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span>点击<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    );</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>而用 ES5 写时， 使用 React.createClass() 来建立组件时，React 会帮你自动绑定函数的 this。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 JavaScript 作用域</title>
+    <link href="http://zhoushidong.cc/2017/02/10/%E5%85%B3%E4%BA%8E-JavaScript-%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    <id>http://zhoushidong.cc/2017/02/10/关于-JavaScript-作用域/</id>
+    <published>2017-02-10T09:19:09.000Z</published>
+    <updated>2017-02-22T10:07:22.562Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近看《JavaScript 语言精粹》时看到这么一句话：</p>
+<blockquote>
+<p>不像许多其它语言，JavaScript 中的代码块不会创建新的作用域，因此变量应该被定义在函数的头部，而不是在代码块中。</p>
+</blockquote>
+<p>那么我们就先来看看其它语言 (Java) 的块级作用域是怎么样的</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Test</span> &#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String[] args</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(<span class="literal">true</span>) &#123;</div><div class="line">      <span class="keyword">int</span> age = <span class="number">3</span>;</div><div class="line">      System.<span class="keyword">out</span>.println(age); <span class="comment">// 3</span></div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    System.<span class="keyword">out</span>.println(age); <span class="comment">// Error</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在这里，age 是 if 这个语句块中的定义的块级变量，其生存周期就是这个语句块，所以在语句块外部访问是无效的。</p>
+<p>在 JS 中，对于作用域，又可以分为全局作用域和局部作用域。局部作用域又被称为函数作用域（Function Scope），所有的变量和函数只能在作用域内部使用。</p>
+<p>JS 是不支持块级作用域的，在语句块内中定义的变量可以在语句块外访问：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// demo1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(<span class="literal">true</span>) &#123;</div><div class="line">    <span class="keyword">var</span> age = <span class="number">3</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="built_in">console</span>.log(age); <span class="comment">// 3</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>为什么会出现这样的情况？</p>
+<h2 id="提升（hoisting）"><a href="#提升（hoisting）" class="headerlink" title="提升（hoisting）"></a>提升（hoisting）</h2><p>之所以在语句块外能访问，是因为<code>var</code>关键字声明变量时，有一个变量提升的过程：</p>
+<blockquote>
+<p>Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. This also means that a variable can appear to be used before it’s declared. This behavior is called “hoisting”, as it appears that the variable declaration is moved to the top of the function or global code.</p>
+</blockquote>
+<p>而在 demo1 中，函数 test 中 if 语句块里面的 age 变量发生了变量提升，上述代码等价于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> age;</div><div class="line">  <span class="keyword">if</span>(<span class="literal">true</span>) &#123;</div><div class="line">    age = <span class="number">3</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="built_in">console</span>.log(age); <span class="comment">// 3</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这里有一点需要注意：所谓的变量提升只是其定义上升，而变量的赋值是不会上升的。</p>
+<p>所以在 JS 中，我们总在作用域的最开始声明变量，这样可以使其作用域变得更加清晰。</p>
+<p>同样的，在 JS 中，定义一个 function 时也会发生提升：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hoisted(); <span class="comment">// logs "foo"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">hoisted</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"foo"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>而函数表达式(Function Expressions)是不会提升的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">notHoisted(); <span class="comment">// TypeError: notHoisted is not a function</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> notHoisted = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   <span class="built_in">console</span>.log(<span class="string">"bar"</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h2 id="let-in-ES6"><a href="#let-in-ES6" class="headerlink" title="let in ES6"></a>let in ES6</h2><p>在ES6中，新增了<code>let</code>关键字，用<code>let</code>声明的变量是存在块级作用域的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (<span class="literal">true</span>) &#123;</div><div class="line">    <span class="keyword">let</span> age = <span class="number">3</span>; </div><div class="line">  &#125; </div><div class="line">  <span class="built_in">console</span>.log(age); <span class="comment">// ReferenceError: age is not defined</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当我们谈及 JS 的作用域时，肯定会想到闭包、作用域链等概念。而这些知识，且待我学习学习先……</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" target="_blank" rel="external">Hoisting - Glossary | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="_blank" rel="external">var - JavaScript | MDN</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近看《JavaScript 语言精粹》时看到这么一句话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不像许多其它语言，JavaScript 中的代码块不会创建新的作用域，因此变量应该被定义在函数的头部，而不是在代码块中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么我们就
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>忙</title>
+    <link href="http://zhoushidong.cc/2017/01/25/%E5%BF%99/"/>
+    <id>http://zhoushidong.cc/2017/01/25/忙/</id>
+    <published>2017-01-25T09:20:26.000Z</published>
+    <updated>2017-02-22T10:07:33.818Z</updated>
+    
+    <content type="html"><![CDATA[<p>有人说，每年年度总结定下的未来计划都是去年年度总结中定下的，就这样一年复一年，自己的“一年计划”从未实现。</p>
+<p>我也没有在 2016 年度总结给我自己定下什么计划或者什么小目标，只是给自己定个方向，比如说多写博文、多看书等，期望自己能够有意识的往这个方向去靠。计划往往是赶不上变化的。高三的时候，每逢月考时，一个同班妹子在晚自修下课时总是抱着好几本复习资料回寝室看，第二天我问她你昨晚看了几本，她说一本还没翻几页就睡着了……妹子明显就是不尊重事物的客观规律嘛。</p>
+<h2 id="期末考试"><a href="#期末考试" class="headerlink" title="期末考试"></a>期末考试</h2><p>从元旦开始到现在，自己一直处于一种比较忙碌的状态。元旦一过，期末考试就不远了，总得“预习”一下要考试的科目吧。</p>
+<p>一直以来，我对大学里面的考试都是持“能过就行”这种态度，几个学期下来，我更加坚定了自己的想法。为什么这么说呢？</p>
+<ol>
+<li>这些学科考试实在太水，这样的考试根本就不是在检查你对知识的掌握情况。凡是考前做过书本题目或者往年试卷（考试原题大多来源于此），考个高分真的不是问题（这方面有可能跟学校的 level 有关吧）。可是，这样做的意义又何在呢？高中时，考试的确是要“分秒必争”，可是到了大学我觉得在学习这方面最重要的是独立思考与实事求是。倘若只是考试得了个高分而对知识的理解仅仅浮于表面，那么你除了 GPA 和奖学金这些外物，其它一无所获。如果在大学里玩弄仍然是高中那一套，那读大学岂不是与不读无异？</li>
+<li>半衰期长与短的问题。这就涉及到很多方面了，不同学科之间也存在这个问题。就拿贵院的软件工程专业的“数据结构”和“ Android 开发”这两门课来讲，“数据结构”作为计算机类专业的基础学科，其半衰期就比“ Android 开发”长，那么明智的做法就是在学习过程中，在“数据结构”这门课上投入更多的精力。而在考试这方面，我觉得花时间使劲做题去争取高分的半衰期短得可怜。（虽然 GPA 也有用，但是我觉得很多东西用 GPA 来量化也是非常不科学的……）</li>
+</ol>
+<p>总的来说，我认为很多人对待期末考试的态度过于急功近利，反倒是那些只玩游戏其它啥都不 care 的同学活得比较单纯些……</p>
+<p>最后，由衷感谢贵院的试卷和老师的努力使我成功地通过了各项考试……</p>
+<h2 id="驾考"><a href="#驾考" class="headerlink" title="驾考"></a>驾考</h2><p>考完试回家以后，就开始忙家里的事，忙完之后又去学车考证。可以说一回到家之后就没停过，好在昨天成功通过科目三、四，拿到了驾照。驾考本身套路多我就不多说了……</p>
+<p>以后自己就能开车上路了，想想还有点小激动……</p>
+<p>How many roads must an driver drive down before you call him an old driver ? 🙊</p>
+<h2 id="✨"><a href="#✨" class="headerlink" title="✨"></a>✨</h2><p>不过总算有自己的时间了，还有很多事情要做。</p>
+<p>BTW，下学期 β-house 在青山湖终于要有办公室了，期待！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有人说，每年年度总结定下的未来计划都是去年年度总结中定下的，就这样一年复一年，自己的“一年计划”从未实现。&lt;/p&gt;
+&lt;p&gt;我也没有在 2016 年度总结给我自己定下什么计划或者什么小目标，只是给自己定个方向，比如说多写博文、多看书等，期望自己能够有意识的往这个方向去靠。计划
+    
+    </summary>
+    
+      <category term="♥" scheme="http://zhoushidong.cc/categories/%E2%99%A5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>my 2016</title>
+    <link href="http://zhoushidong.cc/2016/12/30/my-2016/"/>
+    <id>http://zhoushidong.cc/2016/12/30/my-2016/</id>
+    <published>2016-12-30T09:21:38.000Z</published>
+    <updated>2017-02-22T10:09:29.764Z</updated>
+    
+    <content type="html"><![CDATA[<p>2016这一年，大事件很多。当你无聊地刷着社交媒体时，你会发现这个世界会动不动给你来个大新闻。就在前几天，《星球大战》莱亚公主扮演者 Carrie Fisher 去世，随后一天，其母 Debbie Reynolds 去世，仿佛死神在冲刺年终奖……总体来讲，2016年对于整个世界来说绝对是 a piece of shit。</p>
+<p>而对于我自己来讲，2016 也没有糟糕至如此地步，至少自己的生活里多了 β-house。</p>
+<h2 id="β-house"><a href="#β-house" class="headerlink" title="β-house"></a>β-house</h2><p>加入 β-house 工作室是我今年做的最有意义的一件事，也非常荣幸能被师兄师姐们录取。</p>
+<p>上半年，参加 β-house 的每周例会，每周六上午十点出发去下沙，学习了不少干货，再于夜幕降临之际回到文一。那段经历注定是难忘的。</p>
+<blockquote>
+<p>程序员的正式称号是 SDE——Software Development Engineer。但其真正的名字：Someone (Who Can) Do Everything.</p>
+</blockquote>
+<p>这是 β-house 招新时的标语。β-house 就如一个引路人，它有一种说不出的特质能够触动你去 create something.</p>
+<p>下半年就搬去新校区了，与工作室的前辈们接触不多，但仍甚是想念。没过多久，下沙的 222 办公室因学院搬迁被清空，炳哥、大表哥也即将毕业，“别离”果然是人们无法回避的一个过程。</p>
+<p><a href="https://oblky3j33.qnssl.com//beta/14.jpg" target="_blank" rel="external"><img src="https://oblky3j33.qnssl.com//beta/14.jpg" alt="222 办公室"></a>222 办公室</p>
+<h2 id="除此之外"><a href="#除此之外" class="headerlink" title="除此之外"></a>除此之外</h2><p>新校区，在“无车马喧”的临安青山湖。青山环绕，空气清新，看起来像是一个静心的地方。为了 β-house 在新校区的办公室问题，也折腾了不少时间。刚开始真是处处碰壁，差点以为办公室真的没着落了。后来跟学校达成协议，跟以前一样，首先帮学校干点活(会给点经费)。有一点没想到，那就是刚开始引起学校注意的是我一个写着玩的爬虫项目（就是把教务系统的课表数据抓取下来，集成到微信公众号上）。当时因为教务信息搬迁，像超级课程表这样的第三方软件都爬取不了课表，只有我们工作室能做😎。后来给学校做事，就放在了学生会的微信号上，后续还做了考试安排等功能……</p>
+<p><a href="https://camo.githubusercontent.com/19f08df16ec431ac1a2edeb94779622f6c3212a8/687474703a2f2f6f366c6a77387763712e626b742e636c6f7564646e2e636f6d2f494d475f323438395f496e6b5f4c492d6d696e2e6a7067" target="_blank" rel="external"><img src="https://camo.githubusercontent.com/19f08df16ec431ac1a2edeb94779622f6c3212a8/687474703a2f2f6f366c6a77387763712e626b742e636c6f7564646e2e636f6d2f494d475f323438395f496e6b5f4c492d6d696e2e6a7067" alt="img"></a>img</p>
+<p>其实到了大学，我们遇到的很多事情都是“利益相关”了，不仅仅是跟向学校要办公室这件事，也包括同学和同学之间的人际交往。你拿出一部分利益给他人，你自然而然能够得到他人所拥有的一些资源。很多人际关系的建立就是从一些“小交易”开始的，非常现实。</p>
+<p>说到人际交往，到目前为止我在大学就没有关系非常铁的朋友，意趣相投的朋友真的是可遇不可求。</p>
+<p>除了加入 β-house，似乎在我身上就再也没有发生什么特别值得纪念的大事件。真的。</p>
+<p>《西部世界》中，每个机器人在真正觉醒之前都陷在自己的 loop 中，被人类玩弄致死，再被清空记忆而“重生”。我感觉自己也是陷在 loop 里面。记得在高考完当天，我曾经发过这样一条朋友圈：</p>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/asdasd.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/asdasd.png" alt="string"></a>string</p>
+<p>我原以为自己不会再被一些东西束缚，但其实我是从一个 loop 跳入了另一个 loop。我感觉到自己是浮躁的，这种浮躁从高中开始就有了，没变过。从某种程度上来看，好像是我自己束缚着自己。我觉得自己需要一些改变。并不是“来一场说走就走的旅行”的那种改变，是真的需要静下心来好好想明白一些事情。</p>
+<h2 id="我需要什么？"><a href="#我需要什么？" class="headerlink" title="我需要什么？"></a>我需要什么？</h2><p>机缘巧合，得到机会去了解了一下一个学院大力支持的创业项目，方向正是现在热炒的“互联网+大学生创业”。然后我发现，这种项目其实全国各地都有很多人在做，而且做的人都是大学生。后来我又去深入了解了一下目前中国大学生的创业项目，发现很多产品之前都有两个共同点：</p>
+<ol>
+<li>面向大学生，基于校园</li>
+<li>模式相似，可复制</li>
+<li>短命</li>
+</ol>
+<p>大概第三点的原因就是前两点吧……</p>
+<p>网上曾经有人这样吐槽大学生创业：</p>
+<blockquote>
+<p>你把好几个大学生关在屋子里想好几天，最后能写下来的点子也无非就是那些什么奶茶礼品送外卖、漫吧桌游代金券，花店书店咖啡馆一类的东西。能想到的都是校园和校园衍生的那些玩意儿。什么服务大学寝室的送餐啦，用来给大学生把妹的课程表啦，帮社团搞印刷品纪念品啦，跑到大学后门一条街去发传单啦，联系校园附近的商家打广告啦。</p>
+</blockquote>
+<p>视野狭窄导致这些大学生做出来的东西没有核心竞争力，他做的东西别人也可以做。Bill Gates 在哈佛的时候，为第一台微型计算机 MITS Altair开发了 BASIC 编程语言的一个版本。这东西可不是其他人随随便便就能做出来的，这就是他的核心竞争力。</p>
+<p>我需要培养自己的核心竞争力，这是我在 2016 年学到的比较重要的一点。</p>
+<h2 id="TODO：把一些丢掉的东西捡起来"><a href="#TODO：把一些丢掉的东西捡起来" class="headerlink" title="TODO：把一些丢掉的东西捡起来"></a>TODO：把一些丢掉的东西捡起来</h2><p>我丢掉了什么？</p>
+<ol>
+<li><p>读书（非技术书）的习惯</p>
+<p>其实这个习惯我在初中的时候就丢掉了。小学毕业之后，我似乎没有真正意义上地读完过一本好书。说起来真的好惭愧啊，至少我在小学的时候还读过《哈利波特》全套呢。初中的时候忙着中二，没读。高中的时候读的都是些消遣性的杂志。这个念头是我在逛一个程序媛的博客的时候产生的。她不仅代码写得好，文笔也极佳，而且每读完一本书就会写一篇读后感博文，我真的十分佩服她。看书究竟有什么用，我也说不出来。但或许有时候人就是需要这种“无用”的积累，才能解决诸如“loop”这样的问题。</p>
+</li>
+<li><p>发表、记录自己的想法</p>
+<p>今年三月份我就开了博客，一开始志气满满，誓要经常写博文，然而算上这一篇整个博客中也不过七篇文章（不过还是吸引到了一位网友来此留言🙉）明年开始，要增加写博文的频率。</p>
+<p>另外 ，我向来喜欢在各种社区中潜水，遇到技术问题也很少提问，别人撕逼的时候我也只是在一旁围观。我决定以后要在社区中多发言，甚至可以参加一场撕逼，这样的思想碰撞说不定能使自己的思路更加开阔……</p>
+</li>
+</ol>
+<h2 id="不知谁能躲得过去"><a href="#不知谁能躲得过去" class="headerlink" title="不知谁能躲得过去"></a>不知谁能躲得过去</h2><p>我从来没有过诸如“我对这一天/这一年比较满意”这样的想法。我总觉得这一天/这一年还缺少一点什么，总觉得生活也不是那么美好。</p>
+<p>每逢元旦，我的心情一般都不是很好，因为一年过去，历史的进程在大步向前推进，即使我也做了点微小的工作，但总是无法避免身边的事物的流逝。这种问题，谁能躲得过去呢？所有，一定要好好珍惜眼前所拥有的一切。</p>
+<p>写的比较乱，最后简单说两句：</p>
+<blockquote>
+<p>“…似乎在我身上就再也没有发生什么特别值得纪念的大事件”</p>
+</blockquote>
+<p>我还是很好奇未来会发生什么事，会遇见哪些有意思的人的……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2016这一年，大事件很多。当你无聊地刷着社交媒体时，你会发现这个世界会动不动给你来个大新闻。就在前几天，《星球大战》莱亚公主扮演者 Carrie Fisher 去世，随后一天，其母 Debbie Reynolds 去世，仿佛死神在冲刺年终奖……总体来讲，2016年对于整个
+    
+    </summary>
+    
+      <category term="♥" scheme="http://zhoushidong.cc/categories/%E2%99%A5/"/>
+    
+    
+      <category term="年度总结" scheme="http://zhoushidong.cc/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learn Bootstrap Grid Systems</title>
+    <link href="http://zhoushidong.cc/2016/11/18/Learn-Bootstrap-Grid-Systems/"/>
+    <id>http://zhoushidong.cc/2016/11/18/Learn-Bootstrap-Grid-Systems/</id>
+    <published>2016-11-18T09:23:47.000Z</published>
+    <updated>2017-02-22T10:09:20.582Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>栅格设计系统</strong>（又称<strong>网格设计系统</strong>、<strong>标准尺寸系统</strong>、<strong>程序版面设计</strong>、<strong>瑞士平面设计风格</strong>、<strong>国际主义平面设计风格</strong>），是一种<a href="https://zh.wikipedia.org/wiki/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1" target="_blank" rel="external">平面设计</a>的方法与风格。运用固定的格子设计版面布局，其风格工整简洁，在二战后大受欢迎，已成为今日出版物设计的主流风格之一。</p>
+</blockquote>
+<p>Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。包含了用于简单的布局选项的预定义类，也包含了用于生成更多语义布局的功能强大的混合类。</p>
+<p>学习栅格系统有助于更好地理解响应式布局。</p>
+<p>栅格系统的使用方法具体不做介绍，详细可见 Bootstrap 文档。</p>
+<h2 id="Bootstrap-中的栅格"><a href="#Bootstrap-中的栅格" class="headerlink" title="Bootstrap 中的栅格"></a>Bootstrap 中的栅格</h2><h3 id="容器-Container"><a href="#容器-Container" class="headerlink" title="容器 Container"></a>容器 Container</h3><p>容器的主要作用就是规定整个栅格系统的宽度，源码如下。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.container</span> &#123;</div><div class="line">  <span class="attribute">padding-right</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-right</span>: auto;</div><div class="line">  <span class="attribute">margin-left</span>: auto;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">750px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">970px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</div><div class="line">  <span class="selector-class">.container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">1170px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>从上面的源码可以看出，容器的宽度已经是响应式的了。而且有了容器之后，栅格系统的宽度并不是100%全屏显示的了。这里容器还设置了内边距，我们可以先看 Row 和 Column 的源码再来看看容器为什么要设置内边距。</p>
+<h3 id="行-Row"><a href="#行-Row" class="headerlink" title="行 Row"></a>行 Row</h3><p>首先，行的外边距设置为-15px。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.row</span> &#123;</div><div class="line">  <span class="attribute">margin-right</span>: -<span class="number">15px</span>;</div><div class="line">  <span class="attribute">margin-left</span>: -<span class="number">15px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.row</span><span class="selector-pseudo">:before</span>,</div><div class="line"><span class="selector-class">.row</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">display</span>: table;</div><div class="line">  <span class="attribute">content</span>: <span class="string">" "</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.row</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">clear</span>: both;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>栅格中，行嵌套在容器中，而列（Columns）又包含在行中。行的主要目的就是确保其中的列不会到外面去，这里通过清除浮动来解决。可是，清除浮动为什么要这么写？其实这是一个<code>clearfix hack</code>(css 真是一门博大精深的语言。。。)，详见<a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank" rel="external">http://nicolasgallagher.com/micro-clearfix-hack/</a></p>
+<h3 id="列-Column"><a href="#列-Column" class="headerlink" title="列 Column"></a>列 Column</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.col-xs-1</span>, <span class="selector-class">.col-sm-1</span>, <span class="selector-class">.col-md-1</span>, <span class="selector-class">.col-lg-1</span>, <span class="selector-class">.col-xs-2</span>, <span class="selector-class">.col-sm-2</span>, <span class="selector-class">.col-md-2</span>, <span class="selector-class">.col-lg-2</span>, <span class="selector-class">.col-xs-3</span>, <span class="selector-class">.col-sm-3</span>, <span class="selector-class">.col-md-3</span>, <span class="selector-class">.col-lg-3</span>, <span class="selector-class">.col-xs-4</span>, <span class="selector-class">.col-sm-4</span>, <span class="selector-class">.col-md-4</span>, <span class="selector-class">.col-lg-4</span>, <span class="selector-class">.col-xs-5</span>, <span class="selector-class">.col-sm-5</span>, <span class="selector-class">.col-md-5</span>, <span class="selector-class">.col-lg-5</span>, <span class="selector-class">.col-xs-6</span>, <span class="selector-class">.col-sm-6</span>, <span class="selector-class">.col-md-6</span>, <span class="selector-class">.col-lg-6</span>, <span class="selector-class">.col-xs-7</span>, <span class="selector-class">.col-sm-7</span>, <span class="selector-class">.col-md-7</span>, <span class="selector-class">.col-lg-7</span>, <span class="selector-class">.col-xs-8</span>, <span class="selector-class">.col-sm-8</span>, <span class="selector-class">.col-md-8</span>, <span class="selector-class">.col-lg-8</span>, <span class="selector-class">.col-xs-9</span>, <span class="selector-class">.col-sm-9</span>, <span class="selector-class">.col-md-9</span>, <span class="selector-class">.col-lg-9</span>, <span class="selector-class">.col-xs-10</span>, <span class="selector-class">.col-sm-10</span>, <span class="selector-class">.col-md-10</span>, <span class="selector-class">.col-lg-10</span>, <span class="selector-class">.col-xs-11</span>, <span class="selector-class">.col-sm-11</span>, <span class="selector-class">.col-md-11</span>, <span class="selector-class">.col-lg-11</span>, <span class="selector-class">.col-xs-12</span>, <span class="selector-class">.col-sm-12</span>, <span class="selector-class">.col-md-12</span>, <span class="selector-class">.col-lg-12</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">min-height</span>: <span class="number">1px</span>;</div><div class="line">  <span class="attribute">padding-right</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">15px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/** 设置列的宽度、使列向左浮动的css代码 **/</span></div></pre></td></tr></table></figure>
+<p>列现在也有15px的 padding，而容器本身具有15px的 padding，行用-15px的 margin 反向延伸回去，所以现在列的 padding 部分与容器的 padding 部分重合了，我们可以画个图感受感受。如图（图是盗的。。。）：</p>
+<p><a href="https://segmentfault.com/image?src=http://www.helloerik.com/wp-content/uploads/image-3.png&amp;objectId=1190000000743553&amp;token=8fe037cc7d1cf17194a0a699a326c17c" target="_blank" rel="external"><img src="https://segmentfault.com/image?src=http://www.helloerik.com/wp-content/uploads/image-3.png&amp;objectId=1190000000743553&amp;token=8fe037cc7d1cf17194a0a699a326c17c" alt="img"></a>img</p>
+<p>然后列的内容与容器之间就有了15px的距离，而列内容与列内容之间就有了30px的gutter。这时，也可以继续在列里面嵌套栅格系统，因为此时列也可以当作容器。</p>
+<h3 id="响应式"><a href="#响应式" class="headerlink" title="响应式"></a>响应式</h3><p>响应式处理主要通过媒体查询来设置列的不同宽度，Bootstrap 根据不同的设备尺寸设置了不同的类前缀：</p>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/20161218215521.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/20161218215521.png" alt="img"></a></p>
+<p>我们继续看列的剩下的代码，以平板（≥768px）大小为例：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</div><div class="line">  <span class="selector-class">.col-sm-1</span>, <span class="selector-class">.col-sm-2</span>, <span class="selector-class">.col-sm-3</span>, <span class="selector-class">.col-sm-4</span>, <span class="selector-class">.col-sm-5</span>, <span class="selector-class">.col-sm-6</span>, <span class="selector-class">.col-sm-7</span>, <span class="selector-class">.col-sm-8</span>, <span class="selector-class">.col-sm-9</span>, <span class="selector-class">.col-sm-10</span>, <span class="selector-class">.col-sm-11</span>, <span class="selector-class">.col-sm-12</span> &#123;</div><div class="line">    <span class="attribute">float</span>: left;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-12</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-11</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">91.66666667%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-10</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">83.33333333%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-9</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">75%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-8</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">66.66666667%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-7</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">58.33333333%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-6</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-5</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">41.66666667%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-4</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">33.33333333%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-3</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">25%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-2</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">16.66666667%</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.col-sm-1</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">8.33333333%</span>;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<p>Bootstrap 的栅格系统把每一行分成12部分，每一列横跨n个部分就占比 n/12 * 100%，这个规则对列来讲都是固定不变的，因为外围的容器已经针对不同尺寸做好自适应宽度了，列宽的参照物即容器宽。</p>
+<p>参考资料：</p>
+<ol>
+<li><p><a href="http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works" target="_blank" rel="external">The Subtle Magic Behind Why the Bootstrap 3 Grid Works</a></p>
+</li>
+<li><p><a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank" rel="external">Micro Clearfix Hack</a></p>
+<p>​</p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;栅格设计系统&lt;/strong&gt;（又称&lt;strong&gt;网格设计系统&lt;/strong&gt;、&lt;strong&gt;标准尺寸系统&lt;/strong&gt;、&lt;strong&gt;程序版面设计&lt;/strong&gt;、&lt;strong&gt;瑞士平面设计风格&lt;/strong&gt;、
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
+    
+      <category term="bootstrap" scheme="http://zhoushidong.cc/tags/bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>调教 PowerShell</title>
+    <link href="http://zhoushidong.cc/2016/11/12/%E8%B0%83%E6%95%99-PowerShell/"/>
+    <id>http://zhoushidong.cc/2016/11/12/调教-PowerShell/</id>
+    <published>2016-11-12T09:26:08.000Z</published>
+    <updated>2017-02-22T10:07:14.337Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="PowerShell"><a href="#PowerShell" class="headerlink" title="PowerShell"></a>PowerShell</h2><p>Windows 一直以来都被很多非微软系程序员诟病，莫名奇妙的 bug 太多啊，经常蓝屏啊（这个是所有人都吐槽的），terminal 太弱太丑啊……的确，Windows 不是完美的系统，但也不至于说它彻底不适合开发。环境条件不行（待议），但人行啊，事在人为对不对。</p>
+<p>对于程序员来说，terminal 是一个很重要的工具，其颜值和易用性很大一部分决定了开发效率的高低，在 Windows 上有两个 terminal ，很多人只知道黑不溜秋的cmd，却不知道高大上的Powershell 。</p>
+<blockquote>
+<p><strong>Windows PowerShell</strong>是<a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E8%BD%AF%E5%85%AC%E5%8F%B8" target="_blank" rel="external">微软公司</a>为<a href="https://zh.wikipedia.org/wiki/Windows" target="_blank" rel="external">Windows</a>环境所开发的<a href="https://zh.wikipedia.org/wiki/%E6%AE%BC%E7%A8%8B%E5%BC%8F" target="_blank" rel="external">壳程序</a>（<a href="https://zh.wikipedia.org/wiki/Shell" target="_blank" rel="external">shell</a>）及<a href="https://zh.wikipedia.org/wiki/%E8%85%B3%E6%9C%AC%E8%AA%9E%E8%A8%80" target="_blank" rel="external">脚本语言</a>技术，采用的是<a href="https://zh.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2" target="_blank" rel="external">命令行界面</a>。这项全新的技术提供了丰富的控制与<a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E5%8C%96" target="_blank" rel="external">自动化</a>的系统管理能力。</p>
+<p><a href="https://zh.wikipedia.org/wiki/UNIX" target="_blank" rel="external">UNIX</a>系统一直有着功能强大的壳程序（<a href="https://zh.wikipedia.org/wiki/Shell" target="_blank" rel="external">shell</a>），Windows PowerShell的诞生就是要提供功能相当于UNIX系统的命令行壳程序（例如：<a href="https://zh.wikipedia.org/wiki/Bourne_shell" target="_blank" rel="external">sh</a>、<a href="https://zh.wikipedia.org/wiki/Bash" target="_blank" rel="external">bash</a>或<a href="https://zh.wikipedia.org/wiki/C_shell" target="_blank" rel="external">csh</a>），同时也内置脚本语言以及辅助脚本程序的工具。</p>
+</blockquote>
+<p>​ ——From <a href="https://zh.wikipedia.org/wiki/Windows_PowerShell" target="_blank" rel="external">维基百科</a></p>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Windows_PowerShell_1.0_PD.png" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Windows_PowerShell_1.0_PD.png" alt="Windows PowerShell 1.0 PD.png"></a>Windows PowerShell 1.0 PD.png</p>
+<p>powershell的默认界面是这个样子的，还是丑，对不对？丑没关系，我们可以调教啊</p>
+<h2 id="Step1-自定义界面"><a href="#Step1-自定义界面" class="headerlink" title="Step1 自定义界面"></a>Step1 自定义界面</h2><p>其实powershell 是支持自定义界面的</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">右键工具栏-&gt;属性</div></pre></td></tr></table></figure>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/newblog/pic/powershell/powershell.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/newblog/pic/powershell/powershell.png" alt="powerrshell settings"></a>powerrshell settings</p>
+<p>这个厉害了，字体、布局、颜色都可以自定义。</p>
+<p>下面给出我配置的颜色及字体大小仅供参考：</p>
+<blockquote>
+<p>屏幕背景：RGB(0,0,0)</p>
+<p>屏幕文字：RGB(0,255,0)</p>
+<p>不透明度：70%</p>
+<p>字体大小：16</p>
+</blockquote>
+<p>关于字体，微软对控制台字体的元数据有严格限制。</p>
+<blockquote>
+<p>这些字体必须满足以下条件，可在命令会话窗口中：<br>　该字体必须是等宽字体。<br>　该字体不能为斜体字体。<br>　该字体不能有A或C负空间。<br>　如果是 TrueType 字体，则它必须是 FF_MODERN。<br>　如果它不是 TrueType 字体，则它必须是 OEM_CHARSET。<br>对于亚洲字体的附加条件：<br>　如果不是 TrueType 字体，字体名必须是“Terminal”。<br>　如果它是亚洲的 TrueType 字体，它还必须使用亚洲语言的字符集。</p>
+</blockquote>
+<p>所以很多自带的字体都用不了，往往特别设计的字体才能支持控制台模式。这里推荐<a href="https://www.zhihu.com/people/be5invis" target="_blank" rel="external">Belleve</a>大神做的<a href="https://link.zhihu.com/?target=http%3A//be5invis.github.io/Iosevka/inziu.html" target="_blank" rel="external">Inziu Iosevka</a>字体，（其中，Inziu Iosevka SC/TC/J 和 Inziu IosevkaCC SC/TC/J 可以用于Terminal）</p>
+<p>我用的是 Inziu Iosevka SC，设置完字体，效果是大概是这样的：</p>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/teri.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/teri.png" alt="MyPowerShell"></a>MyPowerShell</p>
+<p>变好看了许多，对不对！</p>
+<h2 id="Step2-posh-git-power-theme"><a href="#Step2-posh-git-power-theme" class="headerlink" title="Step2 posh-git + power-theme"></a>Step2 posh-git + power-theme</h2><p>posh-git 能让你在 PowerShell 中优雅的使用 Git。</p>
+<blockquote>
+<p>Posh-git: A set of PowerShell scripts which provide Git/PowerShell integration.</p>
+<h4 id="Prompt-for-Git-repositories"><a href="#Prompt-for-Git-repositories" class="headerlink" title="Prompt for Git repositories"></a>Prompt for Git repositories</h4><p>The prompt within Git repositories can show the current branch and the state of files (additions, modifications, deletions) within.</p>
+</blockquote>
+<p>它能更改 Git 仓库中命令提示符的外观样式，让你直接能看到当前仓库的状态。</p>
+<h3 id="Pre-requisites"><a href="#Pre-requisites" class="headerlink" title="Pre-requisites"></a>Pre-requisites</h3><p>检查 PowerShell 的执行策略是否允许执行未知脚本，以管理员身份打开PowerShell，输入：</p>
+<p><code>Set-ExecutionPolicy RemoteSigned</code></p>
+<h3 id="安装-posh-git"><a href="#安装-posh-git" class="headerlink" title="安装 posh-git"></a>安装 posh-git</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Install-Module posh-git -Scope CurrentUser</div></pre></td></tr></table></figure>
+<h3 id="power-theme"><a href="#power-theme" class="headerlink" title="power-theme"></a>power-theme</h3><p>power-theme 是<a href="https://www.zhihu.com/people/chantisnake" target="_blank" rel="external">章程</a>写的 PowerShell 命令提示符样式主题， 用了之后进一步提升 PowerShell 的颜值。如果你懂 PowerShell 脚本的话，还可以自己写样式。</p>
+<p>power-theme 的github 地址 ：<a href="https://github.com/chantisnake/power-theme" target="_blank" rel="external">https://github.com/chantisnake/power-theme</a></p>
+<p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/chantisnake/power-theme <span class="string">"<span class="variable">$($($env:PSModulePath -split ';')</span>[0])\power-theme"</span></div></pre></td></tr></table></figure>
+<p>启动 theme，这里是个例子，我选的是 ys 主题：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">notepad <span class="variable">$PROFILE</span></div></pre></td></tr></table></figure>
+<p>然后在这个文件中添加以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Import-Module power-theme</div><div class="line"></div><div class="line">Enable-Theme ys   </div><div class="line"></div><div class="line"><span class="comment"># 这个可以更改路径样式，有 concise, full 和 folder 三个选项</span></div><div class="line"><span class="comment"># 其中 concise 代表省略路径</span></div><div class="line"><span class="variable">$Global</span>:THEME.PathFormat = <span class="string">'concise'</span></div></pre></td></tr></table></figure>
+<p>我配置完的 PowerShell 完是这个样子的：</p>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/tada.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/tada.png" alt="FinishedPS"></a></p>
+<p>是不是Bigger than bigger ？</p>
+<p>它还可以自己添加时间样式</p>
+<p><a href="https://pic3.zhimg.com/6cedca4b2468fa82352539ae5a9e1e7a_b.png" target="_blank" rel="external"><img src="https://pic3.zhimg.com/6cedca4b2468fa82352539ae5a9e1e7a_b.png" alt="img"></a></p>
+<p>具体操作可以查看它的 github 仓库。</p>
+<h2 id="Step3-oh-my-posh-ConEmu"><a href="#Step3-oh-my-posh-ConEmu" class="headerlink" title="Step3 oh-my-posh + ConEmu"></a>Step3 oh-my-posh + ConEmu</h2><p>其实还有比 power-theme 更加厉害的东西，那就是 oh-my-posh 。</p>
+<p>如果你玩过 *nix 的shell，那么你肯定知道 oh-my-zsh。在 Windows平台，PowerShell 有自己的 <a href="https://github.com/JanJoris/oh-my-posh" target="_blank" rel="external">oh-my-posh</a>。只不过，这东西只能在 ConEmu 环境下才有用。（补：power-theme 有些主题也需要在 ConEmu 中才有效）</p>
+<blockquote>
+<p>ConEmu是一个带标签的Windows终端，提供多标签支持和丰富的自定义选项，是Windows下不可多得的Console.</p>
+</blockquote>
+<p>ConEmu 的确很强大，但我还是偏爱原生的 PowerShell，所以就没有用 oh-my-posh。有兴趣的朋友可以自己去尝试一下。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;PowerShell&quot;&gt;&lt;a href=&quot;#PowerShell&quot; class=&quot;headerlink&quot; title=&quot;PowerShell&quot;&gt;&lt;/a&gt;PowerShell&lt;/h2&gt;&lt;p&gt;Windows 一直以来都被很多非微软系程序员诟病，莫名奇妙的 bug 太多
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="windows" scheme="http://zhoushidong.cc/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个Express MVC实例</title>
+    <link href="http://zhoushidong.cc/2016/09/25/%E4%B8%80%E4%B8%AAExpress-MVC%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://zhoushidong.cc/2016/09/25/一个Express-MVC实例/</id>
+    <published>2016-09-25T09:28:20.000Z</published>
+    <updated>2017-02-22T10:07:44.712Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是-Express"><a href="#什么是-Express" class="headerlink" title="什么是 Express ?"></a>什么是 Express ?</h2><p>Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。</p>
+<blockquote>
+<p>Fast, unopinionated, minimalist web framework for Node.js</p>
+</blockquote>
+<p>详情： <a href="http://expressjs.com/" target="_blank" rel="external">Express</a></p>
+<p>随着ES6的推出，Express 开发团队又根据 ES6 新特性发布了下一代 Node.js web 框架：<a href="http://koajs.com/" target="_blank" rel="external">Koa</a></p>
+<h2 id="MVC模式"><a href="#MVC模式" class="headerlink" title="MVC模式 ?"></a>MVC模式 ?</h2><p>MVC 模式是程序架构模式中的一种。MVC是三个单词的首字母缩写，它们是Model（模型）、View（视图）和Controller（控制）。<br>这个模式将程序分成三层：</p>
+<blockquote>
+<p>1.最上面的一层，是直接面向最终用户的”视图层”（View）。它是提供给用户的操作界面，是程序的外壳。</p>
+<p>2.最底下的一层，是核心的”数据层”（Model），也就是程序需要操作的数据或信息。</p>
+<p>3.中间的一层，就是”控制层”（Controller），它负责根据用户从”视图层”输入的指令，选取”数据层”中的数据，然后对其进行相应的操作，产生最终结果。</p>
+</blockquote>
+<p>参考：<a href="http://www.ruanyifeng.com/blog/2007/11/mvc.html" target="_blank" rel="external">谈谈MVC模式</a></p>
+<h2 id="使用-Yeoman-搭建一个-Express-MVC项目"><a href="#使用-Yeoman-搭建一个-Express-MVC项目" class="headerlink" title="使用 Yeoman 搭建一个 Express MVC项目"></a>使用 Yeoman 搭建一个 Express MVC项目</h2><p>使用官方的<code>express-generator</code>生成的项目并没有清晰地体现MVC思想，这里我们使用 Yeoman 搭建。</p>
+<h3 id="安装-Yeoman-和-generator-express"><a href="#安装-Yeoman-和-generator-express" class="headerlink" title="安装 Yeoman 和 generator-express"></a>安装 Yeoman 和 generator-express</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> -g yo</div><div class="line">npm <span class="keyword">install</span> -g generator-express</div></pre></td></tr></table></figure>
+<h3 id="新建一个项目目录，并用generator生成项目模板"><a href="#新建一个项目目录，并用generator生成项目模板" class="headerlink" title="新建一个项目目录，并用generator生成项目模板"></a>新建一个项目目录，并用generator生成项目模板</h3><figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">mkdir</span> ExpressMVC &amp;&amp; <span class="built_in">cd</span> ExpressMVC</div><div class="line">yo express</div></pre></td></tr></table></figure>
+<p>在项目生成过程中，yeoman会让我们选择是否使用MVC模式。</p>
+<h2 id="看懂项目目录"><a href="#看懂项目目录" class="headerlink" title="看懂项目目录"></a>看懂项目目录</h2><ul>
+<li>ExpressMVC<ul>
+<li>app<ul>
+<li>controllers // 控制层</li>
+<li>models // 数据层</li>
+<li>views // 视图层</li>
+</ul>
+</li>
+<li>config // 用来存放配置文件<ul>
+<li>config.js // 配置数据库、端口等</li>
+<li>express.js // 配置express项目相关</li>
+</ul>
+</li>
+<li>public // 存放静态资源<ul>
+<li>js</li>
+<li>img</li>
+<li>css</li>
+<li>components</li>
+</ul>
+</li>
+<li>app.js // 入口文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="app-js-入口文件"><a href="#app-js-入口文件" class="headerlink" title="app.js 入口文件"></a>app.js 入口文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>),</div><div class="line">  config = <span class="built_in">require</span>(<span class="string">'./config/config'</span>), <span class="comment">// 引入配置文件</span></div><div class="line">  glob = <span class="built_in">require</span>(<span class="string">'glob'</span>),              <span class="comment">// glob模块允许你使用 *等符号,获取匹配对应规则的文件.</span></div><div class="line">  mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</div><div class="line"></div><div class="line">mongoose.connect(config.db);          <span class="comment">// 连接数据库</span></div><div class="line"><span class="keyword">var</span> db = mongoose.connection;</div><div class="line"></div><div class="line"><span class="comment">// 处理 error 事件</span></div><div class="line">db.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'unable to connect to database at '</span> + config.db);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> models = glob.sync(config.root + <span class="string">'/app/models/*.js'</span>); <span class="comment">// 引入所有model</span></div><div class="line">models.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">model</span>) </span>&#123;</div><div class="line">  <span class="built_in">require</span>(model);</div><div class="line">&#125;);</div><div class="line"><span class="keyword">var</span> app = express();       <span class="comment">// 生成一个express实例</span></div><div class="line"></div><div class="line"><span class="built_in">require</span>(<span class="string">'./config/express'</span>)(app, config);</div><div class="line"></div><div class="line"><span class="comment">// 监听3000端口</span></div><div class="line">app.listen(config.port, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'Express server listening on port '</span> + config.port);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="config-express-js-配置express相关"><a href="#config-express-js-配置express相关" class="headerlink" title="config/express.js 配置express相关"></a>config/express.js 配置express相关</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="keyword">require</span>(<span class="string">'express'</span>);</div><div class="line"><span class="keyword">var</span> glob = <span class="keyword">require</span>(<span class="string">'glob'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> favicon = <span class="keyword">require</span>(<span class="string">'serve-favicon'</span>);</div><div class="line"><span class="keyword">var</span> logger = <span class="keyword">require</span>(<span class="string">'morgan'</span>);</div><div class="line"><span class="keyword">var</span> cookieParser = <span class="keyword">require</span>(<span class="string">'cookie-parser'</span>);</div><div class="line"><span class="keyword">var</span> bodyParser = <span class="keyword">require</span>(<span class="string">'body-parser'</span>);</div><div class="line"><span class="keyword">var</span> compress = <span class="keyword">require</span>(<span class="string">'compression'</span>);</div><div class="line"><span class="keyword">var</span> methodOverride = <span class="keyword">require</span>(<span class="string">'method-override'</span>);</div><div class="line"></div><div class="line">module.exports = <span class="function"><span class="keyword">function</span><span class="params">(app, config)</span> </span>&#123;</div><div class="line">  <span class="keyword">var</span> env = process.env.NODE_ENV || <span class="string">'development'</span>;</div><div class="line">  app.locals.ENV = env;</div><div class="line">  app.locals.ENV_DEVELOPMENT = env == <span class="string">'development'</span>;</div><div class="line"></div><div class="line">  app.set(<span class="string">'views'</span>, config.root + <span class="string">'/app/views'</span>); <span class="comment">// 配置视图层路径</span></div><div class="line">  app.set(<span class="string">'view engine'</span>, <span class="string">'ejs'</span>);                <span class="comment">// 配置模板引擎为 ejs</span></div><div class="line"></div><div class="line">  <span class="comment">// app.use(favicon(config.root + '/public/img/favicon.ico'));  配置网站favicon</span></div><div class="line">  app.<span class="keyword">use</span>(logger(<span class="string">'dev'</span>));       <span class="comment">// 加载日志中间件</span></div><div class="line">  app.<span class="keyword">use</span>(bodyParser.json());   <span class="comment">// 加载解析json的中间件</span></div><div class="line"></div><div class="line">  <span class="comment">// 加载解析urlencoded请求体的中间件</span></div><div class="line">  app.<span class="keyword">use</span>(bodyParser.urlencoded(&#123;</div><div class="line">    extended: <span class="keyword">true</span></div><div class="line">  &#125;));</div><div class="line"></div><div class="line">  <span class="comment">// 加载解析cookie的中间件</span></div><div class="line">  app.<span class="keyword">use</span>(cookieParser());</div><div class="line"></div><div class="line">  <span class="comment">// 加载压缩中间件进行 Express 应用程序中的 gzip 压缩，</span></div><div class="line">  <span class="comment">// 有助于显著降低响应主体的大小，从而提高 Web 应用程序的速度</span></div><div class="line">  app.<span class="keyword">use</span>(compress());</div><div class="line"></div><div class="line">  <span class="comment">// 配置静态资源的存放路径</span></div><div class="line">  app.<span class="keyword">use</span>(express.<span class="keyword">static</span>(config.root + <span class="string">'/public'</span>));</div><div class="line">  <span class="comment">// 为了支持put、delete等HTTP方法</span></div><div class="line">  app.<span class="keyword">use</span>(methodOverride());</div><div class="line"></div><div class="line">  <span class="comment">// 配置Controller</span></div><div class="line">  <span class="keyword">var</span> controllers = glob.sync(config.root + <span class="string">'/app/controllers/*.js'</span>);</div><div class="line">  controllers.<span class="keyword">forEach</span>(<span class="function"><span class="keyword">function</span> <span class="params">(controller)</span> </span>&#123;</div><div class="line">    <span class="keyword">require</span>(controller)(app);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(req, res, next)</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> err = <span class="keyword">new</span> Error(<span class="string">'Not Found'</span>);</div><div class="line">    err.status = <span class="number">404</span>;</div><div class="line">    next(err);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  <span class="comment">// 当发生错误时，进行错误处理并路由到error页面</span></div><div class="line">  <span class="keyword">if</span>(app.get(<span class="string">'env'</span>) === <span class="string">'development'</span>)&#123;</div><div class="line">    app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(err, req, res, next)</span> </span>&#123;</div><div class="line">      res.status(err.status || <span class="number">500</span>);</div><div class="line">      res.render(<span class="string">'error'</span>, &#123;</div><div class="line">        message: err.message,</div><div class="line">        error: err,</div><div class="line">        title: <span class="string">'error'</span></div><div class="line">      &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(err, req, res, next)</span> </span>&#123;</div><div class="line">    res.status(err.status || <span class="number">500</span>);</div><div class="line">      res.render(<span class="string">'error'</span>, &#123;</div><div class="line">        message: err.message,</div><div class="line">        error: &#123;&#125;,</div><div class="line">        title: <span class="string">'error'</span></div><div class="line">      &#125;);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h3 id="models-article-js-数据层"><a href="#models-article-js-数据层" class="headerlink" title="models/article.js 数据层"></a>models/article.js 数据层</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>),</div><div class="line">  Schema = mongoose.Schema;</div><div class="line"></div><div class="line"><span class="comment">// 定义 Schema</span></div><div class="line"><span class="keyword">var</span> ArticleSchema = <span class="keyword">new</span> Schema(&#123;</div><div class="line">  <span class="attr">title</span>: <span class="built_in">String</span>,</div><div class="line">  <span class="attr">url</span>: <span class="built_in">String</span>,</div><div class="line">  <span class="attr">text</span>: <span class="built_in">String</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">ArticleSchema.virtual(<span class="string">'date'</span>)</div><div class="line">  .get(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>._id.getTimestamp();</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">mongoose.model(<span class="string">'Article'</span>, ArticleSchema);   <span class="comment">// 创建一个名叫 Article 的Model</span></div></pre></td></tr></table></figure>
+<p>关于<a href="http://mongoosejs.com/docs/index.html" target="_blank" rel="external">mongoose</a></p>
+<p><a href="https://www.gitbook.com/book/xiaoxiami/mongoose/details" target="_blank" rel="external">mongoose4.5 中文文档</a></p>
+<h3 id="controllers-home-js-控制层"><a href="#controllers-home-js-控制层" class="headerlink" title="controllers/home.js 控制层"></a>controllers/home.js 控制层</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>),</div><div class="line">  router = express.Router(),</div><div class="line">  mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>),</div><div class="line">  Article = mongoose.model(<span class="string">'Article'</span>); <span class="comment">// 引入 Article 这个 model</span></div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params">app</span>) </span>&#123;</div><div class="line">  app.use(<span class="string">'/'</span>, router);</div><div class="line">&#125;;</div><div class="line"></div><div class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">  Article.find(<span class="function"><span class="keyword">function</span> (<span class="params">err, articles</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span> next(err);</div><div class="line">    <span class="comment">// 渲染到 视图 层</span></div><div class="line">    res.render(<span class="string">'index'</span>, &#123;</div><div class="line">      <span class="attr">title</span>: <span class="string">'Generator-Express MVC'</span>,</div><div class="line">      <span class="attr">articles</span>: articles</div><div class="line">    &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>这里的Controller做的工作正是我们平时所说的路由，Controller不但要处理get请求，也要处理post。</p>
+<h3 id="views-index-ejs-视图层"><a href="#views-index-ejs-视图层" class="headerlink" title="views/index.ejs 视图层"></a>views/index.ejs 视图层</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span> header </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">%-</span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Welcome to <span class="tag">&lt;<span class="name">%-</span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span><span class="ruby"> <span class="keyword">include</span> footer </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h3 id="访问网站根目录效果"><a href="#访问网站根目录效果" class="headerlink" title="访问网站根目录效果"></a>访问网站根目录效果</h3><p><a href="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" alt="img"></a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是-Express&quot;&gt;&lt;a href=&quot;#什么是-Express&quot; class=&quot;headerlink&quot; title=&quot;什么是 Express ?&quot;&gt;&lt;/a&gt;什么是 Express ?&lt;/h2&gt;&lt;p&gt;Express 是最流行的 Node.js 框架，它在 No
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="node.js" scheme="http://zhoushidong.cc/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异步I/O那些事儿</title>
+    <link href="http://zhoushidong.cc/2016/08/10/%E5%BC%82%E6%AD%A5IO%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    <id>http://zhoushidong.cc/2016/08/10/异步IO那些事儿/</id>
+    <published>2016-08-10T09:30:04.000Z</published>
+    <updated>2017-02-22T10:07:55.022Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-什么是回调？"><a href="#1-什么是回调？" class="headerlink" title="1.什么是回调？"></a>1.什么是回调？</h2><blockquote>
+<p>你到一个商店买东西，刚好你要的东西没有货，于是你在店员那里留下了你的电话，过了几天店里有货了，店员就打了你的电话，然后你接到电话后就到店里去取了货。在这个例子里，你的电话号码就叫回调函数，你把电话留给店员就叫登记回调函数，店里后来有货了叫做触发了回调关联的事件，店员给你打电话叫做调用回调函数，你到店里去取货叫做响应回调事件。</p>
+</blockquote>
+<p>From:<a href="https://www.zhihu.com/question/19801131/answer/13005983" target="_blank" rel="external">https://www.zhihu.com/question/19801131/answer/13005983</a><br>以下用代码验证我的理解。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">learn</span>(<span class="params">something</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(something);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">we</span>(<span class="params">callback, something</span>) </span>&#123;</div><div class="line">    something += <span class="string">' is cool'</span>;</div><div class="line">    callback(something);</div><div class="line">&#125;</div><div class="line"></div><div class="line">we(learn, <span class="string">'Node'</span>); <span class="comment">// Node is cool</span></div></pre></td></tr></table></figure>
+<p><a href="http://www.html-js.com/article/Sexy-Javascript-understand-the-callback-function-with-the-use-of-Javascript-in" target="_blank" rel="external">理解与使用回调函数</a></p>
+<h2 id="2-什么是同步-异步？"><a href="#2-什么是同步-异步？" class="headerlink" title="2.什么是同步/异步？"></a>2.什么是同步/异步？</h2><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p>一个web页面中，JS代码都是按照标签顺序来执行的。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// 例1</div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"file.js&gt;&lt;/script&gt;</span></span></div><div class="line">&lt;img src="<span class="attr">image.jpg</span>" /&gt;<span class="actionscript"> <span class="comment">//图片多快出现在你眼前，取决于file.js的装载速度</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 例2</span></div><div class="line"><span class="keyword">var</span> c = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">printIt</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(c);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    c += <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">plus();</div><div class="line">printIt(); <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<h3 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h3><blockquote>
+<p>异步处理不用阻塞当前线程来等待处理完成，而是允许后续操作，直至其它线程将处理完成，并回调通知此线程。</p>
+</blockquote>
+<p>举个例子，你和女票今晚想吃小龙虾，就打开手机订外卖，订完就等着外卖小哥打你电话了。外卖小哥打你电话相当于触发回调函数。这个就是<code>异步处理</code>。<br>以下为未进行回调操作的代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">printIt</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(c);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        c += <span class="number">1</span>;</div><div class="line">    &#125;, <span class="number">1000</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">plus();</div><div class="line">printIt(); <span class="comment">// 0</span></div></pre></td></tr></table></figure>
+<p>进行回调：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> c = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">printIt</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(c);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params">callback</span>) </span>&#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        c += <span class="number">1</span>;</div><div class="line">        callback();</div><div class="line">    &#125;, <span class="number">1000</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">plus(callback); <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<h2 id="3-什么是单线程-多线程？"><a href="#3-什么是单线程-多线程？" class="headerlink" title="3.什么是单线程/多线程？"></a>3.什么是单线程/多线程？</h2><h3 id="单线程"><a href="#单线程" class="headerlink" title="单线程"></a>单线程</h3><p>单线程在程序执行时，所走的程序路径按照连续顺序排下来，前面的必须处理好，后面的才会执行。JavaScript就是单线程的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> isEnd = <span class="literal">true</span>;</div><div class="line">     <span class="built_in">window</span>.setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">         isEnd = <span class="literal">false</span>;<span class="comment">//1s后，改变isEnd的值</span></div><div class="line">     &#125;, <span class="number">1000</span>);</div><div class="line">     <span class="comment">//这个while永远的占用了js线程，所以setTimeout里面的函数永远不会执行</span></div><div class="line">     <span class="keyword">while</span> (isEnd);</div><div class="line">     <span class="comment">//alert也永远不会弹出</span></div><div class="line">     alert(<span class="string">'end'</span>);</div></pre></td></tr></table></figure>
+<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><p>多线程即在同一时间处理多个任务。就像一个人脚踏两条船，在一个时间段交两个女票（？？？？）。<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API/Using_web_workers" target="_blank" rel="external">JavaScript多线程方案——Web worker</a>;</p>
+<h2 id="4-什么是阻塞-非阻塞？阻塞-非阻塞与同步-异步的关系。"><a href="#4-什么是阻塞-非阻塞？阻塞-非阻塞与同步-异步的关系。" class="headerlink" title="4.什么是阻塞/非阻塞？阻塞/非阻塞与同步/异步的关系。"></a>4.什么是阻塞/非阻塞？阻塞/非阻塞与同步/异步的关系。</h2><p>还是订外卖的例子：</p>
+<ol>
+<li>点完菜干等着啥也不干，在门口等菜来了你自己取菜吃。—阻塞、同步</li>
+<li>点完菜在家写代码，在门口等菜来了你自己取菜吃。—非阻塞、同步</li>
+<li>点完菜干等着啥也不干，等外卖小哥打你电话你出门收菜吃。—阻塞、异步</li>
+<li>点完菜在家写代码，等外卖小哥打你电话你出门收菜吃。—非阻塞、异步</li>
+</ol>
+<h2 id="5-什么是事件循环？"><a href="#5-什么是事件循环？" class="headerlink" title="5.什么是事件循环？"></a>5.什么是事件循环？</h2><blockquote>
+<p>主线程从”任务队列”中读取事件，这个过程是循环不断的，所以整个的这种运行机制又称为Event Loop（事件循环）。</p>
+</blockquote>
+<p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="external">JavaScript 运行机制详解：再谈Event Loop</a><br><a href="http://web.jobbole.com/83360/" target="_blank" rel="external">JS事件循环详解</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-什么是回调？&quot;&gt;&lt;a href=&quot;#1-什么是回调？&quot; class=&quot;headerlink&quot; title=&quot;1.什么是回调？&quot;&gt;&lt;/a&gt;1.什么是回调？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你到一个商店买东西，刚好你要的东西没有货，于是你在店员那里留下了你
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome扩展开发实践——外部数据的获取和存储</title>
+    <link href="http://zhoushidong.cc/2016/07/30/Chrome%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5%E2%80%94%E2%80%94%E5%A4%96%E9%83%A8%E6%95%B0%E6%8D%AE%E7%9A%84%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AD%98%E5%82%A8/"/>
+    <id>http://zhoushidong.cc/2016/07/30/Chrome扩展开发实践——外部数据的获取和存储/</id>
+    <published>2016-07-30T09:31:41.000Z</published>
+    <updated>2017-02-22T10:07:08.859Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近尝试着写一个Chrome的天气扩展。几番折腾下来，遇到了不少问题。</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>关于Chrome扩展的开发，当然是要看Google的Chrome开发者文档了：<a href="https://developer.chrome.com/extensions/getstarted" target="_blank" rel="external">Chrome文档</a>;<br>这个是全英文的，然而360很良心地把开发者文档翻译了一遍：<a href="http://open.chrome.360.cn/extension_dev/overview.html" target="_blank" rel="external">360文档</a>;</p>
+<h3 id="关于API和JSON处理"><a href="#关于API和JSON处理" class="headerlink" title="关于API和JSON处理"></a>关于API和JSON处理</h3><p>我的想法是这样的，这个浏览器扩展能够得到设备的地理位置并返回当前位置的天气状况，而JavaScript没有API来得到地理位置信息，必须得先获取ip并通过第三方ip地址查询接口来得到所在城市的信息。(我用的是新浪的接口)</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://<span class="keyword">int</span>.dpool.sina.<span class="keyword">com</span>.<span class="keyword">cn</span>/iplookup/iplookup.php?format=json</div></pre></td></tr></table></figure>
+<p>其内容如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;"ret":1,"start":-1,"end":-1,"country":"\u4e2d\u56fd","province":"\u6d59\u6c5f","city":"\u5b81\u6ce2","district":"","isp":"","type":"","desc":""&#125;;</div></pre></td></tr></table></figure>
+<p>可以看到这里国家、省、市的值都是Unicode编码，然而把值取出来时<code>data.city</code>却自动变为了中文，非常之神奇…</p>
+<p>关于天气API，我用的是和风天气，免费版一天能使用3000次。把城市名作为参数，通过ajax得到的JSON数据是这样的:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    "HeWeather data service 3.0": [&#123;</div><div class="line">        "aqi": &#123;</div><div class="line">            "city": &#123;</div><div class="line">                "aqi": "121",</div><div class="line">                "co": "1",</div><div class="line">                "no2": "22",</div><div class="line">                "o3": "143",</div><div class="line">                "pm10": "59",</div><div class="line">                "pm25": "38",</div><div class="line">                "qlty": "轻度污染",</div><div class="line">                "so2": "7"</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        "basic": &#123;</div><div class="line">            "city": "宁波",</div><div class="line">            "cnty": "中国",</div><div class="line">            "id": "CN101210401",</div><div class="line">            "lat": "29.872000",</div><div class="line">            "lon": "121.542000",</div><div class="line">            "update": &#123;</div><div class="line">                "loc": "2016-07-27 17:52",</div><div class="line">                "utc": "2016-07-27 09:52"</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        ......</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>设<code>data</code>为JSON对象，那么<code>data[&quot;HeWeather data service 3.0&quot;][0].aqi.city.qlty</code>就是空气质量的描述，值为<code>轻度污染</code>。</p>
+<p>关于JSON对象的操作：</p>
+<ol>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank" rel="external">JSON</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" target="_blank" rel="external">JSON.stringify()</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank" rel="external">JSON.parse()</a></li>
+</ol>
+<h3 id="Chrome-Content-Security-Policy问题"><a href="#Chrome-Content-Security-Policy问题" class="headerlink" title="Chrome Content Security Policy问题"></a>Chrome Content Security Policy问题</h3><p>当然这里还有一个大坑，那就是</p>
+<blockquote>
+<p>Chrome遵循Content Security Policy (CSP)的理念，引入了严格的策略使扩展更安全，同时提供创建和实施策略规则的能力，这些规则用以控制扩展（或应用）能够加载的资源和执行的脚本。</p>
+</blockquote>
+<p>也就是说，代码无法引用外部资源，无法使用CDN上的js和css，新浪api也无法以script标签形式存在。<br>查了一下<a href="https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing" target="_blank" rel="external">文档</a>,发下以下代码和外部引用不被允许：</p>
+<ol>
+<li>eval()函数</li>
+<li>html内嵌的js代码</li>
+<li>网上的js等资源</li>
+</ol>
+<p>当然，还有个trick可以引用外部的JavaScript或者资源</p>
+<blockquote>
+<p>放宽默认策略<br>没有绕过“禁止Inline JavaScript执行”的办法。即使有意在脚本策略字段增加unsafe-inline也是没有任何作用的。就是这样设计的！ 不过，如果您需要一些外部的JavaScript或者资源，您可以通过将HTTPS源的脚本加入白名单来放宽“只加载本地脚本和资源”策略。 请记住：白名单对于不安全的HTTP源是无效的。这也是特意设计的！因为必须确保可执行资源的加载正是您所期望的，而不是被网络攻击者替换过的。 而中间人在HTTP上已经是小菜一碟，且还很难检测到，因此只支持HTTPS源。 例如，允许加载来源自HTTS的example.com网站的脚本，策略定义如下： { …, “content<em>security</em>policy”: “script-src ‘self’ <a href="https://example.com/" target="_blank" rel="external">https://example.com</a>; object-src ‘self’”, … } 请注意，上面的策略中，script-src和object-src都定义了。Chrome要求：必须定义这两者！如果您不知道怎么定义，就让它们都是’self’。 通常，可以通过Google Analytics的统计结果来帮助定义策略。在brief tutorial 我们提供各种各样的扩展分析样板，和一个更详细的简短教程。</p>
+</blockquote>
+<p>虽然有这个trick，但能不能用还是要看运气。亲测新浪api不可以用，一些js文件还是要下载到本地才能使用。继续翻文档，发现manifest.json中的<a href="https://developer.chrome.com/extensions/declare_permissions" target="_blank" rel="external">permissions</a>就是给调用API设计的。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  ...</div><div class="line">  "permissions": [</div><div class="line">    "activeTab",</div><div class="line">    "https://ajax.googleapis.com/",</div><div class="line">    "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json"</div><div class="line">  ]</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="缓存数据问题"><a href="#缓存数据问题" class="headerlink" title="缓存数据问题"></a>缓存数据问题</h3><p>由于和风天气一天只能访问3000次，如果能把数据保存一段时间就好了。之前想过用cookie存储数据，后来看到了HTML5的数据存储方案：<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="external">HTML5 Web存储</a>, 里面介绍到</p>
+<blockquote>
+<p>cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。 在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。</p>
+</blockquote>
+<p>HTML5提供了两种在客户端存储数据的方法：</p>
+<ol>
+<li>localStorage - 没有时间限制的数据存储</li>
+<li>sessionStorage - 针对一个 session 的数据存储</li>
+</ol>
+<p>使用HTML5这种方案，代码也十分简单(通过键值对<code>key-value</code>存储,将存储对象转换为字符串后存入)：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">localStorage.nickname = <span class="string">"Mike"</span>;  </div><div class="line"><span class="built_in">console</span>.log(localStorage.nickname); <span class="comment">// Mike</span></div><div class="line"></div><div class="line">localStorage.setItem(<span class="string">"age"</span>,<span class="string">"18"</span>); <span class="comment">// 设置b为"isaac"  </span></div><div class="line">localStorage.getTime(<span class="string">"age"</span>); <span class="comment">//18</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> a = localStorage.key(<span class="number">0</span>); <span class="comment">// 获取第0个数据项的键名，此处即为“nickname”</span></div><div class="line"></div><div class="line">localStorage.removeItem(<span class="string">"age"</span>);<span class="comment">//清除age的值</span></div><div class="line"></div><div class="line">localStorage.clear();<span class="comment">//清除当前域名下的所有localstorage数据</span></div></pre></td></tr></table></figure>
+<p>而用<code>sessionStorage</code>存储的数据，当用于关闭浏览器窗口的时候，数据也会被删除。</p>
+<p>利用<code>localStorage</code>缓存天气数据(时限1小时)：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> storedTime = localStorage.updateTime||<span class="number">0</span>;  </div><div class="line"><span class="keyword">var</span> time = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() - (<span class="number">60</span> * <span class="number">60</span> * <span class="number">100</span>); <span class="comment">//每小时请求一次数据  </span></div><div class="line">httpRequest(<span class="string">'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;  </div><div class="line">  <span class="keyword">if</span> (!data) &#123;</div><div class="line">    <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line">  data = <span class="built_in">JSON</span>.parse(data);</div><div class="line">  <span class="keyword">var</span> cityName = data.city;</div><div class="line">  <span class="keyword">if</span> (time &gt; storedTime) &#123;</div><div class="line">    httpRequest(<span class="string">"https://api.heweather.com/x3/weather?city="</span> + cityName + <span class="string">"&amp;key=yourkey"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">weatherData</span>) </span>&#123;</div><div class="line">      weatherData = <span class="built_in">JSON</span>.parse(weatherData)</div><div class="line">      showData(cityName, weatherData);</div><div class="line">      localStorage.updateTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</div><div class="line">      localStorage.data = <span class="built_in">JSON</span>.stringify(weatherData);</div><div class="line">    &#125;);</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">      weatherData = <span class="built_in">JSON</span>.parse(localStorage.data);</div><div class="line">      showData(cityName, weatherData);</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">showData</span>(<span class="params">city, data</span>) </span>&#123;  </div><div class="line">    <span class="comment">//Show weather data by dealing with DOM.</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>解决了这个问题之后，接下来就是画网页了，我的扩展功能十分简单，只是显示当天的天气情况= =。<a href="http://o6ljw8wcq.bkt.clouddn.com/myblog/jpg/QQ%E5%9B%BE%E7%89%8720160729155721.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/myblog/jpg/QQ%E5%9B%BE%E7%89%8720160729155721.png" alt="img"></a></p>
+<p>一个非常简易的Chrome扩展就写完了。</p>
+<p><a href="https://segmentfault.com/a/1190000004121465" target="_blank" rel="external">localStorage参考资料</a></p>
+<p><a href="https://github.com/clarkzsd/TinyWeather" target="_blank" rel="external">天气预报扩展 源代码地址</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近尝试着写一个Chrome的天气扩展。几番折腾下来，遇到了不少问题。&lt;/p&gt;
+&lt;h2 id=&quot;正文&quot;&gt;&lt;a href=&quot;#正文&quot; clas
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+      <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows-ubuntu双系统问题</title>
+    <link href="http://zhoushidong.cc/2016/05/30/windows-ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98/"/>
+    <id>http://zhoushidong.cc/2016/05/30/windows-ubuntu双系统问题/</id>
+    <published>2016-05-30T09:35:40.000Z</published>
+    <updated>2017-02-22T10:09:42.675Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题1：开机默认进入grub引导"><a href="#问题1：开机默认进入grub引导" class="headerlink" title="问题1：开机默认进入grub引导"></a>问题1：开机默认进入grub引导</h3><p>装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。</p>
+<p>然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。<br>太麻烦……一点都不优雅！<br>后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：</p>
+<ol>
+<li>Ubuntu</li>
+<li>Windows Boot Manager</li>
+<li>UEFI:LITEON</li>
+</ol>
+<p>所以说，Ubuntu放在第一位所以才会默认启动ubuntu的grub引导……那我把Windows Boot Manager放在第一位不就行了？</p>
+<p>然后继续Google如何修改UEFI的启动项顺序。<br>Google大法好，搜到一个叫<code>easyUEFI</code>的东西，可以修改默认启动项顺序。原版是要收费的，而我大天朝中文版竟然免费！<br>界面如下，上调Windows Boot Manager的顺序就Ok了。</p>
+<p><a href="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" alt="img"></a>img</p>
+<h3 id="问题2：没有声音！！！"><a href="#问题2：没有声音！！！" class="headerlink" title="问题2：没有声音！！！"></a>问题2：没有声音！！！</h3><p>蛤，这个问题一搜一大片呀。有位机智的网友答道：这就是双系统常见的蜜汁bug，只要盒上电脑盖子再打开就行了。<br><em>虽然不知道什么原理，但亲测有效！</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;问题1：开机默认进入grub引导&quot;&gt;&lt;a href=&quot;#问题1：开机默认进入grub引导&quot; class=&quot;headerlink&quot; title=&quot;问题1：开机默认进入grub引导&quot;&gt;&lt;/a&gt;问题1：开机默认进入grub引导&lt;/h3&gt;&lt;p&gt;装完ubuntu、windo
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="windows" scheme="http://zhoushidong.cc/tags/windows/"/>
+    
+      <category term="ubuntu" scheme="http://zhoushidong.cc/tags/ubuntu/"/>
+    
+  </entry>
+  
+</feed>
