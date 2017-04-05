@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-02T14:10:22.675Z</updated>
+  <updated>2017-04-05T13:08:57.449Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Log:2017-4-5</title>
+    <link href="http://zhoushidong.cc/2017/04/05/Log-2017-4-5/"/>
+    <id>http://zhoushidong.cc/2017/04/05/Log-2017-4-5/</id>
+    <published>2017-04-05T12:51:10.000Z</published>
+    <updated>2017-04-05T13:08:57.449Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="HTML-amp-amp-CSS"><a href="#HTML-amp-amp-CSS" class="headerlink" title="HTML &amp;&amp; CSS"></a>HTML &amp;&amp; CSS</h3><ol>
+<li><a href="http://zh.learnlayout.com/" target="_blank" rel="external">Learn CSS Layout</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position" target="_blank" rel="external">MDN：position</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank" rel="external">MDN：float</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank" rel="external">MDN：media queries</a></li>
+</ol>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>1.<a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task3" target="_blank" rel="external">Three Column Layout</a></p>
+<h2 id="Idea-💡"><a href="#Idea-💡" class="headerlink" title="Idea 💡"></a>Idea 💡</h2><p>From this day onwards, note down what I read, what I program and what I think.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;HTML-amp-amp-CSS&quot;&gt;&lt;a href=&quot;#HTML-amp-amp-CSS&quot;
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>2017年04月02日</title>
@@ -665,9 +695,9 @@
       <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
     
     
-      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
-    
       <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
     
   </entry>
   
