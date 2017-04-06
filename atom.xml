@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-05T13:59:22.200Z</updated>
+  <updated>2017-04-06T15:00:02.495Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Log:2017-4-6</title>
+    <link href="http://zhoushidong.cc/2017/04/06/Log-2017-4-6/"/>
+    <id>http://zhoushidong.cc/2017/04/06/Log-2017-4-6/</id>
+    <published>2017-04-06T14:40:43.000Z</published>
+    <updated>2017-04-06T15:00:02.495Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Centering-in-CSS"><a href="#Centering-in-CSS" class="headerlink" title="Centering in CSS"></a>Centering in CSS</h3><ol>
+<li><a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="external">Centering in CSS: A Complete Guide</a></li>
+</ol>
+<h3 id="Positioning-in-CSS"><a href="#Positioning-in-CSS" class="headerlink" title="Positioning in CSS"></a>Positioning in CSS</h3><ol>
+<li><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="external">HTML和CSS高级指南之二——定位详解</a></li>
+</ol>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
+<p>Sad😭</p>
+<h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>This world doesn’t deserve Superman. </p>
+<p>Men are not good enough.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Centering-in-CSS&quot;&gt;&lt;a href=&quot;#Centering-in-CSS&quot;
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>Log:2017-4-5</title>
