@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-07T15:38:19.205Z</updated>
+  <updated>2017-04-08T15:53:58.048Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -16,11 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Log:2017-4-8</title>
+    <link href="http://zhoushidong.cc/2017/04/08/Log-2017-4-8/"/>
+    <id>http://zhoushidong.cc/2017/04/08/Log-2017-4-8/</id>
+    <published>2017-04-08T15:31:54.000Z</published>
+    <updated>2017-04-08T15:53:58.048Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><p>None.</p>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
+<h2 id="What-Happened-Today-❔"><a href="#What-Happened-Today-❔" class="headerlink" title="What Happened Today ❔"></a>What Happened Today ❔</h2><p>今天关于工作室的事情谈了很多。一是关于招新的事，二是关于工作室以后的发展。</p>
+<p>从宣传开始算的话，我们的招新开始时间比去年晚了很多，然后从宣传开始到正式电话面试中间又由于各种事情拖了很长时间。由于校区的原因，招新主要由我们大二的负责。总的来说，大二的我们应对招新还是有点吃力的，一切都匆匆忙忙的，总感觉自己经验不足。面对明天的招新见面会也感觉没有准备充分。</p>
+<p>关于工作室以后的发展，真的十分感谢工作室的前辈们为我们打下的基础。在团队建设方面，我们已经有自己的官网、博客和招新网站，现在又有了基于 Websocket 的聊天室和基于 flarum 的校园论坛（未推广上线）。前几天麻凯倩学姐又帮我们申请了 npm 的 group。在职的前辈们都十分关注工作室的发展。真的十分感谢。现在我们要做的事，就是在前辈们留下的基础上打造出属于 β-house 自己的面向校园的产品，这样工作室才能长远发展。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;p&gt;None.&lt;/p&gt;
+&lt;h2 id=&quot;Practice-⚽&quot;&gt;&lt;a href=&quot;#Practice-⚽
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Log:2017-4-7</title>
     <link href="http://zhoushidong.cc/2017/04/07/Log-2017-4-7/"/>
     <id>http://zhoushidong.cc/2017/04/07/Log-2017-4-7/</id>
     <published>2017-04-07T02:49:10.000Z</published>
-    <updated>2017-04-07T15:38:19.205Z</updated>
+    <updated>2017-04-07T15:40:40.900Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h3><ol>
 <li><a href="https://segmentfault.com/a/1190000002910324" target="_blank" rel="external">Flexbox 详解</a></li>
@@ -30,7 +56,7 @@
 <li><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task4" target="_blank" rel="external">Centering in CSS</a></li>
 <li>Meet Flexbox(unfinished)</li>
 </ol>
-<h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>The world has become flat. So how can you stand out in comparison?</p>
+<h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>The world has become flat. So how can you stand out in comparison with the others?</p>
 ]]></content>
     
     <summary type="html">
