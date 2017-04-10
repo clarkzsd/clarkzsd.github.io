@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-08T15:53:58.048Z</updated>
+  <updated>2017-04-10T15:07:04.153Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -16,11 +16,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Log:2017-4-10</title>
+    <link href="http://zhoushidong.cc/2017/04/10/Log-2017-4-10/"/>
+    <id>http://zhoushidong.cc/2017/04/10/Log-2017-4-10/</id>
+    <published>2017-04-10T15:03:40.000Z</published>
+    <updated>2017-04-10T15:07:04.153Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><ol>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="external"><meta> | MDN</a></li>
+<li><a href="https://nodesource.com/blog/configuring-your-npmrc-for-an-optimal-node-js-environment" target="_blank" rel="external">Configuring Your .npmrc for an Optimal Node.js Environment</a></li>
+</ol>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Log:2017-4-9</title>
+    <link href="http://zhoushidong.cc/2017/04/09/Log-2017-4-9/"/>
+    <id>http://zhoushidong.cc/2017/04/09/Log-2017-4-9/</id>
+    <published>2017-04-09T10:08:55.000Z</published>
+    <updated>2017-04-10T10:54:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><p>None.</p>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><ol>
+<li><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task10" target="_blank" rel="external">IFE Flexbox practice</a></li>
+</ol>
+<h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>Today, we met the new guys. Young and passionate, they know more about tech stuff than me in the past when I participate the recruitment of β-house. Wow!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;p&gt;None.&lt;/p&gt;
+&lt;h2 id=&quot;Practice-⚽&quot;&gt;&lt;a href=&quot;#Practice-⚽
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Log:2017-4-8</title>
     <link href="http://zhoushidong.cc/2017/04/08/Log-2017-4-8/"/>
     <id>http://zhoushidong.cc/2017/04/08/Log-2017-4-8/</id>
     <published>2017-04-08T15:31:54.000Z</published>
-    <updated>2017-04-08T15:53:58.048Z</updated>
+    <updated>2017-04-08T15:54:58.876Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><p>None.</p>
 <h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
@@ -788,9 +840,9 @@
       <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
     
     
-      <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
-    
       <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+      <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
     
   </entry>
   
