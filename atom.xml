@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-10T15:07:04.153Z</updated>
+  <updated>2017-04-11T15:22:51.089Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -14,6 +14,191 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最熟悉的陌生人——&lt;meta&gt; 标签</title>
+    <link href="http://zhoushidong.cc/2017/04/11/%E8%B0%88%E8%B0%88-meta-%E6%A0%87%E7%AD%BE/"/>
+    <id>http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/</id>
+    <published>2017-04-11T11:50:31.000Z</published>
+    <updated>2017-04-11T15:22:51.089Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/4-11/TIM%E6%88%AA%E5%9B%BE20170411195731.png" alt="meta 标签"></p>
+<h2 id="元数据-Metadata"><a href="#元数据-Metadata" class="headerlink" title="元数据 Metadata"></a>元数据 Metadata</h2><p>在<code>html</code>中，每个<code>DOM</code>元素都有其内容模型（Content model）：</p>
+<blockquote>
+<p>An <a href="https://www.w3.org/TR/html51/infrastructure.html#html-element" target="_blank" rel="external">HTML element</a> must have contents that match the requirements described in the element’s content model.</p>
+</blockquote>
+<p>而所谓 <code>Content</code> 正是指该<code>DOM</code>元素的子项。根据 <code>Content</code> ，又可将<code>DOM</code>元素分为好几个类别，其中，<code>Metadata content</code>一类包含以下元素：  <code>&lt;base&gt;</code> <code>&lt;link&gt;</code> <code>&lt;meta&gt;</code> <code>&lt;noscript&gt;</code> <code>&lt;script&gt;</code> <code>&lt;style&gt;</code> <code>&lt;template&gt;</code> <code>&lt;title&gt;</code></p>
+<blockquote>
+<p>Metadata content is content that sets up the presentation or behavior of the rest of the content, or that sets up the relationship of the document with other documents, or that conveys other “out of band” information.</p>
+</blockquote>
+<p>而<code>meta</code>元素用来表示那些不能由其他<code>Metadata content</code>类元素表示的元数据（Metadata），如页面的说明，关键字，最后修改日期等。移动互联网出现之后，其<code>name</code>属性中的<code>viewport</code>被广泛应用于移动 web。</p>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>meta标签共有四个属性：</p>
+<ol>
+<li>charset</li>
+<li>content</li>
+<li>http-equiv</li>
+<li>name（全局属性，在<code>&lt;meta&gt;</code>中有特殊含义）</li>
+<li>itemprop（全局属性）</li>
+</ol>
+<h3 id="1-charset"><a href="#1-charset" class="headerlink" title="1.charset"></a>1.charset</h3><blockquote>
+<p>The <code>charset</code> attribute specifies the character encoding used by the document. This is a <a href="https://www.w3.org/TR/html51/document-metadata.html#character-encoding-declaration" target="_blank" rel="external">character encoding declaration</a>.</p>
+</blockquote>
+<p>注意：每个<code>html</code>文档不能有多个具有<code>charset</code>属性的<code>meta</code>元素</p>
+<p>关于编码详情：<a href="https://www.w3.org/TR/html51/document-metadata.html#specifying-the-documents-character-encoding" target="_blank" rel="external">https://www.w3.org/TR/html51/document-metadata.html#specifying-the-documents-character-encoding</a></p>
+<h3 id="2-content"><a href="#2-content" class="headerlink" title="2.content"></a>2.content</h3><p>这个属性为 <code>http-equiv</code> 或 <code>name</code> 属性提供了与其相关的值的定义，其值取决于具体的上下文。</p>
+<h3 id="3-http-equiv"><a href="#3-http-equiv" class="headerlink" title="3.http-equiv"></a>3.http-equiv</h3><p><code>http-equiv</code> 属性是一个可枚举属性。下表是属性可选关键字及这些关键字所映射的内容。</p>
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>所映射的内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content-language</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-content-language" target="_blank" rel="external">Content Language</a></td>
+<td>已过时。 使用<code>&lt;html&gt;</code>元素上全局的 <strong>lang</strong> 属性来替代它。</td>
+</tr>
+<tr>
+<td><code>content-type</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-content-type" target="_blank" rel="external">Encoding declaration</a></td>
+<td>已过时。推荐使用<code>&lt;meta charset=&quot;&quot;&gt;</code>。不能和含有<code>charset</code>属性的<code>&lt;meta&gt;</code>标签同时使用。</td>
+</tr>
+<tr>
+<td><code>default-style</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-default-style" target="_blank" rel="external">Default style</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>refresh</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-refresh" target="_blank" rel="external">Refresh</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>set-cookie</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-set-cookie" target="_blank" rel="external">Cookie setter</a></td>
+<td>已过时。 使用HTTP header set-cookie 来替代它。</td>
+</tr>
+<tr>
+<td><code>content-security-policy</code></td>
+<td><a href="https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-content-security-policy" target="_blank" rel="external">Content security policy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x-ua-compatible</code></td>
+<td><a href="https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-x-ua-compatible" target="_blank" rel="external">X-UA-Compatible</a></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p><code>default-style</code></p>
+<p>用于指定首选css。</p>
+<blockquote>
+<h2 id="Descriptions-for-attributes-specific-to-this-element"><a href="#Descriptions-for-attributes-specific-to-this-element" class="headerlink" title="Descriptions for attributes specific to this element"></a>Descriptions for attributes specific to this element</h2><ul>
+<li><p><a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.http-equiv.default-style.html#meta.http-equiv.attrs.http-equiv.default-style" target="_blank" rel="external">http-equiv</a> = “default-style”</p>
+<p>Indicates that the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.html#meta" target="_blank" rel="external">meta</a> element is a pragma directive that specifies the document’s preferred stylesheet.</p>
+</li>
+<li><p><a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.http-equiv.default-style.html#meta.http-equiv.attrs.content.default-style" target="_blank" rel="external">content</a> = <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/datatypes.html#common.data.default-style" target="_blank" rel="external">default-style name</a></p>
+<p>Specifies the name of the document’s preferred stylesheet. The name must meet either of the following sets of constraints:</p>
+<ul>
+<li>The name must match the value of the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/common-attributes.html#common.attrs.title" target="_blank" rel="external">title</a> attribute on a <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link" target="_blank" rel="external">link</a> element in the same document, and that <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link" target="_blank" rel="external">link</a> element must have an <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link.attrs.href" target="_blank" rel="external">href</a> attribute that references the location of a CSS stylesheet.</li>
+<li>The name must match the value of the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/common-attributes.html#common.attrs.title" target="_blank" rel="external">title</a> attribute on a <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/style.html#style" target="_blank" rel="external">style</a> element in the same document, and the contents of that element must be a CSS stylesheet.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>refresh</code></p>
+<p>每隔一段时间自动刷新并指向某页面，以下是使用举例</p>
+<ol>
+<li><p>新闻网站首页可能会在页面的头元素中包含以下标记，以确保页面每五分钟自动从服务器重新加载：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Refresh"</span> <span class="attr">content</span>=<span class="string">"300"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>可以将一系列页面用作自动幻灯片放映：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Refresh"</span> <span class="attr">content</span>=<span class="string">"20; URL=page4.html"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p><code>content-security-policy</code></p>
+<p>通常防止站点脚本攻击（XSS）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Security-Policy"</span> <span class="attr">content</span>=<span class="string">"script-src 'self'; object-src 'none'"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><code>x-ua-compatible</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>/&gt;</span> </div><div class="line"><span class="comment">&lt;!-- 指定IE使用最新版本渲染当前页面</span></div><div class="line"> Note, the W3C validator will flag chrome=1 as an error.</div><div class="line">--&gt;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="4-name"><a href="#4-name" class="headerlink" title="4.name"></a>4.name</h3><ol>
+<li><p>application-name</p>
+<p>设置 Web App 名称。可通过使用<code>lang</code>属性设置不同语言版本的名称。free-form string。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"application-name"</span> <span class="attr">content</span>=<span class="string">"zhizhi"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>author</p>
+<p>标注网页作者。free-form string。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"author"</span> <span class="attr">content</span>=<span class="string">"zsd,clarkzsd@gmail.com"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>description</p>
+<p>页面介绍。措辞应当合适，因为会在搜索引擎中显示。free-form string。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"betahouse工作室博客"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>keywords</p>
+<p>页面关键字。set of comma-separated tokens。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"british,typeface,font,fonts,highway,highways"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>referrer</p>
+<p>指定 referrer 策略</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"referrer"</span> <span class="attr">content</span>=<span class="string">"no-referrer|no-referrer-when-downgrade|origin|origin-when-crossorigin|unsafe-url"</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>关于 referrer 策略: <a href="https://w3c.github.io/webappsec-referrer-policy/#referrer-policy" target="_blank" rel="external">https://w3c.github.io/webappsec-referrer-policy/#referrer-policy</a></p>
+</li>
+<li><p>theme-color</p>
+<p>HTML 规范定义：</p>
+<blockquote>
+<p>The value must be a string that matches the CSS <a href="https://drafts.csswg.org/css-color/#typedef-color" target="_blank" rel="external">color</a> production, defining a suggested color that user agents should use to customize the display of the page or of the surrounding user interface. For example, a browser might color the page’s title bar with the specified value, or use it as a color highlight in a tab bar or task switcher.</p>
+</blockquote>
+<p>不过现在只有 Android 上面的 Chrome 支持 theme-color。</p>
+<p><img src="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" alt="theme-color in chrome"></p>
+<p>注意：<code>name</code>为<code>theme-color</code>的<code>meta</code>元素只能出现一次。</p>
+</li>
+<li><p>generator</p>
+<blockquote>
+<p>The value must be a free-form string that identifies one of the software packages used to generate the document. This value must not be used on pages whose markup is not generated by software, e.g. pages whose markup was written by a user in a text editor.</p>
+</blockquote>
+<p>例子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- </span></div><div class="line">	Here is what a tool called "Frontweaver" could include in its output, in the page's head element, to identify itself as the tool used to generate the page:</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">generator</span> <span class="attr">content</span>=<span class="string">"Frontweaver 8.2"</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>在过去，某些网站编辑器（如 FrontPage）会在创建新的HTML文档或使用它们发布站点时自动插入生成器标签。这被认为是指“此页面是使用FrontPage创建的”。现在几乎不使用……</p>
+</li>
+<li><h5 id="Other-metadata-names"><a href="#Other-metadata-names" class="headerlink" title="Other metadata names"></a>Other metadata names</h5><p>任何人都可以创建并使用自己的扩展 metadata name。</p>
+<p>详情：<a href="https://html.spec.whatwg.org/multipage/semantics.html#other-metadata-names" target="_blank" rel="external">https://html.spec.whatwg.org/multipage/semantics.html#other-metadata-names</a></p>
+</li>
+<li><p>viewport</p>
+<p>viewport 指的是 web 的可视区域。在不同的设备上，viewport 都不同。</p>
+<p>meta viewport标签首先是由 Apple 在其 safari 浏览器中引入的，目的是解决移动设备的 viewport 问题。后来其他各大厂商纷纷也引入了对 viewport 的支持。</p>
+<p>这个特性虽然被广泛使用，但仍然未被标准化。（在 w3c 规范中翻了好久没翻出来。。。）</p>
+<p>| Value           | 可能值                        | 描述                                       |<br>| ————— | ————————– | —————————————- |<br>| <code>width</code>         | 一个正整数或者字符串 <code>device-width</code>  | defines the width, in pixels, of the viewport |<br>| <code>height</code>        | 一个正整数或者字符串 <code>device-height</code> | defines the height, in pixels, of the viewport |<br>| <code>initial-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the ratio between the device width (<code>device-width</code> in portrait mode or <code>device-height</code> in landscape mode) and the viewport size. |<br>| <code>maximum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate. |<br>| <code>minimum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the minimum value of the zoom; it must be smaller or equal to the <code>maximum-scale</code> or the behavior is indeterminate. |<br>| <code>user-scalable</code> | 一个布尔值（yes 或者no）            | If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is <code>yes</code>. |</p>
+<p><a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
+</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="external">The meta element | whatwg</a></li>
+<li><a href="https://www.w3.org/TR/2016/REC-html51-20161101/document-metadata.html#the-meta-element" target="_blank" rel="external">The meta element | w3.org</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o6ljw8wcq.bkt.clouddn.com/blog/4-11/TIM%E6%88%AA%E5%9B%BE20170411195731.png&quot; alt=&quot;meta 标签&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;元数据-Metadata&quot;&gt;&lt;a
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="HTML" scheme="http://zhoushidong.cc/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>Log:2017-4-10</title>
