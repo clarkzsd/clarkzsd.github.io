@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-11T15:22:51.089Z</updated>
+  <updated>2017-04-11T15:41:57.710Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zhoushidong.cc/2017/04/11/%E8%B0%88%E8%B0%88-meta-%E6%A0%87%E7%AD%BE/"/>
     <id>http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/</id>
     <published>2017-04-11T11:50:31.000Z</published>
-    <updated>2017-04-11T15:22:51.089Z</updated>
+    <updated>2017-04-11T15:41:57.710Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/4-11/TIM%E6%88%AA%E5%9B%BE20170411195731.png" alt="meta 标签"></p>
 <h2 id="元数据-Metadata"><a href="#元数据-Metadata" class="headerlink" title="元数据 Metadata"></a>元数据 Metadata</h2><p>在<code>html</code>中，每个<code>DOM</code>元素都有其内容模型（Content model）：</p>
@@ -157,6 +157,7 @@
 <p>The value must be a string that matches the CSS <a href="https://drafts.csswg.org/css-color/#typedef-color" target="_blank" rel="external">color</a> production, defining a suggested color that user agents should use to customize the display of the page or of the surrounding user interface. For example, a browser might color the page’s title bar with the specified value, or use it as a color highlight in a tab bar or task switcher.</p>
 </blockquote>
 <p>不过现在只有 Android 上面的 Chrome 支持 theme-color。</p>
+<p><a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android" target="_blank" rel="external">Support for theme-color in Chrome 39 for Android</a></p>
 <p><img src="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" alt="theme-color in chrome"></p>
 <p>注意：<code>name</code>为<code>theme-color</code>的<code>meta</code>元素只能出现一次。</p>
 </li>
@@ -175,10 +176,50 @@
 <p>viewport 指的是 web 的可视区域。在不同的设备上，viewport 都不同。</p>
 <p>meta viewport标签首先是由 Apple 在其 safari 浏览器中引入的，目的是解决移动设备的 viewport 问题。后来其他各大厂商纷纷也引入了对 viewport 的支持。</p>
 <p>这个特性虽然被广泛使用，但仍然未被标准化。（在 w3c 规范中翻了好久没翻出来。。。）</p>
-<p>| Value           | 可能值                        | 描述                                       |<br>| ————— | ————————– | —————————————- |<br>| <code>width</code>         | 一个正整数或者字符串 <code>device-width</code>  | defines the width, in pixels, of the viewport |<br>| <code>height</code>        | 一个正整数或者字符串 <code>device-height</code> | defines the height, in pixels, of the viewport |<br>| <code>initial-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the ratio between the device width (<code>device-width</code> in portrait mode or <code>device-height</code> in landscape mode) and the viewport size. |<br>| <code>maximum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate. |<br>| <code>minimum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the minimum value of the zoom; it must be smaller or equal to the <code>maximum-scale</code> or the behavior is indeterminate. |<br>| <code>user-scalable</code> | 一个布尔值（yes 或者no）            | If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is <code>yes</code>. |</p>
-<p><a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
 </li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>可能值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>一个正整数或者字符串 <code>device-width</code></td>
+<td>defines the width, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>height</td>
+<td>一个正整数或者字符串 <code>device-height</code></td>
+<td>defines the height, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>initial-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size.</td>
+</tr>
+<tr>
+<td>maximum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td>minimum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the minimum value of the zoom; it must be smaller or equal to the maximum-scale or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td><code>user-scalable</code></td>
+<td>一个布尔值（yes 或者no）</td>
+<td>If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is yes.</td>
+</tr>
+</tbody>
+</table>
+<p>​    <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
 <li><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="external">The meta element | whatwg</a></li>
@@ -1025,9 +1066,9 @@
       <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
     
     
-      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
-    
       <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
     
   </entry>
   

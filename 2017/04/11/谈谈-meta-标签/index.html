@@ -133,6 +133,7 @@
 <p>The value must be a string that matches the CSS <a href="https://drafts.csswg.org/css-color/#typedef-color" target="_blank" rel="external">color</a> production, defining a suggested color that user agents should use to customize the display of the page or of the surrounding user interface. For example, a browser might color the page’s title bar with the specified value, or use it as a color highlight in a tab bar or task switcher.</p>
 </blockquote>
 <p>不过现在只有 Android 上面的 Chrome 支持 theme-color。</p>
+<p><a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android" target="_blank" rel="external">Support for theme-color in Chrome 39 for Android</a></p>
 <p><img src="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" alt="theme-color in chrome"></p>
 <p>注意：<code>name</code>为<code>theme-color</code>的<code>meta</code>元素只能出现一次。</p>
 </li>
@@ -151,16 +152,56 @@
 <p>viewport 指的是 web 的可视区域。在不同的设备上，viewport 都不同。</p>
 <p>meta viewport标签首先是由 Apple 在其 safari 浏览器中引入的，目的是解决移动设备的 viewport 问题。后来其他各大厂商纷纷也引入了对 viewport 的支持。</p>
 <p>这个特性虽然被广泛使用，但仍然未被标准化。（在 w3c 规范中翻了好久没翻出来。。。）</p>
-<p>| Value           | 可能值                        | 描述                                       |<br>| ————— | ————————– | —————————————- |<br>| <code>width</code>         | 一个正整数或者字符串 <code>device-width</code>  | defines the width, in pixels, of the viewport |<br>| <code>height</code>        | 一个正整数或者字符串 <code>device-height</code> | defines the height, in pixels, of the viewport |<br>| <code>initial-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the ratio between the device width (<code>device-width</code> in portrait mode or <code>device-height</code> in landscape mode) and the viewport size. |<br>| <code>maximum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate. |<br>| <code>minimum-scale</code> | <code>一个0.0</code> 到<code>10.0之间的正数</code>       | defines the minimum value of the zoom; it must be smaller or equal to the <code>maximum-scale</code> or the behavior is indeterminate. |<br>| <code>user-scalable</code> | 一个布尔值（yes 或者no）            | If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is <code>yes</code>. |</p>
-<p><a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
 </li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>可能值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>一个正整数或者字符串 <code>device-width</code></td>
+<td>defines the width, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>height</td>
+<td>一个正整数或者字符串 <code>device-height</code></td>
+<td>defines the height, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>initial-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size.</td>
+</tr>
+<tr>
+<td>maximum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td>minimum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the minimum value of the zoom; it must be smaller or equal to the maximum-scale or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td><code>user-scalable</code></td>
+<td>一个布尔值（yes 或者no）</td>
+<td>If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is yes.</td>
+</tr>
+</tbody>
+</table>
+<p>​    <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
 <li><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="external">The meta element | whatwg</a></li>
 <li><a href="https://www.w3.org/TR/2016/REC-html51-20161101/document-metadata.html#the-meta-element" target="_blank" rel="external">The meta element | w3.org</a></li>
 </ul>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/" data-id="cj1dp599r001c7wgp66l73lc9" class="article-share-link">分享到</a><div class="tags"><a href="/tags/HTML/">HTML</a></div><div class="post-nav"><a href="/2017/04/10/Log-2017-4-10/" class="next">Log:2017-4-10</a></div><div id="disqus_thread"><script>var disqus_shortname = 'clarkzsd';
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/" data-id="cj1dpj1jy001k2wgp45nwiy6s" class="article-share-link">分享到</a><div class="tags"><a href="/tags/HTML/">HTML</a></div><div class="post-nav"><a href="/2017/04/10/Log-2017-4-10/" class="next">Log:2017-4-10</a></div><div id="disqus_thread"><script>var disqus_shortname = 'clarkzsd';
 var disqus_identifier = '2017/04/11/谈谈-meta-标签/';
 var disqus_title = '最熟悉的陌生人——&lt;meta&gt; 标签';
 var disqus_url = 'http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/';
@@ -168,4 +209,4 @@ var disqus_url = 'http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/';
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script><script id="dsq-count-scr" src="//clarkzsd.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://zhoushidong.cc"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log/">Log</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/♥/">♥</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/言语/">言语</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/流水账/" style="font-size: 15px;">流水账</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/bootstrap/" style="font-size: 15px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 15px;">chrome</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/windows/" style="font-size: 15px;">windows</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/ife/" style="font-size: 15px;">ife</a> <a href="/tags/node-js/" style="font-size: 15px;">node.js</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/谈谈-meta-标签/">最熟悉的陌生人——<meta> 标签</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/Log-2017-4-10/">Log:2017-4-10</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/09/Log-2017-4-9/">Log:2017-4-9</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/08/Log-2017-4-8/">Log:2017-4-8</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/07/Log-2017-4-7/">Log:2017-4-7</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/06/Log-2017-4-6/">Log:2017-4-6</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/05/Log-2017-4-5/">Log:2017-4-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/02/2017-04-02/">2017年04月02日</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/无题-2017年3月19日/">无题 2017年3月19日</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/28/自定义checkbox、radio样式/">自定义checkbox、radio样式</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//clarkzsd.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://zhizhi.betahouse.us/" title="知之" target="_blank">知之</a><ul></ul><a href="https://blog.hxtao.site/" title="Elliot' Blog" target="_blank">Elliot' Blog</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Clark's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+})();</script><script id="dsq-count-scr" src="//clarkzsd.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://zhoushidong.cc"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log/">Log</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/♥/">♥</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/言语/">言语</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/流水账/" style="font-size: 15px;">流水账</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/bootstrap/" style="font-size: 15px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 15px;">chrome</a> <a href="/tags/windows/" style="font-size: 15px;">windows</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/node-js/" style="font-size: 15px;">node.js</a> <a href="/tags/ife/" style="font-size: 15px;">ife</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/谈谈-meta-标签/">最熟悉的陌生人——<meta> 标签</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/Log-2017-4-10/">Log:2017-4-10</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/09/Log-2017-4-9/">Log:2017-4-9</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/08/Log-2017-4-8/">Log:2017-4-8</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/07/Log-2017-4-7/">Log:2017-4-7</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/06/Log-2017-4-6/">Log:2017-4-6</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/05/Log-2017-4-5/">Log:2017-4-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/02/2017-04-02/">2017年04月02日</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/无题-2017年3月19日/">无题 2017年3月19日</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/28/自定义checkbox、radio样式/">自定义checkbox、radio样式</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//clarkzsd.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://zhizhi.betahouse.us/" title="知之" target="_blank">知之</a><ul></ul><a href="https://blog.hxtao.site/" title="Elliot' Blog" target="_blank">Elliot' Blog</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Clark's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
