@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-04-11T15:41:57.710Z</updated>
+  <updated>2017-04-12T14:58:59.142Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -16,11 +16,260 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Log:2017-4-11</title>
+    <link href="http://zhoushidong.cc/2017/04/12/Log-2017-4-11/"/>
+    <id>http://zhoushidong.cc/2017/04/12/Log-2017-4-11/</id>
+    <published>2017-04-12T14:46:01.000Z</published>
+    <updated>2017-04-12T14:58:59.142Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="external">The meta element | whatwg</a></li>
+<li><a href="https://www.w3.org/TR/2016/REC-html51-20161101/document-metadata.html#the-meta-element" target="_blank" rel="external">The meta element | w3.org</a></li>
+</ul>
+<h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
+<h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>Have known more about <code>&lt;meta&gt;</code>. Gotta learn about <code>viewport</code> in a few days.</p>
+<p>And I realized that official standards or documents are the best learning materials.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN
+    
+    </summary>
+    
+      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhoushidong.cc/2017/04/11/sasd/"/>
+    <id>http://zhoushidong.cc/2017/04/11/sasd/</id>
+    <published>2017-04-11T15:45:04.067Z</published>
+    <updated>2017-04-11T15:45:41.909Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="元数据-Metadata"><a href="#元数据-Metadata" class="headerlink" title="元数据 Metadata"></a>元数据 Metadata</h2><p>在<code>html</code>中，每个<code>DOM</code>元素都有其内容模型（Content model）：</p>
+<blockquote>
+<p>An <a href="https://www.w3.org/TR/html51/infrastructure.html#html-element" target="_blank" rel="external">HTML element</a> must have contents that match the requirements described in the element’s content model.</p>
+</blockquote>
+<p>而所谓 <code>Content</code> 正是指该<code>DOM</code>元素的子项。根据 <code>Content</code> ，又可将<code>DOM</code>元素分为好几个类别，其中，<code>Metadata content</code>一类包含以下元素： <code>&lt;base&gt;</code> <code>&lt;link&gt;</code> <code>&lt;meta&gt;</code> <code>&lt;noscript&gt;</code> <code>&lt;script&gt;</code> <code>&lt;style&gt;</code> <code>&lt;template&gt;</code> <code>&lt;title&gt;</code></p>
+<blockquote>
+<p>Metadata content is content that sets up the presentation or behavior of the rest of the content, or that sets up the relationship of the document with other documents, or that conveys other “out of band” information.</p>
+</blockquote>
+<p>而<code>meta</code>元素用来表示那些不能由其他<code>Metadata content</code>类元素表示的元数据（Metadata），如页面的说明，关键字，最后修改日期等。移动互联网出现之后，其<code>name</code>属性中的<code>viewport</code>被广泛应用于移动 web。</p>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>meta标签共有四个属性：</p>
+<ol>
+<li>charset</li>
+<li>content</li>
+<li>http-equiv</li>
+<li>name（全局属性，在<code>&lt;meta&gt;</code>中有特殊含义）</li>
+<li>itemprop（全局属性）</li>
+</ol>
+<h3 id="1-charset"><a href="#1-charset" class="headerlink" title="1.charset"></a>1.charset</h3><blockquote>
+<p>The <code>charset</code> attribute specifies the character encoding used by the document. This is a <a href="https://www.w3.org/TR/html51/document-metadata.html#character-encoding-declaration" target="_blank" rel="external">character encoding declaration</a>.</p>
+</blockquote>
+<p>注意：每个<code>html</code>文档不能有多个具有<code>charset</code>属性的<code>meta</code>元素</p>
+<p>关于编码详情：<a href="https://www.w3.org/TR/html51/document-metadata.html#specifying-the-documents-character-encoding" target="_blank" rel="external">https://www.w3.org/TR/html51/document-metadata.html#specifying-the-documents-character-encoding</a></p>
+<h3 id="2-content"><a href="#2-content" class="headerlink" title="2.content"></a>2.content</h3><p>这个属性为 <code>http-equiv</code> 或 <code>name</code> 属性提供了与其相关的值的定义，其值取决于具体的上下文。</p>
+<h3 id="3-http-equiv"><a href="#3-http-equiv" class="headerlink" title="3.http-equiv"></a>3.http-equiv</h3><p><code>http-equiv</code> 属性是一个可枚举属性。下表是属性可选关键字及这些关键字所映射的内容。</p>
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>所映射的内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content-language</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-content-language" target="_blank" rel="external">Content Language</a></td>
+<td>已过时。 使用<code>&lt;html&gt;</code>元素上全局的 <strong>lang</strong> 属性来替代它。</td>
+</tr>
+<tr>
+<td><code>content-type</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-content-type" target="_blank" rel="external">Encoding declaration</a></td>
+<td>已过时。推荐使用<code>&lt;meta charset=&quot;&quot;&gt;</code>。不能和含有<code>charset</code>属性的<code>&lt;meta&gt;</code>标签同时使用。</td>
+</tr>
+<tr>
+<td><code>default-style</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-default-style" target="_blank" rel="external">Default style</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>refresh</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-refresh" target="_blank" rel="external">Refresh</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>set-cookie</code></td>
+<td><a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-set-cookie" target="_blank" rel="external">Cookie setter</a></td>
+<td>已过时。 使用HTTP header set-cookie 来替代它。</td>
+</tr>
+<tr>
+<td><code>content-security-policy</code></td>
+<td><a href="https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-content-security-policy" target="_blank" rel="external">Content security policy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x-ua-compatible</code></td>
+<td><a href="https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-x-ua-compatible" target="_blank" rel="external">X-UA-Compatible</a></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p><code>default-style</code></p>
+<p>用于指定首选css。</p>
+<blockquote>
+<h2 id="Descriptions-for-attributes-specific-to-this-element"><a href="#Descriptions-for-attributes-specific-to-this-element" class="headerlink" title="Descriptions for attributes specific to this element"></a>Descriptions for attributes specific to this element</h2><ul>
+<li><p><a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.http-equiv.default-style.html#meta.http-equiv.attrs.http-equiv.default-style" target="_blank" rel="external">http-equiv</a> = “default-style”</p>
+<p>Indicates that the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.html#meta" target="_blank" rel="external">meta</a> element is a pragma directive that specifies the document’s preferred stylesheet.</p>
+</li>
+<li><p><a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/meta.http-equiv.default-style.html#meta.http-equiv.attrs.content.default-style" target="_blank" rel="external">content</a> = <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/datatypes.html#common.data.default-style" target="_blank" rel="external">default-style name</a></p>
+<p>Specifies the name of the document’s preferred stylesheet. The name must meet either of the following sets of constraints:</p>
+<ul>
+<li>The name must match the value of the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/common-attributes.html#common.attrs.title" target="_blank" rel="external">title</a> attribute on a <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link" target="_blank" rel="external">link</a> element in the same document, and that <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link" target="_blank" rel="external">link</a> element must have an <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/link.html#link.attrs.href" target="_blank" rel="external">href</a> attribute that references the location of a CSS stylesheet.</li>
+<li>The name must match the value of the <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/common-attributes.html#common.attrs.title" target="_blank" rel="external">title</a> attribute on a <a href="https://www.w3.org/TR/2010/WD-html-markup-20100624/style.html#style" target="_blank" rel="external">style</a> element in the same document, and the contents of that element must be a CSS stylesheet.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>refresh</code></p>
+<p>每隔一段时间自动刷新并指向某页面，以下是使用举例</p>
+<ol>
+<li><p>新闻网站首页可能会在页面的头元素中包含以下标记，以确保页面每五分钟自动从服务器重新加载：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Refresh"</span> <span class="attr">content</span>=<span class="string">"300"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>可以将一系列页面用作自动幻灯片放映：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Refresh"</span> <span class="attr">content</span>=<span class="string">"20; URL=page4.html"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p><code>content-security-policy</code></p>
+<p>通常防止站点脚本攻击（XSS）：</p>
+<figure class="highlight csp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv="Content-Security-Policy" content="<span class="keyword">script-src</span> <span class="string">'self'</span>; <span class="keyword">object-src</span> <span class="string">'none'</span>"&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>x-ua-compatible</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>/&gt;</span> </div><div class="line"><span class="comment">&lt;!-- 指定IE使用最新版本渲染当前页面</span></div><div class="line"> Note, the W3C validator will flag chrome=1 as an error.</div><div class="line">--&gt;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="4-name"><a href="#4-name" class="headerlink" title="4.name"></a>4.name</h3><ol>
+<li><p>application-name</p>
+<p>设置 Web App 名称。可通过使用<code>lang</code>属性设置不同语言版本的名称。free-form string。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="built_in">name</span>=<span class="string">"application-name"</span> content=<span class="string">"zhizhi"</span>&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>author</p>
+<p>标注网页作者。free-form string。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="built_in">name</span>=<span class="string">"author"</span> content=<span class="string">"zsd,clarkzsd@gmail.com"</span>&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>description</p>
+<p>页面介绍。措辞应当合适，因为会在搜索引擎中显示。free-form string。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="built_in">name</span>=<span class="string">"description"</span> content=<span class="string">"betahouse工作室博客"</span>&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>keywords</p>
+<p>页面关键字。set of comma-separated tokens。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="built_in">name</span>=<span class="string">"keywords"</span> content=<span class="string">"british,typeface,font,fonts,highway,highways"</span>&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>referrer</p>
+<p>指定 referrer 策略</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="built_in">name</span>=<span class="string">"referrer"</span> content=<span class="string">"no-referrer|no-referrer-when-downgrade|origin|origin-when-crossorigin|unsafe-url"</span>&gt;</div></pre></td></tr></table></figure>
+<p>关于 referrer 策略: <a href="https://w3c.github.io/webappsec-referrer-policy/#referrer-policy" target="_blank" rel="external">https://w3c.github.io/webappsec-referrer-policy/#referrer-policy</a></p>
+</li>
+<li><p>theme-color</p>
+<p>HTML 规范定义：</p>
+<blockquote>
+<p>The value must be a string that matches the CSS <a href="https://drafts.csswg.org/css-color/#typedef-color" target="_blank" rel="external">color</a> production, defining a suggested color that user agents should use to customize the display of the page or of the surrounding user interface. For example, a browser might color the page’s title bar with the specified value, or use it as a color highlight in a tab bar or task switcher.</p>
+</blockquote>
+<p>不过现在只有 Android 上面的 Chrome 支持 theme-color。</p>
+<p><a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android" target="_blank" rel="external">Support for theme-color in Chrome 39 for Android</a></p>
+<p><a href="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" target="_blank" rel="external"><img src="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" alt="theme-color in chrome"></a>theme-color in chrome</p>
+<p>注意：<code>name</code>为<code>theme-color</code>的<code>meta</code>元素只能出现一次。</p>
+</li>
+<li><p>generator</p>
+<blockquote>
+<p>The value must be a free-form string that identifies one of the software packages used to generate the document. This value must not be used on pages whose markup is not generated by software, e.g. pages whose markup was written by a user in a text editor.</p>
+</blockquote>
+<p>例子：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- </span></div><div class="line">	Here is what a tool called "Frontweaver" could include in its output, in the page's head element, to identify itself as the tool used to generate the page:</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">generator</span> <span class="attr">content</span>=<span class="string">"Frontweaver 8.2"</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>在过去，某些网站编辑器（如 FrontPage）会在创建新的HTML文档或使用它们发布站点时自动插入生成器标签。这被认为是指“此页面是使用FrontPage创建的”。现在几乎不使用……</p>
+</li>
+<li><h5 id="Other-metadata-names"><a href="#Other-metadata-names" class="headerlink" title="Other metadata names"></a>Other metadata names</h5><p>任何人都可以创建并使用自己的扩展 metadata name。</p>
+<p>详情：<a href="https://html.spec.whatwg.org/multipage/semantics.html#other-metadata-names" target="_blank" rel="external">https://html.spec.whatwg.org/multipage/semantics.html#other-metadata-names</a></p>
+</li>
+<li><p>viewport</p>
+<p>viewport 指的是 web 的可视区域。在不同的设备上，viewport 都不同。</p>
+<p>meta viewport标签首先是由 Apple 在其 safari 浏览器中引入的，目的是解决移动设备的 viewport 问题。后来其他各大厂商纷纷也引入了对 viewport 的支持。</p>
+<p>这个特性虽然被广泛使用，但仍然未被标准化。（在 w3c 规范中翻了好久没翻出来。。。）</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>可能值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>一个正整数或者字符串 <code>device-width</code></td>
+<td>defines the width, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>height</td>
+<td>一个正整数或者字符串 <code>device-height</code></td>
+<td>defines the height, in pixels, of the viewport</td>
+</tr>
+<tr>
+<td>initial-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size.</td>
+</tr>
+<tr>
+<td>maximum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the maximum value of the zoom; it must be greater or equal to the <code>minimum-scale</code> or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td>minimum-scale</td>
+<td><code>一个0.0</code> 到<code>10.0之间的正数</code></td>
+<td>defines the minimum value of the zoom; it must be smaller or equal to the maximum-scale or the behavior is indeterminate.</td>
+</tr>
+<tr>
+<td><code>user-scalable</code></td>
+<td>一个布尔值（yes 或者no）</td>
+<td>If set to <code>no</code>, the user is not able to zoom in the webpage. Default value is yes.</td>
+</tr>
+</tbody>
+</table>
+<p> <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank" rel="external">Learn more about viewport</a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element" target="_blank" rel="external">The meta element | whatwg</a></li>
+<li><a href="https://www.w3.org/TR/2016/REC-html51-20161101/document-metadata.html#the-meta-element" target="_blank" rel="external">The meta element | w3.org</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;元数据-Metadata&quot;&gt;&lt;a href=&quot;#元数据-Metadata&quot; class=&quot;headerlink&quot; title=&quot;元数据 Metadata&quot;&gt;&lt;/a&gt;元数据 Metadata&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;html&lt;/code&gt;中，每个&lt;code&gt;DO
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>最熟悉的陌生人——&lt;meta&gt; 标签</title>
     <link href="http://zhoushidong.cc/2017/04/11/%E8%B0%88%E8%B0%88-meta-%E6%A0%87%E7%AD%BE/"/>
     <id>http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/</id>
     <published>2017-04-11T11:50:31.000Z</published>
-    <updated>2017-04-11T15:41:57.710Z</updated>
+    <updated>2017-04-11T15:42:14.228Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/4-11/TIM%E6%88%AA%E5%9B%BE20170411195731.png" alt="meta 标签"></p>
 <h2 id="元数据-Metadata"><a href="#元数据-Metadata" class="headerlink" title="元数据 Metadata"></a>元数据 Metadata</h2><p>在<code>html</code>中，每个<code>DOM</code>元素都有其内容模型（Content model）：</p>
@@ -246,10 +495,10 @@
     <link href="http://zhoushidong.cc/2017/04/10/Log-2017-4-10/"/>
     <id>http://zhoushidong.cc/2017/04/10/Log-2017-4-10/</id>
     <published>2017-04-10T15:03:40.000Z</published>
-    <updated>2017-04-10T15:07:04.153Z</updated>
+    <updated>2017-04-12T14:47:03.708Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><ol>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="external"><meta> | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="external">meta | MDN</a></li>
 <li><a href="https://nodesource.com/blog/configuring-your-npmrc-for-an-optimal-node-js-environment" target="_blank" rel="external">Configuring Your .npmrc for an Optimal Node.js Environment</a></li>
 </ol>
 <h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
@@ -994,116 +1243,6 @@
     
     
       <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Chrome扩展开发实践——外部数据的获取和存储</title>
-    <link href="http://zhoushidong.cc/2016/07/30/Chrome%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5%E2%80%94%E2%80%94%E5%A4%96%E9%83%A8%E6%95%B0%E6%8D%AE%E7%9A%84%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AD%98%E5%82%A8/"/>
-    <id>http://zhoushidong.cc/2016/07/30/Chrome扩展开发实践——外部数据的获取和存储/</id>
-    <published>2016-07-30T09:31:41.000Z</published>
-    <updated>2017-02-22T10:07:08.859Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近尝试着写一个Chrome的天气扩展。几番折腾下来，遇到了不少问题。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>关于Chrome扩展的开发，当然是要看Google的Chrome开发者文档了：<a href="https://developer.chrome.com/extensions/getstarted" target="_blank" rel="external">Chrome文档</a>;<br>这个是全英文的，然而360很良心地把开发者文档翻译了一遍：<a href="http://open.chrome.360.cn/extension_dev/overview.html" target="_blank" rel="external">360文档</a>;</p>
-<h3 id="关于API和JSON处理"><a href="#关于API和JSON处理" class="headerlink" title="关于API和JSON处理"></a>关于API和JSON处理</h3><p>我的想法是这样的，这个浏览器扩展能够得到设备的地理位置并返回当前位置的天气状况，而JavaScript没有API来得到地理位置信息，必须得先获取ip并通过第三方ip地址查询接口来得到所在城市的信息。(我用的是新浪的接口)</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://<span class="keyword">int</span>.dpool.sina.<span class="keyword">com</span>.<span class="keyword">cn</span>/iplookup/iplookup.php?format=json</div></pre></td></tr></table></figure>
-<p>其内容如下：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;"ret":1,"start":-1,"end":-1,"country":"\u4e2d\u56fd","province":"\u6d59\u6c5f","city":"\u5b81\u6ce2","district":"","isp":"","type":"","desc":""&#125;;</div></pre></td></tr></table></figure>
-<p>可以看到这里国家、省、市的值都是Unicode编码，然而把值取出来时<code>data.city</code>却自动变为了中文，非常之神奇…</p>
-<p>关于天气API，我用的是和风天气，免费版一天能使用3000次。把城市名作为参数，通过ajax得到的JSON数据是这样的:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    "HeWeather data service 3.0": [&#123;</div><div class="line">        "aqi": &#123;</div><div class="line">            "city": &#123;</div><div class="line">                "aqi": "121",</div><div class="line">                "co": "1",</div><div class="line">                "no2": "22",</div><div class="line">                "o3": "143",</div><div class="line">                "pm10": "59",</div><div class="line">                "pm25": "38",</div><div class="line">                "qlty": "轻度污染",</div><div class="line">                "so2": "7"</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        "basic": &#123;</div><div class="line">            "city": "宁波",</div><div class="line">            "cnty": "中国",</div><div class="line">            "id": "CN101210401",</div><div class="line">            "lat": "29.872000",</div><div class="line">            "lon": "121.542000",</div><div class="line">            "update": &#123;</div><div class="line">                "loc": "2016-07-27 17:52",</div><div class="line">                "utc": "2016-07-27 09:52"</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        ......</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>设<code>data</code>为JSON对象，那么<code>data[&quot;HeWeather data service 3.0&quot;][0].aqi.city.qlty</code>就是空气质量的描述，值为<code>轻度污染</code>。</p>
-<p>关于JSON对象的操作：</p>
-<ol>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank" rel="external">JSON</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" target="_blank" rel="external">JSON.stringify()</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank" rel="external">JSON.parse()</a></li>
-</ol>
-<h3 id="Chrome-Content-Security-Policy问题"><a href="#Chrome-Content-Security-Policy问题" class="headerlink" title="Chrome Content Security Policy问题"></a>Chrome Content Security Policy问题</h3><p>当然这里还有一个大坑，那就是</p>
-<blockquote>
-<p>Chrome遵循Content Security Policy (CSP)的理念，引入了严格的策略使扩展更安全，同时提供创建和实施策略规则的能力，这些规则用以控制扩展（或应用）能够加载的资源和执行的脚本。</p>
-</blockquote>
-<p>也就是说，代码无法引用外部资源，无法使用CDN上的js和css，新浪api也无法以script标签形式存在。<br>查了一下<a href="https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing" target="_blank" rel="external">文档</a>,发下以下代码和外部引用不被允许：</p>
-<ol>
-<li>eval()函数</li>
-<li>html内嵌的js代码</li>
-<li>网上的js等资源</li>
-</ol>
-<p>当然，还有个trick可以引用外部的JavaScript或者资源</p>
-<blockquote>
-<p>放宽默认策略<br>没有绕过“禁止Inline JavaScript执行”的办法。即使有意在脚本策略字段增加unsafe-inline也是没有任何作用的。就是这样设计的！ 不过，如果您需要一些外部的JavaScript或者资源，您可以通过将HTTPS源的脚本加入白名单来放宽“只加载本地脚本和资源”策略。 请记住：白名单对于不安全的HTTP源是无效的。这也是特意设计的！因为必须确保可执行资源的加载正是您所期望的，而不是被网络攻击者替换过的。 而中间人在HTTP上已经是小菜一碟，且还很难检测到，因此只支持HTTPS源。 例如，允许加载来源自HTTS的example.com网站的脚本，策略定义如下： { …, “content<em>security</em>policy”: “script-src ‘self’ <a href="https://example.com/" target="_blank" rel="external">https://example.com</a>; object-src ‘self’”, … } 请注意，上面的策略中，script-src和object-src都定义了。Chrome要求：必须定义这两者！如果您不知道怎么定义，就让它们都是’self’。 通常，可以通过Google Analytics的统计结果来帮助定义策略。在brief tutorial 我们提供各种各样的扩展分析样板，和一个更详细的简短教程。</p>
-</blockquote>
-<p>虽然有这个trick，但能不能用还是要看运气。亲测新浪api不可以用，一些js文件还是要下载到本地才能使用。继续翻文档，发现manifest.json中的<a href="https://developer.chrome.com/extensions/declare_permissions" target="_blank" rel="external">permissions</a>就是给调用API设计的。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  ...</div><div class="line">  "permissions": [</div><div class="line">    "activeTab",</div><div class="line">    "https://ajax.googleapis.com/",</div><div class="line">    "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json"</div><div class="line">  ]</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="缓存数据问题"><a href="#缓存数据问题" class="headerlink" title="缓存数据问题"></a>缓存数据问题</h3><p>由于和风天气一天只能访问3000次，如果能把数据保存一段时间就好了。之前想过用cookie存储数据，后来看到了HTML5的数据存储方案：<a href="http://www.w3school.com.cn/html5/html_5_webstorage.asp" target="_blank" rel="external">HTML5 Web存储</a>, 里面介绍到</p>
-<blockquote>
-<p>cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。 在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。</p>
-</blockquote>
-<p>HTML5提供了两种在客户端存储数据的方法：</p>
-<ol>
-<li>localStorage - 没有时间限制的数据存储</li>
-<li>sessionStorage - 针对一个 session 的数据存储</li>
-</ol>
-<p>使用HTML5这种方案，代码也十分简单(通过键值对<code>key-value</code>存储,将存储对象转换为字符串后存入)：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">localStorage.nickname = <span class="string">"Mike"</span>;  </div><div class="line"><span class="built_in">console</span>.log(localStorage.nickname); <span class="comment">// Mike</span></div><div class="line"></div><div class="line">localStorage.setItem(<span class="string">"age"</span>,<span class="string">"18"</span>); <span class="comment">// 设置b为"isaac"  </span></div><div class="line">localStorage.getTime(<span class="string">"age"</span>); <span class="comment">//18</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> a = localStorage.key(<span class="number">0</span>); <span class="comment">// 获取第0个数据项的键名，此处即为“nickname”</span></div><div class="line"></div><div class="line">localStorage.removeItem(<span class="string">"age"</span>);<span class="comment">//清除age的值</span></div><div class="line"></div><div class="line">localStorage.clear();<span class="comment">//清除当前域名下的所有localstorage数据</span></div></pre></td></tr></table></figure>
-<p>而用<code>sessionStorage</code>存储的数据，当用于关闭浏览器窗口的时候，数据也会被删除。</p>
-<p>利用<code>localStorage</code>缓存天气数据(时限1小时)：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> storedTime = localStorage.updateTime||<span class="number">0</span>;  </div><div class="line"><span class="keyword">var</span> time = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() - (<span class="number">60</span> * <span class="number">60</span> * <span class="number">100</span>); <span class="comment">//每小时请求一次数据  </span></div><div class="line">httpRequest(<span class="string">'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;  </div><div class="line">  <span class="keyword">if</span> (!data) &#123;</div><div class="line">    <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line">  data = <span class="built_in">JSON</span>.parse(data);</div><div class="line">  <span class="keyword">var</span> cityName = data.city;</div><div class="line">  <span class="keyword">if</span> (time &gt; storedTime) &#123;</div><div class="line">    httpRequest(<span class="string">"https://api.heweather.com/x3/weather?city="</span> + cityName + <span class="string">"&amp;key=yourkey"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">weatherData</span>) </span>&#123;</div><div class="line">      weatherData = <span class="built_in">JSON</span>.parse(weatherData)</div><div class="line">      showData(cityName, weatherData);</div><div class="line">      localStorage.updateTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</div><div class="line">      localStorage.data = <span class="built_in">JSON</span>.stringify(weatherData);</div><div class="line">    &#125;);</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">      weatherData = <span class="built_in">JSON</span>.parse(localStorage.data);</div><div class="line">      showData(cityName, weatherData);</div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">showData</span>(<span class="params">city, data</span>) </span>&#123;  </div><div class="line">    <span class="comment">//Show weather data by dealing with DOM.</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>解决了这个问题之后，接下来就是画网页了，我的扩展功能十分简单，只是显示当天的天气情况= =。<a href="http://o6ljw8wcq.bkt.clouddn.com/myblog/jpg/QQ%E5%9B%BE%E7%89%8720160729155721.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/myblog/jpg/QQ%E5%9B%BE%E7%89%8720160729155721.png" alt="img"></a></p>
-<p>一个非常简易的Chrome扩展就写完了。</p>
-<p><a href="https://segmentfault.com/a/1190000004121465" target="_blank" rel="external">localStorage参考资料</a></p>
-<p><a href="https://github.com/clarkzsd/TinyWeather" target="_blank" rel="external">天气预报扩展 源代码地址</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近尝试着写一个Chrome的天气扩展。几番折腾下来，遇到了不少问题。&lt;/p&gt;
-&lt;h2 id=&quot;正文&quot;&gt;&lt;a href=&quot;#正文&quot; clas
-    
-    </summary>
-    
-      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
-    
-    
-      <category term="chrome" scheme="http://zhoushidong.cc/tags/chrome/"/>
-    
-      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows-ubuntu双系统问题</title>
-    <link href="http://zhoushidong.cc/2016/05/30/windows-ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98/"/>
-    <id>http://zhoushidong.cc/2016/05/30/windows-ubuntu双系统问题/</id>
-    <published>2016-05-30T09:35:40.000Z</published>
-    <updated>2017-02-22T10:09:42.675Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="问题1：开机默认进入grub引导"><a href="#问题1：开机默认进入grub引导" class="headerlink" title="问题1：开机默认进入grub引导"></a>问题1：开机默认进入grub引导</h3><p>装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。</p>
-<p>然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。<br>太麻烦……一点都不优雅！<br>后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：</p>
-<ol>
-<li>Ubuntu</li>
-<li>Windows Boot Manager</li>
-<li>UEFI:LITEON</li>
-</ol>
-<p>所以说，Ubuntu放在第一位所以才会默认启动ubuntu的grub引导……那我把Windows Boot Manager放在第一位不就行了？</p>
-<p>然后继续Google如何修改UEFI的启动项顺序。<br>Google大法好，搜到一个叫<code>easyUEFI</code>的东西，可以修改默认启动项顺序。原版是要收费的，而我大天朝中文版竟然免费！<br>界面如下，上调Windows Boot Manager的顺序就Ok了。</p>
-<p><a href="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" alt="img"></a>img</p>
-<h3 id="问题2：没有声音！！！"><a href="#问题2：没有声音！！！" class="headerlink" title="问题2：没有声音！！！"></a>问题2：没有声音！！！</h3><p>蛤，这个问题一搜一大片呀。有位机智的网友答道：这就是双系统常见的蜜汁bug，只要盒上电脑盖子再打开就行了。<br><em>虽然不知道什么原理，但亲测有效！</em></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;问题1：开机默认进入grub引导&quot;&gt;&lt;a href=&quot;#问题1：开机默认进入grub引导&quot; class=&quot;headerlink&quot; title=&quot;问题1：开机默认进入grub引导&quot;&gt;&lt;/a&gt;问题1：开机默认进入grub引导&lt;/h3&gt;&lt;p&gt;装完ubuntu、windo
-    
-    </summary>
-    
-      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
-    
-    
-      <category term="windows" scheme="http://zhoushidong.cc/tags/windows/"/>
-    
-      <category term="ubuntu" scheme="http://zhoushidong.cc/tags/ubuntu/"/>
     
   </entry>
   
