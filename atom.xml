@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-05-19T12:34:55.790Z</updated>
+  <updated>2017-04-26T16:04:41.680Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -14,38 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>我大概也是个无趣的人吧</title>
-    <link href="http://zhoushidong.cc/2017/05/19/boring-man/"/>
-    <id>http://zhoushidong.cc/2017/05/19/boring-man/</id>
-    <published>2017-05-19T12:17:33.000Z</published>
-    <updated>2017-05-19T12:34:55.790Z</updated>
-    
-    <content type="html"><![CDATA[<p>我常常觉得自己遇到的人没有以前遇到的有趣了。</p>
-<p>学校里大家各自干自己的事，互相不甚了解，若聊上几句也是十分默契地马上打住，用现在的流行语来讲就是“尬聊”吧。</p>
-<p>我经常觉得诧异为什么很多人对世界上那些有趣的事物一无所知呢？他们平常就没有特别热爱某些事吗？而且很奇怪他们竟然也生活的挺开心的。他们不知道自己很无趣吗？但仔细一想，他们也有能使自己愉悦的兴趣爱好，他们的精神世界或许很富足。只是我无法理解罢了。</p>
-<p>一直以来，我是不屑于与那些我认为“无趣”的人接触的。但或许，在别人眼中，我也是个很无趣的人吧。</p>
-<p>到目前为止，我唯一会玩的桌游只是 uno （感谢高中同学的指导） ,然后在一次 team activity 中被五花八门的桌游给弄懵了；我不会玩王者荣耀，LOL，游戏里面我只对 Minecraft 感兴趣……当然这只是个人兴趣爱好相关，与有趣与否无关。我想说的是，人各有别。想起高中学校的一句校训：“承认差异”……</p>
-<p>有位朋友说我感兴趣的东西跟别人不太一样，但是这些东西我是真的觉得有趣，是真真正正能够充实我自己。或许我很适合一个人自娱自乐。</p>
-<p>我一直觉得自己是算是个有趣的人，懂得的东西也算蛮多（自负了），面对一些事情能够游刃有余，但是在一些关键时刻，我仍然是笨拙的要命，就显得我自己很无聊。</p>
-<p>我很害怕自己变得无趣，变成一个“尬聊”制造者。</p>
-<p>不过，我渐渐感觉到，我底子里大概也是个无趣的人吧，习惯于生活在自己的精神世界，一踏出去就战战兢兢显得不知所措。</p>
-<p>但那些有趣的人会不会也觉得自己底子里是个无趣的人呢？</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我常常觉得自己遇到的人没有以前遇到的有趣了。&lt;/p&gt;
-&lt;p&gt;学校里大家各自干自己的事，互相不甚了解，若聊上几句也是十分默契地马上打住，用现在的流行语来讲就是“尬聊”吧。&lt;/p&gt;
-&lt;p&gt;我经常觉得诧异为什么很多人对世界上那些有趣的事物一无所知呢？他们平常就没有特别热爱某些事吗
-    
-    </summary>
-    
-      <category term="言语" scheme="http://zhoushidong.cc/categories/%E8%A8%80%E8%AF%AD/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>The First Encounter With Socket</title>
@@ -194,7 +162,7 @@
     <link href="http://zhoushidong.cc/2017/04/11/%E8%B0%88%E8%B0%88-meta-%E6%A0%87%E7%AD%BE/"/>
     <id>http://zhoushidong.cc/2017/04/11/谈谈-meta-标签/</id>
     <published>2017-04-11T11:50:31.000Z</published>
-    <updated>2017-04-11T15:42:14.228Z</updated>
+    <updated>2017-04-11T15:42:14.229Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/4-11/TIM%E6%88%AA%E5%9B%BE20170411195731.png" alt="meta 标签"></p>
 <h2 id="元数据-Metadata"><a href="#元数据-Metadata" class="headerlink" title="元数据 Metadata"></a>元数据 Metadata</h2><p>在<code>html</code>中，每个<code>DOM</code>元素都有其内容模型（Content model）：</p>
@@ -472,7 +440,7 @@
     <link href="http://zhoushidong.cc/2017/04/08/Log-2017-4-8/"/>
     <id>http://zhoushidong.cc/2017/04/08/Log-2017-4-8/</id>
     <published>2017-04-08T15:31:54.000Z</published>
-    <updated>2017-04-08T15:54:58.876Z</updated>
+    <updated>2017-04-08T15:54:58.877Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><p>None.</p>
 <h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p>None.</p>
@@ -498,7 +466,7 @@
     <link href="http://zhoushidong.cc/2017/04/07/Log-2017-4-7/"/>
     <id>http://zhoushidong.cc/2017/04/07/Log-2017-4-7/</id>
     <published>2017-04-07T02:49:10.000Z</published>
-    <updated>2017-04-07T15:40:40.900Z</updated>
+    <updated>2017-04-07T15:40:40.901Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h3><ol>
 <li><a href="https://segmentfault.com/a/1190000002910324" target="_blank" rel="external">Flexbox 详解</a></li>
@@ -649,7 +617,7 @@
     <link href="http://zhoushidong.cc/2017/02/28/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%E3%80%81radio%E6%A0%B7%E5%BC%8F/"/>
     <id>http://zhoushidong.cc/2017/02/28/自定义checkbox、radio样式/</id>
     <published>2017-02-28T07:35:49.000Z</published>
-    <updated>2017-03-12T04:42:25.471Z</updated>
+    <updated>2017-03-12T04:42:25.472Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Task"><a href="#Task" class="headerlink" title="Task"></a>Task</h2><p><a href="http://ife.baidu.com/course/detail/id/23" target="_blank" rel="external">自定义checkbox、radio样式</a></p>
 <h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><h2 id="一-伪元素与伪类"><a href="#一-伪元素与伪类" class="headerlink" title="一.伪元素与伪类"></a>一.伪元素与伪类</h2><p>CSS伪类是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 将在用户悬停在选择器指定的元素上时应用样式。</p>
@@ -706,7 +674,7 @@
     <link href="http://zhoushidong.cc/2017/02/19/JavaScript-%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84apply-%E3%80%81call-%E5%92%8Cbind/"/>
     <id>http://zhoushidong.cc/2017/02/19/JavaScript-函数中的apply-、call-和bind/</id>
     <published>2017-02-19T09:15:21.000Z</published>
-    <updated>2017-02-22T10:09:07.806Z</updated>
+    <updated>2017-02-22T10:09:07.807Z</updated>
     
     <content type="html"><![CDATA[<p>第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。</p>
 <h1 id="函数属性和方法"><a href="#函数属性和方法" class="headerlink" title="函数属性和方法"></a>函数属性和方法</h1><p>ECMAScript 中的函数是对象，因此函数也有属性和方法。每个函数包含两个属性：length 和 prototype。length 表示函数的参数个数：</p>
@@ -755,7 +723,7 @@
     <link href="http://zhoushidong.cc/2017/02/10/%E5%85%B3%E4%BA%8E-JavaScript-%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     <id>http://zhoushidong.cc/2017/02/10/关于-JavaScript-作用域/</id>
     <published>2017-02-10T09:19:09.000Z</published>
-    <updated>2017-02-22T10:07:22.562Z</updated>
+    <updated>2017-02-22T10:07:22.563Z</updated>
     
     <content type="html"><![CDATA[<p>最近看《JavaScript 语言精粹》时看到这么一句话：</p>
 <blockquote>
@@ -1043,6 +1011,78 @@
     
     
       <category term="windows" scheme="http://zhoushidong.cc/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个Express MVC实例</title>
+    <link href="http://zhoushidong.cc/2016/09/25/%E4%B8%80%E4%B8%AAExpress-MVC%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://zhoushidong.cc/2016/09/25/一个Express-MVC实例/</id>
+    <published>2016-09-25T09:28:20.000Z</published>
+    <updated>2017-02-22T10:07:44.713Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是-Express"><a href="#什么是-Express" class="headerlink" title="什么是 Express ?"></a>什么是 Express ?</h2><p>Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。</p>
+<blockquote>
+<p>Fast, unopinionated, minimalist web framework for Node.js</p>
+</blockquote>
+<p>详情： <a href="http://expressjs.com/" target="_blank" rel="external">Express</a></p>
+<p>随着ES6的推出，Express 开发团队又根据 ES6 新特性发布了下一代 Node.js web 框架：<a href="http://koajs.com/" target="_blank" rel="external">Koa</a></p>
+<h2 id="MVC模式"><a href="#MVC模式" class="headerlink" title="MVC模式 ?"></a>MVC模式 ?</h2><p>MVC 模式是程序架构模式中的一种。MVC是三个单词的首字母缩写，它们是Model（模型）、View（视图）和Controller（控制）。<br>这个模式将程序分成三层：</p>
+<blockquote>
+<p>1.最上面的一层，是直接面向最终用户的”视图层”（View）。它是提供给用户的操作界面，是程序的外壳。</p>
+<p>2.最底下的一层，是核心的”数据层”（Model），也就是程序需要操作的数据或信息。</p>
+<p>3.中间的一层，就是”控制层”（Controller），它负责根据用户从”视图层”输入的指令，选取”数据层”中的数据，然后对其进行相应的操作，产生最终结果。</p>
+</blockquote>
+<p>参考：<a href="http://www.ruanyifeng.com/blog/2007/11/mvc.html" target="_blank" rel="external">谈谈MVC模式</a></p>
+<h2 id="使用-Yeoman-搭建一个-Express-MVC项目"><a href="#使用-Yeoman-搭建一个-Express-MVC项目" class="headerlink" title="使用 Yeoman 搭建一个 Express MVC项目"></a>使用 Yeoman 搭建一个 Express MVC项目</h2><p>使用官方的<code>express-generator</code>生成的项目并没有清晰地体现MVC思想，这里我们使用 Yeoman 搭建。</p>
+<h3 id="安装-Yeoman-和-generator-express"><a href="#安装-Yeoman-和-generator-express" class="headerlink" title="安装 Yeoman 和 generator-express"></a>安装 Yeoman 和 generator-express</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> -g yo</div><div class="line">npm <span class="keyword">install</span> -g generator-express</div></pre></td></tr></table></figure>
+<h3 id="新建一个项目目录，并用generator生成项目模板"><a href="#新建一个项目目录，并用generator生成项目模板" class="headerlink" title="新建一个项目目录，并用generator生成项目模板"></a>新建一个项目目录，并用generator生成项目模板</h3><figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">mkdir</span> ExpressMVC &amp;&amp; <span class="built_in">cd</span> ExpressMVC</div><div class="line">yo express</div></pre></td></tr></table></figure>
+<p>在项目生成过程中，yeoman会让我们选择是否使用MVC模式。</p>
+<h2 id="看懂项目目录"><a href="#看懂项目目录" class="headerlink" title="看懂项目目录"></a>看懂项目目录</h2><ul>
+<li>ExpressMVC<ul>
+<li>app<ul>
+<li>controllers // 控制层</li>
+<li>models // 数据层</li>
+<li>views // 视图层</li>
+</ul>
+</li>
+<li>config // 用来存放配置文件<ul>
+<li>config.js // 配置数据库、端口等</li>
+<li>express.js // 配置express项目相关</li>
+</ul>
+</li>
+<li>public // 存放静态资源<ul>
+<li>js</li>
+<li>img</li>
+<li>css</li>
+<li>components</li>
+</ul>
+</li>
+<li>app.js // 入口文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="app-js-入口文件"><a href="#app-js-入口文件" class="headerlink" title="app.js 入口文件"></a>app.js 入口文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>),</div><div class="line">  config = <span class="built_in">require</span>(<span class="string">'./config/config'</span>), <span class="comment">// 引入配置文件</span></div><div class="line">  glob = <span class="built_in">require</span>(<span class="string">'glob'</span>),              <span class="comment">// glob模块允许你使用 *等符号,获取匹配对应规则的文件.</span></div><div class="line">  mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</div><div class="line"></div><div class="line">mongoose.connect(config.db);          <span class="comment">// 连接数据库</span></div><div class="line"><span class="keyword">var</span> db = mongoose.connection;</div><div class="line"></div><div class="line"><span class="comment">// 处理 error 事件</span></div><div class="line">db.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'unable to connect to database at '</span> + config.db);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> models = glob.sync(config.root + <span class="string">'/app/models/*.js'</span>); <span class="comment">// 引入所有model</span></div><div class="line">models.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">model</span>) </span>&#123;</div><div class="line">  <span class="built_in">require</span>(model);</div><div class="line">&#125;);</div><div class="line"><span class="keyword">var</span> app = express();       <span class="comment">// 生成一个express实例</span></div><div class="line"></div><div class="line"><span class="built_in">require</span>(<span class="string">'./config/express'</span>)(app, config);</div><div class="line"></div><div class="line"><span class="comment">// 监听3000端口</span></div><div class="line">app.listen(config.port, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'Express server listening on port '</span> + config.port);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="config-express-js-配置express相关"><a href="#config-express-js-配置express相关" class="headerlink" title="config/express.js 配置express相关"></a>config/express.js 配置express相关</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="keyword">require</span>(<span class="string">'express'</span>);</div><div class="line"><span class="keyword">var</span> glob = <span class="keyword">require</span>(<span class="string">'glob'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> favicon = <span class="keyword">require</span>(<span class="string">'serve-favicon'</span>);</div><div class="line"><span class="keyword">var</span> logger = <span class="keyword">require</span>(<span class="string">'morgan'</span>);</div><div class="line"><span class="keyword">var</span> cookieParser = <span class="keyword">require</span>(<span class="string">'cookie-parser'</span>);</div><div class="line"><span class="keyword">var</span> bodyParser = <span class="keyword">require</span>(<span class="string">'body-parser'</span>);</div><div class="line"><span class="keyword">var</span> compress = <span class="keyword">require</span>(<span class="string">'compression'</span>);</div><div class="line"><span class="keyword">var</span> methodOverride = <span class="keyword">require</span>(<span class="string">'method-override'</span>);</div><div class="line"></div><div class="line">module.exports = <span class="function"><span class="keyword">function</span><span class="params">(app, config)</span> </span>&#123;</div><div class="line">  <span class="keyword">var</span> env = process.env.NODE_ENV || <span class="string">'development'</span>;</div><div class="line">  app.locals.ENV = env;</div><div class="line">  app.locals.ENV_DEVELOPMENT = env == <span class="string">'development'</span>;</div><div class="line"></div><div class="line">  app.set(<span class="string">'views'</span>, config.root + <span class="string">'/app/views'</span>); <span class="comment">// 配置视图层路径</span></div><div class="line">  app.set(<span class="string">'view engine'</span>, <span class="string">'ejs'</span>);                <span class="comment">// 配置模板引擎为 ejs</span></div><div class="line"></div><div class="line">  <span class="comment">// app.use(favicon(config.root + '/public/img/favicon.ico'));  配置网站favicon</span></div><div class="line">  app.<span class="keyword">use</span>(logger(<span class="string">'dev'</span>));       <span class="comment">// 加载日志中间件</span></div><div class="line">  app.<span class="keyword">use</span>(bodyParser.json());   <span class="comment">// 加载解析json的中间件</span></div><div class="line"></div><div class="line">  <span class="comment">// 加载解析urlencoded请求体的中间件</span></div><div class="line">  app.<span class="keyword">use</span>(bodyParser.urlencoded(&#123;</div><div class="line">    extended: <span class="keyword">true</span></div><div class="line">  &#125;));</div><div class="line"></div><div class="line">  <span class="comment">// 加载解析cookie的中间件</span></div><div class="line">  app.<span class="keyword">use</span>(cookieParser());</div><div class="line"></div><div class="line">  <span class="comment">// 加载压缩中间件进行 Express 应用程序中的 gzip 压缩，</span></div><div class="line">  <span class="comment">// 有助于显著降低响应主体的大小，从而提高 Web 应用程序的速度</span></div><div class="line">  app.<span class="keyword">use</span>(compress());</div><div class="line"></div><div class="line">  <span class="comment">// 配置静态资源的存放路径</span></div><div class="line">  app.<span class="keyword">use</span>(express.<span class="keyword">static</span>(config.root + <span class="string">'/public'</span>));</div><div class="line">  <span class="comment">// 为了支持put、delete等HTTP方法</span></div><div class="line">  app.<span class="keyword">use</span>(methodOverride());</div><div class="line"></div><div class="line">  <span class="comment">// 配置Controller</span></div><div class="line">  <span class="keyword">var</span> controllers = glob.sync(config.root + <span class="string">'/app/controllers/*.js'</span>);</div><div class="line">  controllers.<span class="keyword">forEach</span>(<span class="function"><span class="keyword">function</span> <span class="params">(controller)</span> </span>&#123;</div><div class="line">    <span class="keyword">require</span>(controller)(app);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(req, res, next)</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> err = <span class="keyword">new</span> Error(<span class="string">'Not Found'</span>);</div><div class="line">    err.status = <span class="number">404</span>;</div><div class="line">    next(err);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  <span class="comment">// 当发生错误时，进行错误处理并路由到error页面</span></div><div class="line">  <span class="keyword">if</span>(app.get(<span class="string">'env'</span>) === <span class="string">'development'</span>)&#123;</div><div class="line">    app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(err, req, res, next)</span> </span>&#123;</div><div class="line">      res.status(err.status || <span class="number">500</span>);</div><div class="line">      res.render(<span class="string">'error'</span>, &#123;</div><div class="line">        message: err.message,</div><div class="line">        error: err,</div><div class="line">        title: <span class="string">'error'</span></div><div class="line">      &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  app.<span class="keyword">use</span>(<span class="function"><span class="keyword">function</span> <span class="params">(err, req, res, next)</span> </span>&#123;</div><div class="line">    res.status(err.status || <span class="number">500</span>);</div><div class="line">      res.render(<span class="string">'error'</span>, &#123;</div><div class="line">        message: err.message,</div><div class="line">        error: &#123;&#125;,</div><div class="line">        title: <span class="string">'error'</span></div><div class="line">      &#125;);</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h3 id="models-article-js-数据层"><a href="#models-article-js-数据层" class="headerlink" title="models/article.js 数据层"></a>models/article.js 数据层</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>),</div><div class="line">  Schema = mongoose.Schema;</div><div class="line"></div><div class="line"><span class="comment">// 定义 Schema</span></div><div class="line"><span class="keyword">var</span> ArticleSchema = <span class="keyword">new</span> Schema(&#123;</div><div class="line">  <span class="attr">title</span>: <span class="built_in">String</span>,</div><div class="line">  <span class="attr">url</span>: <span class="built_in">String</span>,</div><div class="line">  <span class="attr">text</span>: <span class="built_in">String</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">ArticleSchema.virtual(<span class="string">'date'</span>)</div><div class="line">  .get(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>._id.getTimestamp();</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">mongoose.model(<span class="string">'Article'</span>, ArticleSchema);   <span class="comment">// 创建一个名叫 Article 的Model</span></div></pre></td></tr></table></figure>
+<p>关于<a href="http://mongoosejs.com/docs/index.html" target="_blank" rel="external">mongoose</a></p>
+<p><a href="https://www.gitbook.com/book/xiaoxiami/mongoose/details" target="_blank" rel="external">mongoose4.5 中文文档</a></p>
+<h3 id="controllers-home-js-控制层"><a href="#controllers-home-js-控制层" class="headerlink" title="controllers/home.js 控制层"></a>controllers/home.js 控制层</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>),</div><div class="line">  router = express.Router(),</div><div class="line">  mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>),</div><div class="line">  Article = mongoose.model(<span class="string">'Article'</span>); <span class="comment">// 引入 Article 这个 model</span></div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params">app</span>) </span>&#123;</div><div class="line">  app.use(<span class="string">'/'</span>, router);</div><div class="line">&#125;;</div><div class="line"></div><div class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">  Article.find(<span class="function"><span class="keyword">function</span> (<span class="params">err, articles</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span> next(err);</div><div class="line">    <span class="comment">// 渲染到 视图 层</span></div><div class="line">    res.render(<span class="string">'index'</span>, &#123;</div><div class="line">      <span class="attr">title</span>: <span class="string">'Generator-Express MVC'</span>,</div><div class="line">      <span class="attr">articles</span>: articles</div><div class="line">    &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>这里的Controller做的工作正是我们平时所说的路由，Controller不但要处理get请求，也要处理post。</p>
+<h3 id="views-index-ejs-视图层"><a href="#views-index-ejs-视图层" class="headerlink" title="views/index.ejs 视图层"></a>views/index.ejs 视图层</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span> header </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">%-</span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Welcome to <span class="tag">&lt;<span class="name">%-</span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span><span class="ruby"> <span class="keyword">include</span> footer </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h3 id="访问网站根目录效果"><a href="#访问网站根目录效果" class="headerlink" title="访问网站根目录效果"></a>访问网站根目录效果</h3><p><a href="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" alt="img"></a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是-Express&quot;&gt;&lt;a href=&quot;#什么是-Express&quot; class=&quot;headerlink&quot; title=&quot;什么是 Express ?&quot;&gt;&lt;/a&gt;什么是 Express ?&lt;/h2&gt;&lt;p&gt;Express 是最流行的 Node.js 框架，它在 No
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
+    
+    
+      <category term="node.js" scheme="http://zhoushidong.cc/tags/node-js/"/>
     
   </entry>
   
