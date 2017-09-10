@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-08-19T00:46:27.377Z</updated>
+  <updated>2017-09-10T02:51:20.692Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://zhoushidong.cc/2017/08/18/mod-vs-rem/"/>
     <id>http://zhoushidong.cc/2017/08/18/mod-vs-rem/</id>
     <published>2017-08-18T09:26:08.000Z</published>
-    <updated>2017-08-19T00:46:27.377Z</updated>
+    <updated>2017-09-10T02:51:20.692Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="取模和取余的区别以及-JS-中的取模运算问题"><a href="#取模和取余的区别以及-JS-中的取模运算问题" class="headerlink" title="取模和取余的区别以及 JS 中的取模运算问题"></a>取模和取余的区别以及 JS 中的取模运算问题</h1><h3 id="取模-VS-取余"><a href="#取模-VS-取余" class="headerlink" title="取模 VS 取余"></a>取模 VS 取余</h3><p>取模运算（Modulo Operation）属于计算机术语，运算符为<code>%</code>。取余运算（Complementation ）就是平常数学运算中的求余数。它们两个概念有重叠的部分但又不完全一致。</p>
+    <content type="html"><![CDATA[<h3 id="取模-VS-取余"><a href="#取模-VS-取余" class="headerlink" title="取模 VS 取余"></a>取模 VS 取余</h3><p>取模运算（Modulo Operation）属于计算机术语，运算符为<code>%</code>。取余运算（Complementation ）就是平常数学运算中的求余数。它们两个概念有重叠的部分但又不完全一致。</p>
 <p>先来看看除法运算中求余数的整个过程，a、b、c 和 d 分别为被除数、除数、商和被除数。</p>
 <ol>
 <li>求商：c = a / b;</li>
@@ -42,7 +42,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;取模和取余的区别以及-JS-中的取模运算问题&quot;&gt;&lt;a href=&quot;#取模和取余的区别以及-JS-中的取模运算问题&quot; class=&quot;headerlink&quot; title=&quot;取模和取余的区别以及 JS 中的取模运算问题&quot;&gt;&lt;/a&gt;取模和取余的区别以及 JS 中的取模运算
+      &lt;h3 id=&quot;取模-VS-取余&quot;&gt;&lt;a href=&quot;#取模-VS-取余&quot; class=&quot;headerlink&quot; title=&quot;取模 VS 取余&quot;&gt;&lt;/a&gt;取模 VS 取余&lt;/h3&gt;&lt;p&gt;取模运算（Modulo Operation）属于计算机术语，运算符为&lt;code&gt;%&lt;/cod
     
     </summary>
     
