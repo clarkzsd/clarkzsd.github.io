@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-09-30T12:04:52.815Z</updated>
+  <updated>2017-10-23T11:11:33.092Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -14,6 +14,114 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript 异步编程一二三四五</title>
+    <link href="http://zhoushidong.cc/2017/10/04/understanding-async-JavaScript/"/>
+    <id>http://zhoushidong.cc/2017/10/04/understanding-async-JavaScript/</id>
+    <published>2017-10-04T09:35:16.000Z</published>
+    <updated>2017-10-23T11:11:33.092Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-JavaScript-天生异步"><a href="#1-JavaScript-天生异步" class="headerlink" title="1. JavaScript 天生异步"></a>1. JavaScript 天生异步</h2><blockquote>
+<p>你说我一个浏览器写写表单验证的，怎么就突然成为如今最流行的编程语言了呢？</p>
+</blockquote>
+<p>JavaScript 设计之初是用于浏览器端 GUI 编程，这就决定了这门语言是单线程、非阻塞的。而 JavaScript 正是通过异步执行任务来实现非阻塞。</p>
+<p>关于 JavaScript 异步机制和 Event loop 详细可见：<a href="http://vimeo.com/96425312" target="_blank" rel="external">Help, I’m stuck in an event-loop</a></p>
+<h2 id="2-异步函数的类型"><a href="#2-异步函数的类型" class="headerlink" title="2. 异步函数的类型"></a>2. 异步函数的类型</h2><p>JavaScript 环境本身提供的异步函数通常可以分为两大类：</p>
+<ol>
+<li>I/O 函数</li>
+<li>计时函数</li>
+</ol>
+<p>如果想在应用中自定义复杂的异步任务，就需要在两类异步函数上构建。</p>
+<h2 id="3-异步解决方案"><a href="#3-异步解决方案" class="headerlink" title="3. 异步解决方案"></a>3. 异步解决方案</h2><h3 id="3-1-回调"><a href="#3-1-回调" class="headerlink" title="3.1 回调"></a>3.1 回调</h3><p>一开始，JS 中的异步是通过回调实现的。如果想让某段代码将来执行，可以将它放在一个回掉函数中。例如下面的 node 代码，只有在文件读取完毕后，<code>&#39;finished&#39;</code>才会被打印。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line">fs.readFile(<span class="string">'/etc/passwd'</span>, (err, result) =&gt; &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'finished'</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>但是随着应用变得复杂，我们有许多异步事件需要处理，并且需要数据从一个事件传递到下一个事件，那么回调函数就会变得这样</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">step1(<span class="function"><span class="keyword">function</span>(<span class="params">result1</span>) </span>&#123;</div><div class="line">	step2(<span class="function"><span class="keyword">function</span>(<span class="params">result2</span>) </span>&#123;</div><div class="line">        step3(<span class="function"><span class="keyword">function</span>(<span class="params">result3</span>) </span>&#123;</div><div class="line">            <span class="comment">// ...</span></div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>这样的代码被称为<code>Callback Hell</code>（回调地狱），回调地狱主要以下有以下几大罪状</p>
+<ol>
+<li><p>代码丑陋，不符合人类阅读习惯</p>
+</li>
+<li><p>异常难以捕获</p>
+<p><code>try/catch</code>是同步代码，上面的 step 函数运行时，<code>try/catch</code>已经执行完毕，异常并不能被捕获。</p>
+</li>
+<li><p>代码容易产生冗余</p>
+<p>假设我们还有一个不同的操作需要在 step1 之后完成，那么得再来一段<code>Callback Hell</code>了……</p>
+</li>
+</ol>
+<h3 id="3-2-Pub-Sub"><a href="#3-2-Pub-Sub" class="headerlink" title="3.2 Pub/Sub"></a>3.2 Pub/Sub</h3><p>Pub/Sub(发布/订阅)模式又叫观察者模式，它定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知。</p>
+<p>我觉得 Pub/Sub 模式和蝴蝶效应很像：某个事件被触发，整个应用都受到影响。</p>
+<p>Pub/Sub 模式可以很好的解决回调地狱产生的代码冗余的问题。</p>
+<p>DOM 事件就是很典型的 Pub/Sub 模式。例如下面的点击事件。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">button.addEventListener(<span class="string">'click'</span>, () =&gt; &#123;</div><div class="line">   <span class="built_in">console</span>.log(<span class="string">'the button is clicked'</span>); </div><div class="line">&#125;, <span class="literal">false</span>);</div></pre></td></tr></table></figure>
+<p>这里我们相当于订阅了<code>button</code>上面的点击事件，当用户点击之后，这个按钮就会向订阅者发布这个消息。</p>
+<h3 id="3-3-Promise"><a href="#3-3-Promise" class="headerlink" title="3.3  Promise"></a>3.3  Promise</h3><p>事件（click, keyup）和 Pub/Sub 模式对于同一对象上发生多次的事情非常有用，但是关系到异步事件执行的成功或者失败，Pub/Sub 模式没有提供一个好的解决方案。Promise 很好的解决了这个问题：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 假设`ready()`返回一个 Promise.</span></div><div class="line">img.ready().then(<span class="function">(<span class="params">result</span>)=&gt;</span> &#123; <span class="built_in">console</span>.log(<span class="string">'success!'</span>); &#125;, (err) =&gt; &#123; <span class="built_in">console</span>.log(<span class="string">'failed!'</span>); &#125;)</div></pre></td></tr></table></figure>
+<p>当然，Promise 在异步事件执行方面的优点不仅于此。</p>
+<p>Promise 最早由社区提出和实现，常见的 Promise 的第三方库有</p>
+<ul>
+<li><a href="https://github.com/kriskowal/q" target="_blank" rel="external">Q</a></li>
+<li><a href="https://github.com/cujojs/when" target="_blank" rel="external">when</a></li>
+<li><a href="https://msdn.microsoft.com/en-us/library/windows/apps/br211867.aspx" target="_blank" rel="external">WinJS</a></li>
+<li><a href="https://github.com/tildeio/rsvp.js" target="_blank" rel="external">RSVP.js</a></li>
+</ul>
+<p>而官方则在 ES6 正式支持 Promise，并采用了 <a href="https://github.com/promises-aplus/promises-spec" target="_blank" rel="external">Promises/A+</a> 规范。</p>
+<p>Promise 为什么叫 Promise 呢，我觉得 MDN 上面关于 Promise 的中文“翻译”很好的解释了这一点🙃：</p>
+<blockquote>
+<p><strong>Promise </strong>对象用于一个异步操作的最终完成（或失败）及其结果值的表示。(简单点说就是处理异步请求。我们经常会做些承诺，如果我赢了你就嫁给我，如果输了我就嫁给你之类的诺言。这就是promise的中文含义：诺言，一个成功，一个失败。)</p>
+<p>原文：</p>
+<p>The <strong>Promise</strong> object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.</p>
+</blockquote>
+<p>Promise 通过链接多个<code>then()</code>来处理多个异步操作，比回掉地狱优雅很多：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">aPromiseStuff().then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">return</span> doPromiseStuff();</div><div class="line">&#125;).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">return</span> doAnotherPromiseStuff();</div><div class="line">&#125;).catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(err);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>关于 Promise 的更多内容可以查看 MDN 上面的教程：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="external">Promise</a></p>
+<p>还有两篇关于 Promise 的文章很值得一读：</p>
+<ul>
+<li><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html" target="_blank" rel="external">We have a problem with promises</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/primers/promises" target="_blank" rel="external">JavaScript Promises: an Introduction</a></li>
+</ul>
+<h3 id="3-4-Generator"><a href="#3-4-Generator" class="headerlink" title="3.4 Generator"></a>3.4 Generator</h3><p>Generator Function 和 Generator 也是 ES6 引入的新特性。</p>
+<p><code>function*</code>这种声明方式用来定义一个 Generator Function，后者会返回一个 Generator 对象。</p>
+<p>当一个 Generator Function 被调用时并不会马上执行；相反，它会返回一个 Generator 对象。每次调用 Generator 对象的<code>next()</code>方法将会执行函数至下一个<code>yield</code>表达式，并返回一个符合迭代器协议的对象，包含<code>value</code>和<code>done</code>两个属性。<code>value</code>的值为<code>yield</code>表达式的运行结果，函数运行结束时其值为<code>undefined</code>；<code>done</code>的值表示函数是否运行结束。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span>* <span class="title">simpleGenerator</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">yield</span> <span class="string">"first"</span>;</div><div class="line">  <span class="keyword">yield</span> <span class="string">"second"</span>;</div><div class="line">  <span class="keyword">yield</span> <span class="string">"third"</span>;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</div><div class="line">    <span class="keyword">yield</span> i;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> g = simpleGenerator();</div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: "first", done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: "second", done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: "third", done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: 0, done: false &#125;,</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: 1, done: false &#125;,</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: 1, done: false &#125;,</span></div><div class="line"><span class="built_in">console</span>.log(g.next()); <span class="comment">// &#123; value: undefined, done: true &#125;,</span></div></pre></td></tr></table></figure>
+<p>Generator Function 这种可以暂停执行和恢复执行的特性，使它能够有处理异步任务的能力。可是光有一个 Generator Function 还不够，它还需要有一个执行器来执行它所封装的异步任务：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</div><div class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">            resolve(<span class="number">1</span>)</div><div class="line">        &#125;, <span class="number">500</span>);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span>* <span class="title">handleAsynchronousStuff</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  	<span class="keyword">try</span> &#123;</div><div class="line">        <span class="keyword">const</span> val = <span class="keyword">yield</span> doSomething();</div><div class="line">  	    <span class="built_in">console</span>.log(val);</div><div class="line">    &#125; <span class="keyword">catch</span>(e) &#123;</div><div class="line">        <span class="built_in">console</span>.log(e);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>万事具备，只欠一个<a href="https://github.com/tj/co" target="_blank" rel="external">co</a>:</p>
+<blockquote>
+<p>co:</p>
+<p>Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> co = <span class="built_in">require</span>(<span class="string">'co'</span>);</div><div class="line"></div><div class="line">co(handleAsynchronousStuff) <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<p>我们再来看看 co 做了什么事:</p>
+<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/co.png" alt="co 示意图"></p>
+<p>co 的功能其实不算复杂，总共也就 200 多行代码。它不断递归拆解 generator function 中的 yield 表达式，并返回一个 Promise。它做的事情就是执行用 Generator 封装好的异步任务。</p>
+<h4 id="Generator-错误处理"><a href="#Generator-错误处理" class="headerlink" title="Generator 错误处理"></a>Generator 错误处理</h4><p>generator 对象有一个 throw 方法，可以在 generator function 外面抛出异常，并且能够在 generator function 中使用<code>try/catch</code>捕获异常，详细内容可见 MDN 文档：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/throw" target="_blank" rel="external">Generator.prototype.throw()</a></p>
+<p>那么，使用 Generator 处理异步任务可以优雅的捕获异常吗？答案是肯定的，我们再来啃一啃 co 的核心函数的代码:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">co</span>(<span class="params">gen</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> ctx = <span class="keyword">this</span>;</div><div class="line">  <span class="keyword">var</span> args = slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>);</div><div class="line"></div><div class="line">  <span class="comment">// we wrap everything in a promise to avoid promise chaining,</span></div><div class="line">  <span class="comment">// which leads to memory leak errors.</span></div><div class="line">  <span class="comment">// see https://github.com/tj/co/issues/180</span></div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> gen === <span class="string">'function'</span>) gen = gen.apply(ctx, args);</div><div class="line">    <span class="keyword">if</span> (!gen || <span class="keyword">typeof</span> gen.next !== <span class="string">'function'</span>) <span class="keyword">return</span> resolve(gen);</div><div class="line"></div><div class="line">    onFulfilled();</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * @param &#123;Mixed&#125; res</span></div><div class="line"><span class="comment">     * @return &#123;Promise&#125;</span></div><div class="line"><span class="comment">     * @api private</span></div><div class="line"><span class="comment">     */</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">onFulfilled</span>(<span class="params">res</span>) </span>&#123;</div><div class="line">      <span class="keyword">var</span> ret;</div><div class="line">      <span class="keyword">try</span> &#123;</div><div class="line">        ret = gen.next(res);</div><div class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">        <span class="keyword">return</span> reject(e);</div><div class="line">      &#125;</div><div class="line">      next(ret);</div><div class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * @param &#123;Error&#125; err</span></div><div class="line"><span class="comment">     * @return &#123;Promise&#125;</span></div><div class="line"><span class="comment">     * @api private</span></div><div class="line"><span class="comment">     */</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">onRejected</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">      <span class="keyword">var</span> ret;</div><div class="line">      <span class="keyword">try</span> &#123;</div><div class="line">        ret = gen.throw(err);</div><div class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">        <span class="keyword">return</span> reject(e);</div><div class="line">      &#125;</div><div class="line">      next(ret);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * Get the next value in the generator,</span></div><div class="line"><span class="comment">     * return a promise.</span></div><div class="line"><span class="comment">     *</span></div><div class="line"><span class="comment">     * @param &#123;Object&#125; ret</span></div><div class="line"><span class="comment">     * @return &#123;Promise&#125;</span></div><div class="line"><span class="comment">     * @api private</span></div><div class="line"><span class="comment">     */</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">next</span>(<span class="params">ret</span>) </span>&#123;</div><div class="line">      <span class="comment">// generator function 执行完毕，Promise 状态变为 resolve</span></div><div class="line">      <span class="keyword">if</span> (ret.done) <span class="keyword">return</span> resolve(ret.value);</div><div class="line">      <span class="comment">// value =&gt; Promise</span></div><div class="line">      <span class="keyword">var</span> value = toPromise.call(ctx, ret.value);</div><div class="line">      <span class="comment">// 如果 value 成功转变为 Promise，则通过`Promise.then()`继续拆解 generator function，并为Promise 添加`onFulfilled`和`onRejected`</span></div><div class="line">      <span class="keyword">if</span> (value &amp;&amp; isPromise(value)) <span class="keyword">return</span> value.then(onFulfilled, onRejected);</div><div class="line">      <span class="keyword">return</span> onRejected(<span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">'You may only yield a function, promise, generator, array, or object, '</span></div><div class="line">        + <span class="string">'but the following object was passed: "'</span> + <span class="built_in">String</span>(ret.value) + <span class="string">'"'</span>));</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可以看到，它对 generator function 的异常处理封装在了 <code>onRejected()</code>函数当中：如果发生错误，则将返回的 Promise 的状态变为<code>reject</code>，再调用<code>next()</code>继续拆解 generator function。</p>
+<p>通过 co 的处理，异步函数中的异常成功通过<code>gen.throw()</code>抛出，那么我们就可以跟同步代码一样使用<code>try/catch</code>捕获异常了：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</div><div class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">            reject(<span class="string">'something is wrong'</span>)</div><div class="line">        &#125;, <span class="number">500</span>);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span>* <span class="title">handleAsynchronousStuff</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  	<span class="keyword">try</span> &#123;</div><div class="line">        <span class="keyword">const</span> val = <span class="keyword">yield</span> doSomething();</div><div class="line">  	    <span class="built_in">console</span>.log(val);</div><div class="line">    &#125; <span class="keyword">catch</span>(e) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Error: '</span>, e);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">co(handleAsynchronousStuff); <span class="comment">// Error: something is wrong</span></div></pre></td></tr></table></figure>
+<p>嗯……不得不说 Generator 使异步处理的过程更加优雅了。但是 Generator 本身并不是专门用来处理异步任务的，而且在使用 Generator 这种方案时，还得引入第三方模块 co，总觉得有点变扭。</p>
+<p>ES7：那就来个语法糖把它们包装一下吧！</p>
+<h3 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h3><p>ES7 正式引入<code>async/await</code>，它本质上就是 Generator 解决方案的语法糖，并且内置了执行器，上面的<code>handleAsynchronousStuff()</code>可以这么写：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">handleAsynchronousStuff</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">try</span> &#123;</div><div class="line">        <span class="keyword">const</span> val = <span class="keyword">await</span> doSomething();</div><div class="line">      	<span class="built_in">console</span>.log(val);</div><div class="line">    &#125; <span class="keyword">catch</span>(e) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Error: '</span>, e);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">handleAsynchronousStuff();</div></pre></td></tr></table></figure>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>说到底，<code>async/await</code>就是基于 <code>Promise</code>和<code>Generator</code>的，要用好<code>async/await</code>，就必须先理解<code>Promise</code>和<code>Generator</code>。</p>
+<p>这篇文章正是在阐述这样一个观点：在使用<code>async/await</code>之前，先理解<code>Promise</code></p>
+<ul>
+<li><a href="https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8" target="_blank" rel="external">Understand promises before you start using async/await</a></li>
+</ul>
+<p>说来惭愧，再还没有真正理解<code>Promise</code>和<code>Generator</code>之前我就已经在跟风使用<code>async/await</code>了，如今正是在恶补 JavaScript 异步解决方案的发展历程。现在再来看<code>async/await</code>，发现 JavaScript 这门语言的发展有很大一部分都是依赖于开源社区的贡献，不得不感叹开源社区的力量之强大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-JavaScript-天生异步&quot;&gt;&lt;a href=&quot;#1-JavaScript-天生异步&quot; class=&quot;headerlink&quot; title=&quot;1. JavaScript 天生异步&quot;&gt;&lt;/a&gt;1. JavaScript 天生异步&lt;/h2&gt;&lt;blockquote
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>理解 JWT</title>
@@ -983,76 +1091,6 @@
     
       <category term="♥" scheme="http://zhoushidong.cc/categories/%E2%99%A5/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>my 2016</title>
-    <link href="http://zhoushidong.cc/2016/12/30/my-2016/"/>
-    <id>http://zhoushidong.cc/2016/12/30/my-2016/</id>
-    <published>2016-12-30T09:21:38.000Z</published>
-    <updated>2017-02-22T10:09:29.764Z</updated>
-    
-    <content type="html"><![CDATA[<p>2016这一年，大事件很多。当你无聊地刷着社交媒体时，你会发现这个世界会动不动给你来个大新闻。就在前几天，《星球大战》莱亚公主扮演者 Carrie Fisher 去世，随后一天，其母 Debbie Reynolds 去世，仿佛死神在冲刺年终奖……总体来讲，2016年对于整个世界来说绝对是 a piece of shit。</p>
-<p>而对于我自己来讲，2016 也没有糟糕至如此地步，至少自己的生活里多了 β-house。</p>
-<h2 id="β-house"><a href="#β-house" class="headerlink" title="β-house"></a>β-house</h2><p>加入 β-house 工作室是我今年做的最有意义的一件事，也非常荣幸能被师兄师姐们录取。</p>
-<p>上半年，参加 β-house 的每周例会，每周六上午十点出发去下沙，学习了不少干货，再于夜幕降临之际回到文一。那段经历注定是难忘的。</p>
-<blockquote>
-<p>程序员的正式称号是 SDE——Software Development Engineer。但其真正的名字：Someone (Who Can) Do Everything.</p>
-</blockquote>
-<p>这是 β-house 招新时的标语。β-house 就如一个引路人，它有一种说不出的特质能够触动你去 create something.</p>
-<p>下半年就搬去新校区了，与工作室的前辈们接触不多，但仍甚是想念。没过多久，下沙的 222 办公室因学院搬迁被清空，炳哥、大表哥也即将毕业，“别离”果然是人们无法回避的一个过程。</p>
-<p><a href="https://oblky3j33.qnssl.com//beta/14.jpg" target="_blank" rel="external"><img src="https://oblky3j33.qnssl.com//beta/14.jpg" alt="222 办公室"></a>222 办公室</p>
-<h2 id="除此之外"><a href="#除此之外" class="headerlink" title="除此之外"></a>除此之外</h2><p>新校区，在“无车马喧”的临安青山湖。青山环绕，空气清新，看起来像是一个静心的地方。为了 β-house 在新校区的办公室问题，也折腾了不少时间。刚开始真是处处碰壁，差点以为办公室真的没着落了。后来跟学校达成协议，跟以前一样，首先帮学校干点活(会给点经费)。有一点没想到，那就是刚开始引起学校注意的是我一个写着玩的爬虫项目（就是把教务系统的课表数据抓取下来，集成到微信公众号上）。当时因为教务信息搬迁，像超级课程表这样的第三方软件都爬取不了课表，只有我们工作室能做😎。后来给学校做事，就放在了学生会的微信号上，后续还做了考试安排等功能……</p>
-<p><a href="https://camo.githubusercontent.com/19f08df16ec431ac1a2edeb94779622f6c3212a8/687474703a2f2f6f366c6a77387763712e626b742e636c6f7564646e2e636f6d2f494d475f323438395f496e6b5f4c492d6d696e2e6a7067" target="_blank" rel="external"><img src="https://camo.githubusercontent.com/19f08df16ec431ac1a2edeb94779622f6c3212a8/687474703a2f2f6f366c6a77387763712e626b742e636c6f7564646e2e636f6d2f494d475f323438395f496e6b5f4c492d6d696e2e6a7067" alt="img"></a>img</p>
-<p>其实到了大学，我们遇到的很多事情都是“利益相关”了，不仅仅是跟向学校要办公室这件事，也包括同学和同学之间的人际交往。你拿出一部分利益给他人，你自然而然能够得到他人所拥有的一些资源。很多人际关系的建立就是从一些“小交易”开始的，非常现实。</p>
-<p>说到人际交往，到目前为止我在大学就没有关系非常铁的朋友，意趣相投的朋友真的是可遇不可求。</p>
-<p>除了加入 β-house，似乎在我身上就再也没有发生什么特别值得纪念的大事件。真的。</p>
-<p>《西部世界》中，每个机器人在真正觉醒之前都陷在自己的 loop 中，被人类玩弄致死，再被清空记忆而“重生”。我感觉自己也是陷在 loop 里面。记得在高考完当天，我曾经发过这样一条朋友圈：</p>
-<p><a href="http://o6ljw8wcq.bkt.clouddn.com/asdasd.png" target="_blank" rel="external"><img src="http://o6ljw8wcq.bkt.clouddn.com/asdasd.png" alt="string"></a>string</p>
-<p>我原以为自己不会再被一些东西束缚，但其实我是从一个 loop 跳入了另一个 loop。我感觉到自己是浮躁的，这种浮躁从高中开始就有了，没变过。从某种程度上来看，好像是我自己束缚着自己。我觉得自己需要一些改变。并不是“来一场说走就走的旅行”的那种改变，是真的需要静下心来好好想明白一些事情。</p>
-<h2 id="我需要什么？"><a href="#我需要什么？" class="headerlink" title="我需要什么？"></a>我需要什么？</h2><p>机缘巧合，得到机会去了解了一下一个学院大力支持的创业项目，方向正是现在热炒的“互联网+大学生创业”。然后我发现，这种项目其实全国各地都有很多人在做，而且做的人都是大学生。后来我又去深入了解了一下目前中国大学生的创业项目，发现很多产品之前都有两个共同点：</p>
-<ol>
-<li>面向大学生，基于校园</li>
-<li>模式相似，可复制</li>
-<li>短命</li>
-</ol>
-<p>大概第三点的原因就是前两点吧……</p>
-<p>网上曾经有人这样吐槽大学生创业：</p>
-<blockquote>
-<p>你把好几个大学生关在屋子里想好几天，最后能写下来的点子也无非就是那些什么奶茶礼品送外卖、漫吧桌游代金券，花店书店咖啡馆一类的东西。能想到的都是校园和校园衍生的那些玩意儿。什么服务大学寝室的送餐啦，用来给大学生把妹的课程表啦，帮社团搞印刷品纪念品啦，跑到大学后门一条街去发传单啦，联系校园附近的商家打广告啦。</p>
-</blockquote>
-<p>视野狭窄导致这些大学生做出来的东西没有核心竞争力，他做的东西别人也可以做。Bill Gates 在哈佛的时候，为第一台微型计算机 MITS Altair开发了 BASIC 编程语言的一个版本。这东西可不是其他人随随便便就能做出来的，这就是他的核心竞争力。</p>
-<p>我需要培养自己的核心竞争力，这是我在 2016 年学到的比较重要的一点。</p>
-<h2 id="TODO：把一些丢掉的东西捡起来"><a href="#TODO：把一些丢掉的东西捡起来" class="headerlink" title="TODO：把一些丢掉的东西捡起来"></a>TODO：把一些丢掉的东西捡起来</h2><p>我丢掉了什么？</p>
-<ol>
-<li><p>读书（非技术书）的习惯</p>
-<p>其实这个习惯我在初中的时候就丢掉了。小学毕业之后，我似乎没有真正意义上地读完过一本好书。说起来真的好惭愧啊，至少我在小学的时候还读过《哈利波特》全套呢。初中的时候忙着中二，没读。高中的时候读的都是些消遣性的杂志。这个念头是我在逛一个程序媛的博客的时候产生的。她不仅代码写得好，文笔也极佳，而且每读完一本书就会写一篇读后感博文，我真的十分佩服她。看书究竟有什么用，我也说不出来。但或许有时候人就是需要这种“无用”的积累，才能解决诸如“loop”这样的问题。</p>
-</li>
-<li><p>发表、记录自己的想法</p>
-<p>今年三月份我就开了博客，一开始志气满满，誓要经常写博文，然而算上这一篇整个博客中也不过七篇文章（不过还是吸引到了一位网友来此留言🙉）明年开始，要增加写博文的频率。</p>
-<p>另外 ，我向来喜欢在各种社区中潜水，遇到技术问题也很少提问，别人撕逼的时候我也只是在一旁围观。我决定以后要在社区中多发言，甚至可以参加一场撕逼，这样的思想碰撞说不定能使自己的思路更加开阔……</p>
-</li>
-</ol>
-<h2 id="不知谁能躲得过去"><a href="#不知谁能躲得过去" class="headerlink" title="不知谁能躲得过去"></a>不知谁能躲得过去</h2><p>我从来没有过诸如“我对这一天/这一年比较满意”这样的想法。我总觉得这一天/这一年还缺少一点什么，总觉得生活也不是那么美好。</p>
-<p>每逢元旦，我的心情一般都不是很好，因为一年过去，历史的进程在大步向前推进，即使我也做了点微小的工作，但总是无法避免身边的事物的流逝。这种问题，谁能躲得过去呢？所有，一定要好好珍惜眼前所拥有的一切。</p>
-<p>写的比较乱，最后简单说两句：</p>
-<blockquote>
-<p>“…似乎在我身上就再也没有发生什么特别值得纪念的大事件”</p>
-</blockquote>
-<p>我还是很好奇未来会发生什么事，会遇见哪些有意思的人的……</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;2016这一年，大事件很多。当你无聊地刷着社交媒体时，你会发现这个世界会动不动给你来个大新闻。就在前几天，《星球大战》莱亚公主扮演者 Carrie Fisher 去世，随后一天，其母 Debbie Reynolds 去世，仿佛死神在冲刺年终奖……总体来讲，2016年对于整个
-    
-    </summary>
-    
-      <category term="♥" scheme="http://zhoushidong.cc/categories/%E2%99%A5/"/>
-    
-    
-      <category term="年度总结" scheme="http://zhoushidong.cc/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
