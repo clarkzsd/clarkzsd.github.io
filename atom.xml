@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-10-23T11:11:33.092Z</updated>
+  <updated>2017-10-24T05:13:35.596Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaScript 异步编程一二三四五</title>
-    <link href="http://zhoushidong.cc/2017/10/04/understanding-async-JavaScript/"/>
-    <id>http://zhoushidong.cc/2017/10/04/understanding-async-JavaScript/</id>
-    <published>2017-10-04T09:35:16.000Z</published>
-    <updated>2017-10-23T11:11:33.092Z</updated>
+    <title>JavaScript 异步编程一二三</title>
+    <link href="http://zhoushidong.cc/2017/10/23/understanding-async-JavaScript/"/>
+    <id>http://zhoushidong.cc/2017/10/23/understanding-async-JavaScript/</id>
+    <published>2017-10-23T09:35:16.000Z</published>
+    <updated>2017-10-24T05:13:35.596Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-JavaScript-天生异步"><a href="#1-JavaScript-天生异步" class="headerlink" title="1. JavaScript 天生异步"></a>1. JavaScript 天生异步</h2><blockquote>
 <p>你说我一个浏览器写写表单验证的，怎么就突然成为如今最流行的编程语言了呢？</p>
@@ -104,12 +104,30 @@
 <p>ES7：那就来个语法糖把它们包装一下吧！</p>
 <h3 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h3><p>ES7 正式引入<code>async/await</code>，它本质上就是 Generator 解决方案的语法糖，并且内置了执行器，上面的<code>handleAsynchronousStuff()</code>可以这么写：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">handleAsynchronousStuff</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">try</span> &#123;</div><div class="line">        <span class="keyword">const</span> val = <span class="keyword">await</span> doSomething();</div><div class="line">      	<span class="built_in">console</span>.log(val);</div><div class="line">    &#125; <span class="keyword">catch</span>(e) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Error: '</span>, e);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">handleAsynchronousStuff();</div></pre></td></tr></table></figure>
+<p>我觉得<code>async/await</code>相较于 Promise 的最直观的优点就是代码的可阅读性大大的提高了。在过去，我们需要链式地写<code>then()</code>来处理<code>Promise()</code>的<code>resolve</code>值，逻辑一复杂，嵌套的代码就越来越多，而<code>async/await</code>则让我们可以像写同步代码一样来写异步代码。</p>
+<p><img src="http://o6ljw8wcq.bkt.clouddn.com/blog/504.jpg" alt=""></p>
+<p>关于<code>async/await</code>与<code>Promise</code>更详细的对比，可以见这篇文章：</p>
+<ul>
+<li><a href="https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9" target="_blank" rel="external">6 Reasons Why JavaScript’s Async/Await Blows Promises Away</a></li>
+</ul>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>说到底，<code>async/await</code>就是基于 <code>Promise</code>和<code>Generator</code>的，要用好<code>async/await</code>，就必须先理解<code>Promise</code>和<code>Generator</code>。</p>
 <p>这篇文章正是在阐述这样一个观点：在使用<code>async/await</code>之前，先理解<code>Promise</code></p>
 <ul>
 <li><a href="https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8" target="_blank" rel="external">Understand promises before you start using async/await</a></li>
 </ul>
 <p>说来惭愧，再还没有真正理解<code>Promise</code>和<code>Generator</code>之前我就已经在跟风使用<code>async/await</code>了，如今正是在恶补 JavaScript 异步解决方案的发展历程。现在再来看<code>async/await</code>，发现 JavaScript 这门语言的发展有很大一部分都是依赖于开源社区的贡献，不得不感叹开源社区的力量之强大。</p>
+<hr>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li>《JavaScript 异步编程：设计快速响应的网络应用》</li>
+<li><a href="http://taobaofed.org/blog/2016/03/18/error-handling-in-koa/" target="_blank" rel="external">如何优雅地在 koa 中处理错误</a></li>
+<li>MDN</li>
+</ul>
+<h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><ul>
+<li><a href="https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8" target="_blank" rel="external">Understand promises before you start using async/await</a></li>
+<li><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html" target="_blank" rel="external">We have a problem with promises</a></li>
+<li><a href="https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9" target="_blank" rel="external">6 Reasons Why JavaScript’s Async/Await Blows Promises Away</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/primers/promises" target="_blank" rel="external">JavaScript Promises: an Introduction</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
