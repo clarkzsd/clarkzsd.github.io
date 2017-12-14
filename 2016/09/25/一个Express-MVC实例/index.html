@@ -1,4 +1,190 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>一个Express MVC实例 | Clark's Blog</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">一个Express MVC实例</h1><a id="logo" href="/.">Clark's Blog</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">一个Express MVC实例</h1><div class="post-meta">Sep 25, 2016<span> | </span><span class="category"><a href="/categories/Tech/">Tech</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/09/25/一个Express-MVC实例/" href="/2016/09/25/一个Express-MVC实例/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><h2 id="什么是-Express"><a href="#什么是-Express" class="headerlink" title="什么是 Express ?"></a>什么是 Express ?</h2><p>Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      一个Express MVC实例 | Clark&#39;s Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Clark Zhou">
+    
+    
+
+    <meta name="description" content="什么是 Express ?Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。  Fast, unopinionated, minimalist web framework for Node.js  详情： Express 随着ES6的推出，Express 开">
+<meta name="keywords" content="node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个Express MVC实例 | Clark&#39;s Blog">
+<meta property="og:url" content="http://zhoushidong.cc/2016/09/25/一个Express-MVC实例/index.html">
+<meta property="og:site_name" content="Clark&#39;s Blog">
+<meta property="og:description" content="什么是 Express ?Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。  Fast, unopinionated, minimalist web framework for Node.js  详情： Express 随着ES6的推出，Express 开发团队又根据 ES6 新特性发布了下一代 Node.js web 框架：Koa">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png">
+<meta property="og:updated_time" content="2017-02-22T10:07:44.713Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一个Express MVC实例 | Clark&#39;s Blog">
+<meta name="twitter:description" content="什么是 Express ?Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。  Fast, unopinionated, minimalist web framework for Node.js  详情： Express 随着ES6的推出，Express 开发团队又根据 ES6 新特性发布了下一代 Node.js web 框架：Koa">
+<meta name="twitter:image" content="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Clark&#39;s Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archives" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">一个Express MVC实例</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-09-25" class="post-meta__date date">2016-09-25</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/Tech/">Tech</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/node-js/">node.js</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="什么是-Express"><a href="#什么是-Express" class="headerlink" title="什么是 Express ?"></a>什么是 Express ?</h2><p>Express 是最流行的 Node.js 框架，它在 Node.js 之上扩展了 Web 应用所需的基本功能。</p>
 <blockquote>
 <p>Fast, unopinionated, minimalist web framework for Node.js</p>
 </blockquote>
@@ -48,12 +234,83 @@
 <p>这里的Controller做的工作正是我们平时所说的路由，Controller不但要处理get请求，也要处理post。</p>
 <h3 id="views-index-ejs-视图层"><a href="#views-index-ejs-视图层" class="headerlink" title="views/index.ejs 视图层"></a>views/index.ejs 视图层</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span> header </span><span class="xml"><span class="tag">%&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">%-</span></span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Welcome to <span class="tag">&lt;<span class="name">%-</span></span></span><span class="ruby">title </span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span> footer </span><span class="xml"><span class="tag">%&gt;</span></span></span><br></pre></td></tr></table></figure>
 <h3 id="访问网站根目录效果"><a href="#访问网站根目录效果" class="headerlink" title="访问网站根目录效果"></a>访问网站根目录效果</h3><p><a href="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" target="_blank" rel="noopener"><img src="http://o6ljw8wcq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160925160903.png" alt="img"></a></p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://zhoushidong.cc/2016/09/25/一个Express-MVC实例/" data-id="cjb6o6ruh001do0gpt9h6q9hh" class="article-share-link">分享到</a><div class="tags"><a href="/tags/node-js/">node.js</a></div><div class="post-nav"><a href="/2016/11/12/调教-PowerShell/" class="pre">调教 PowerShell</a><a href="/2016/08/10/异步IO那些事儿/" class="next">异步I/O那些事儿</a></div><div id="disqus_thread"><script>var disqus_shortname = 'clarkzsd';
-var disqus_identifier = '2016/09/25/一个Express-MVC实例/';
-var disqus_title = '一个Express MVC实例';
-var disqus_url = 'http://zhoushidong.cc/2016/09/25/一个Express-MVC实例/';
-(function() {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script><script id="dsq-count-scr" src="//clarkzsd.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://zhoushidong.cc"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log/">Log</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/♥/">♥</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/日记/">日记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/言语/">言语</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/TCP/" style="font-size: 15px;">TCP</a> <a href="/tags/chrome/" style="font-size: 15px;">chrome</a> <a href="/tags/读书/" style="font-size: 15px;">读书</a> <a href="/tags/电影/" style="font-size: 15px;">电影</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/bootstrap/" style="font-size: 15px;">bootstrap</a> <a href="/tags/MongoDB/" style="font-size: 15px;">MongoDB</a> <a href="/tags/socket/" style="font-size: 15px;">socket</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/HTTP/" style="font-size: 15px;">HTTP</a> <a href="/tags/node-js/" style="font-size: 15px;">node.js</a> <a href="/tags/windows/" style="font-size: 15px;">windows</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/ife/" style="font-size: 15px;">ife</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/20171214/">20171214</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/understanding-async-JavaScript/">JavaScript 异步编程一二三</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/29/understanding-JWT/">理解 JWT</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/18/mod-vs-rem/">取模和取余的区别以及 JS 中的取模运算问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/04/Cloud-Atlas/">《云图》———今夜我们聊聊人类</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/The-First-Encounter-With-Socket/">The First Encounter With Socket</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/23/The-pits-I-met-when-I-use-MongoDB/">The pits I met when I use MongoDB</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/12/Log-2017-4-11/">Log:2017-4-11</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/谈谈-meta-标签/">最熟悉的陌生人——<meta> 标签</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/Log-2017-4-10/">Log:2017-4-10</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//clarkzsd.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://zhizhi.betahouse.us/" title="知之" target="_blank">知之</a><ul></ul><a href="https://blog.hxtao.site/" title="Elliot' Blog" target="_blank">Elliot' Blog</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Clark's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://clarkzsd.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
