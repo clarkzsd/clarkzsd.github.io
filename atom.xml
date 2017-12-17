@@ -298,13 +298,17 @@
     <link href="http://zhoushidong.cc/2017/04/09/Log-2017-4-9/"/>
     <id>http://zhoushidong.cc/2017/04/09/Log-2017-4-9/</id>
     <published>2017-04-09T10:08:55.000Z</published>
-    <updated>2017-12-12T07:04:30.373Z</updated>
+    <updated>2017-12-17T14:15:37.624Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><p>None.</p><h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><ol><li><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task10" target="_blank" rel="noopener">IFE Flexbox practice</a></li></ol><h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>Today, we met the new guys. Young and passionate, they know more about tech stuff than me in the past when I participate the recruitment of β-house. Wow!</p>]]></content>
     
     <summary type="html">
     
-      在服务器上装了 MongDB 后，想在本地环境用可视化工具来管理 MongoDB ，可是死活连不上。后来发现在配置文件`/etc/mongod.conf`中，其默认的 bindIp 为 `127.0.0.1`，也就是说数据库只限内网访问。
+      
+      
+        &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;p&gt;None.&lt;/p&gt;
+&lt;h2 id=&quot;Practice-⚽&quot;&gt;&lt;a href=&quot;#Practice-⚽
+      
     
     </summary>
     
@@ -367,13 +371,16 @@
     <link href="http://zhoushidong.cc/2017/04/06/Log-2017-4-6/"/>
     <id>http://zhoushidong.cc/2017/04/06/Log-2017-4-6/</id>
     <published>2017-04-06T14:40:43.000Z</published>
-    <updated>2017-12-12T07:04:31.349Z</updated>
+    <updated>2017-12-17T14:15:30.026Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Centering-in-CSS"><a href="#Centering-in-CSS" class="headerlink" title="Centering in CSS"></a>Centering in CSS</h3><ol><li><a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="noopener">Centering in CSS: A Complete Guide</a></li></ol><h3 id="Positioning-in-CSS"><a href="#Positioning-in-CSS" class="headerlink" title="Positioning in CSS"></a>Positioning in CSS</h3><ol><li><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="noopener">HTML和CSS高级指南之二——定位详解</a></li></ol><h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task4" target="_blank" rel="noopener">Centering in CSS</a>(unfinished)</p><h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>This world doesn’t deserve Superman. </p><p>Men are not good enough.</p>]]></content>
     
     <summary type="html">
     
-      在服务器上装了 MongDB 后，想在本地环境用可视化工具来管理 MongoDB ，可是死活连不上。后来发现在配置文件`/etc/mongod.conf`中，其默认的 bindIp 为 `127.0.0.1`，也就是说数据库只限内网访问。
+      
+      
+        &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Centering-in-CSS&quot;&gt;&lt;a href=&quot;#Centering-in-CSS&quot;
+      
     
     </summary>
     
