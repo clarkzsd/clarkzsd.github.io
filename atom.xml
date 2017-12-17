@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-12-16T13:49:22.193Z</updated>
+  <updated>2017-12-17T15:16:01.792Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20171217</title>
+    <link href="http://zhoushidong.cc/2017/12/17/20171217/"/>
+    <id>http://zhoushidong.cc/2017/12/17/20171217/</id>
+    <published>2017-12-17T15:16:01.000Z</published>
+    <updated>2017-12-17T15:16:01.792Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天起床已是十一点，洗漱完之后下楼买了个三明治和一杯拿铁就直接去参加分享会了。学校咖啡店的拿铁真的不好喝……</p><p>分享会来的人比较少。和我同届的算上我也就两个人。</p><p>现在大家都各做各的事，没有工作室的感觉了。看过学长学姐们以前的照片，很羡慕他们能够拥有那样的友情。</p><p>开讲前突然有种感觉：准备了两天的内容却没有受众……但讲的时候发现和大家的互动还算不错，比较欣慰。</p><p>很早以前买的豆瓣电影日历今天终于到货了。但是如今却不知道怎么处理它。</p><p>晚上去看了《芳华》，看完感觉不如预期，但还是值得打四星。今天已经是电影上映的第三天，看的人还是很多，位子基本坐满，来看的除了学校的同学还有不少中年人。电影里面最让我触动的一个片段是何小萍的月下独舞，太美了。</p><p>我想这部电影挺适合父母和爷爷奶奶去看的，他们看了感触应该会比我多很多。从没和家人一起去看过电影，很想带他们一起去看。</p><p>晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      从没和家人一起去看过电影，很想带他们一起去看。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://zhoushidong.cc/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>20171216</title>
@@ -461,28 +481,6 @@
       <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
     
       <category term="ife" scheme="http://zhoushidong.cc/tags/ife/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 函数中的apply()、call()和bind()</title>
-    <link href="http://zhoushidong.cc/2017/02/19/JavaScript-%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84apply-%E3%80%81call-%E5%92%8Cbind/"/>
-    <id>http://zhoushidong.cc/2017/02/19/JavaScript-函数中的apply-、call-和bind/</id>
-    <published>2017-02-19T09:15:21.000Z</published>
-    <updated>2017-02-22T10:09:07.807Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。</p><h1 id="函数属性和方法"><a href="#函数属性和方法" class="headerlink" title="函数属性和方法"></a>函数属性和方法</h1><p>ECMAScript 中的函数是对象，因此函数也有属性和方法。每个函数包含两个属性：length 和 prototype。length 表示函数的参数个数：</p><figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1,num2)</span> &#123;</span></span><br><span class="line">  <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.<span class="built_in">log</span>(sum.<span class="built_in">length</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure><p>而 prototype 所对应的就是该对象传说中的原型了。对于 ECMAScript 中的引用类型而言，prototype 保存着它们所有实例方法，对于函数来讲，其 prototype 中就包括 apply()、call() 和 bind()。</p><h1 id="apply-与-call"><a href="#apply-与-call" class="headerlink" title="apply() 与 call()"></a>apply() 与 call()</h1><p>这两个方法的用途都是在特定的作用域中调用函数。换句话说就是设置函数体中的 this 的值。</p><h2 id="apply"><a href="#apply" class="headerlink" title="apply()"></a>apply()</h2><p>apply() 接受两个参数，第一个是要设定的作用域，另一个是参数数组（arguments 对象亦可）</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1,num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1,num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>,<span class="built_in">arguments</span>);</span><br><span class="line"> <span class="comment">// or: return sum.apply(this,[num1,num2]);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(callSum1(<span class="number">10</span>,<span class="number">10</span>)); <span class="comment">// 20</span></span><br></pre></td></tr></table></figure><p>在此处是在全局作用域环境下调用的 callSum1,则 apply() 传入的 this 便是 window 对象（浏览器环境）。</p><p>另一个例子，扩充函数赖以运行的作用域：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.word = <span class="string">"Hello"</span>;</span><br><span class="line"><span class="keyword">const</span> o = &#123;<span class="attr">word</span>:<span class="string">"World"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">saySomething</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.color);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">saySomething(); <span class="comment">// Hello</span></span><br><span class="line">saySomething.apply(<span class="built_in">window</span>); <span class="comment">// Hello</span></span><br><span class="line">saySomething.apply(o); <span class="comment">// World</span></span><br></pre></td></tr></table></figure><p>在第三次调用 saySomething() 时，该函数的执行环境变了，this 指向了 o，所以打印出来的是 “World”。</p><p>使用 apply() 和 call() 来扩充函数赖以运行的作用域的好处是，对象不需要与方法有任何耦合关系，这样能大大增加代码的复用性。</p><h2 id="call"><a href="#call" class="headerlink" title="call()"></a>call()</h2><p>call() 与 apply() 大同小异，它的作用与 apply() 是相同的。只是传递给 call() 的参数必须逐个列举出来：</p><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span><span class="params">(num1,num2)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> sum.call(<span class="keyword">this</span>,num1,num2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="bind"><a href="#bind" class="headerlink" title="bind()"></a>bind()</h1><p>bind() 方法会新建一个函数的实例，这个函数实例的 this 值会被绑定到传给 bind() 函数的值。</p><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span></span>() &#123;</span><br><span class="line">  console.log(<span class="built_in">this</span> === obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const <span class="keyword">new</span><span class="type">Test</span> = test.bind(obj);</span><br><span class="line">test(); <span class="comment">// false</span></span><br><span class="line"><span class="keyword">new</span><span class="type">Test</span>(); <span class="comment">// true</span></span><br></pre></td></tr></table></figure><p>newTest() 函数中的 this 始终指向 obj，无论在哪里调用，其输出结果始终是 true。</p><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>JS 中 this 是动态指向的，而 bind() 便可以把 this 固定住。我们来看一个具体例子：</p><h3 id="click-事件处理"><a href="#click-事件处理" class="headerlink" title="click 事件处理"></a>click 事件处理</h3><p>定义一个日志对象来记录 click 的次数：</p><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let logger = &#123;</span><br><span class="line">  <span class="built_in">count</span>:<span class="number">0</span>,</span><br><span class="line">  increment: <span class="function"><span class="keyword">function</span><span class="params">()</span></span> &#123;</span><br><span class="line">    this.<span class="built_in">count</span>++;</span><br><span class="line">    console.<span class="built_in">log</span>(<span class="built_in">count</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>然后在点击事件的回调函数中调用该对象的 increment() 方法:</p><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">document</span><span class="selector-class">.getElementById</span>(<span class="string">'btn'</span>)<span class="selector-class">.addEventListener</span>(<span class="string">'click'</span>, logger.increment);</span><br></pre></td></tr></table></figure><p>这里要注意的是，如果直接像上述代码这么写，那么 increment() 函数中的 this 指向的是 id 为 ‘btn’ 的 DOM 对象，而非 logger。这时就需要靠 bind() 出场了：</p><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">document</span><span class="selector-class">.getElementById</span>(<span class="string">'btn'</span>)<span class="selector-class">.addEventListener</span>(<span class="string">'click'</span>, logger.increment.bind(logger));</span><br></pre></td></tr></table></figure><p>如果你用 ES6 写 React 的话，上述场景你一定不会陌生。在写事件函数时，我们经常需要 bind() 一下来保证 this 一直指向组件实例：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.handleClick = <span class="keyword">this</span>.handleClick.bind(<span class="keyword">this</span>)</span><br><span class="line">&#125;</span><br><span class="line">handleClick(e) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line">render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;button onClick=&#123;<span class="keyword">this</span>.handleClick&#125;&gt;点击&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>div&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>而用 ES5 写时， 使用 React.createClass() 来建立组件时，React 会帮你自动绑定函数的 this。</p>]]></content>
-    
-    <summary type="html">
-    
-      第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。
-    
-    </summary>
-    
-      <category term="Tech" scheme="http://zhoushidong.cc/categories/Tech/"/>
-    
-    
-      <category term="JavaScript" scheme="http://zhoushidong.cc/tags/JavaScript/"/>
     
   </entry>
   
