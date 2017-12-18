@@ -153,6 +153,26 @@ classes that you can use:
     <li>
 
       <h2 class="post-list__post-title post-title">
+        <a href="/2017/04/23/The-pits-I-met-when-I-use-MongoDB/" title="link to The pits I met when I use MongoDB">The pits I met when I use MongoDB</a>
+      </h2>
+
+      <div class="post-list__meta">
+
+        <time datetime="2017-04-23" class="post-list__meta--date date">2017-04-23</time> 
+      </div>
+
+      <div class="excerpt">
+        
+          在服务器上装了 MongDB 后，想在本地环境用可视化工具来管理 MongoDB ，可是死活连不上。后来发现在配置文件`/etc/mongod.conf`中，其默认的 bindIp 为 `127.0.0.1`，也就是说数据库只限内网访问。将其改为`0.0.0.0`或其他指定环境即可。若想指定多个 ip ，每个 ip 之间用逗号分隔。
+        
+      </div>
+
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
+
+      <h2 class="post-list__post-title post-title">
         <a href="/2017/04/12/Log-2017-4-11/" title="link to Log:2017-4-11">Log:2017-4-11</a>
       </h2>
 
@@ -312,26 +332,6 @@ classes that you can use:
       <hr class="post-list__divider" />
     </li>
     
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2017/02/28/自定义checkbox、radio样式/" title="link to 自定义checkbox、radio样式">自定义checkbox、radio样式</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2017-02-28" class="post-list__meta--date date">2017-02-28</time> 
-      </div>
-
-      <div class="excerpt">
-        
-          CSS伪类是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 将在用户悬停在选择器指定的元素上时应用样式。
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
   </ol>
 
   <hr class="post-list__divider " />
@@ -343,7 +343,7 @@ classes that you can use:
         
     
 
-    <span class="pagination__page-number"> 2 / 3</span>
+    <span class="pagination__page-number"> 2 / 4</span>
     
     
         <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">下一页 &rarr;</a>
