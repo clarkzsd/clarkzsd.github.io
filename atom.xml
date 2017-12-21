@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-12-19T15:29:24.966Z</updated>
+  <updated>2017-12-21T15:09:38.774Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>20171221</title>
+    <link href="http://zhoushidong.cc/2017/12/21/20171221/"/>
+    <id>http://zhoushidong.cc/2017/12/21/20171221/</id>
+    <published>2017-12-21T15:09:38.000Z</published>
+    <updated>2017-12-21T15:09:38.774Z</updated>
+    
+    <content type="html"><![CDATA[<p>嗯……昨天漏了一天的日记。</p><p>用了两天 α6000，表示非常满意。今天下午在校园里逛了逛，拍了许多感觉还行的照片。</p><p>今天作业方面，写了软工的一个页面，帮组员配了一下<code>webpack-dev-server</code>。</p><p>已经接近期末，时间过得真的快。还有好多大作业没写完，课外要学的东西也搁置了很久。明天先不拍照了，先把 D2 总结写完（拖延了好几天了），然后就写大作业。</p><p>晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      用了两天α6000，表示非常满意。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://zhoushidong.cc/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>20171219</title>
     <link href="http://zhoushidong.cc/2017/12/19/20171219/"/>
     <id>http://zhoushidong.cc/2017/12/19/20171219/</id>
     <published>2017-12-19T15:27:05.000Z</published>
-    <updated>2017-12-19T15:29:24.966Z</updated>
+    <updated>2017-12-20T01:59:00.780Z</updated>
     
     <content type="html"><![CDATA[<p>今天在 Twitter 上看到苹果官方表态将不允许使用用跨平台技术开发的 App 上架 iOS App Store，点名了 PhoneGap 和 Xamarin。看来 React Native 在苹果那儿也快凉了……本来还想用 RN 开发跨端的独立应用的。</p><p>今天课挺多，除了上课之外就是在写某大作业。但是感觉还没干多少事一天就结束了。</p><p>任性了一把，下单了 Sony A6000，明天就能到货。</p><p>立个 flag，明天把 D2 前端大会的参会总结写一下。</p><p>晚安。</p>]]></content>
     
@@ -440,31 +460,6 @@
       
       
         &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Centering-in-CSS&quot;&gt;&lt;a href=&quot;#Centering-in-CSS&quot;
-      
-    
-    </summary>
-    
-      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
-    
-    
-      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Log:2017-4-5</title>
-    <link href="http://zhoushidong.cc/2017/04/05/Log-2017-4-5/"/>
-    <id>http://zhoushidong.cc/2017/04/05/Log-2017-4-5/</id>
-    <published>2017-04-05T12:51:10.000Z</published>
-    <updated>2017-04-05T13:59:22.200Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="CSS-Layout"><a href="#CSS-Layout" class="headerlink" title="CSS Layout"></a>CSS Layout</h3><ol><li><a href="http://zh.learnlayout.com/" target="_blank" rel="noopener">Learn CSS Layout</a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position" target="_blank" rel="noopener">MDN：position</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank" rel="noopener">MDN：float</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank" rel="noopener">MDN：media queries</a></li></ol><h3 id="CSS-Clearfix"><a href="#CSS-Clearfix" class="headerlink" title="CSS Clearfix"></a>CSS Clearfix</h3><ol><li><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="noopener">advanced-html-css-lesson2-detailed-css-positioning</a></li></ol><h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><ol><li><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task3" target="_blank" rel="noopener">Three Column Layout</a></li></ol><h2 id="Idea-💡"><a href="#Idea-💡" class="headerlink" title="Idea 💡"></a>Idea 💡</h2><p>From this day onwards, note down what I read, what I program and what I think.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;CSS-Layout&quot;&gt;&lt;a href=&quot;#CSS-Layout&quot; class=&quot;head
       
     
     </summary>
