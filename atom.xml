@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-12-21T15:09:38.774Z</updated>
+  <updated>2017-12-22T15:48:11.391Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>20171222</title>
+    <link href="http://zhoushidong.cc/2017/12/22/20171222/"/>
+    <id>http://zhoushidong.cc/2017/12/22/20171222/</id>
+    <published>2017-12-22T15:41:37.000Z</published>
+    <updated>2017-12-22T15:48:11.391Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天去看了《妖猫传》。虽然豆瓣评分现在降到 6.9 了，但是我很喜欢，给了五星。</p><blockquote><p>电影里面每个喜欢杨贵妃的人都是陈凯歌导演自己吧。同样是作者意识很强烈的电影，《芳华》与《妖猫传》相比，我更喜欢《妖猫传》。想二刷一遍 IMAX，画面实在太美了；对了，这又是一部关于造梦的电影，里面的幻术师在造梦，导演也在造自己的盛唐梦。</p></blockquote><p>几个小时前写了这条短评，现在一看被点了 5 个“有用”，开心。</p><p>看完电影回到寝室一直在发呆、看影评……</p><p>另外，电影主题曲《Mountain Top》和宣传曲《Shape of Miracle》都很好听。</p><p>晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      去看了《妖猫传》。很喜欢。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://zhoushidong.cc/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>20171221</title>
     <link href="http://zhoushidong.cc/2017/12/21/20171221/"/>
     <id>http://zhoushidong.cc/2017/12/21/20171221/</id>
     <published>2017-12-21T15:09:38.000Z</published>
-    <updated>2017-12-21T15:09:38.774Z</updated>
+    <updated>2017-12-21T15:35:06.543Z</updated>
     
     <content type="html"><![CDATA[<p>嗯……昨天漏了一天的日记。</p><p>用了两天 α6000，表示非常满意。今天下午在校园里逛了逛，拍了许多感觉还行的照片。</p><p>今天作业方面，写了软工的一个页面，帮组员配了一下<code>webpack-dev-server</code>。</p><p>已经接近期末，时间过得真的快。还有好多大作业没写完，课外要学的东西也搁置了很久。明天先不拍照了，先把 D2 总结写完（拖延了好几天了），然后就写大作业。</p><p>晚安。</p>]]></content>
     
@@ -435,31 +455,6 @@
       
       
         &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Flexbox&quot;&gt;&lt;a href=&quot;#Flexbox&quot; class=&quot;headerlink
-      
-    
-    </summary>
-    
-      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
-    
-    
-      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Log:2017-4-6</title>
-    <link href="http://zhoushidong.cc/2017/04/06/Log-2017-4-6/"/>
-    <id>http://zhoushidong.cc/2017/04/06/Log-2017-4-6/</id>
-    <published>2017-04-06T14:40:43.000Z</published>
-    <updated>2017-12-17T14:15:30.026Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Centering-in-CSS"><a href="#Centering-in-CSS" class="headerlink" title="Centering in CSS"></a>Centering in CSS</h3><ol><li><a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="noopener">Centering in CSS: A Complete Guide</a></li></ol><h3 id="Positioning-in-CSS"><a href="#Positioning-in-CSS" class="headerlink" title="Positioning in CSS"></a>Positioning in CSS</h3><ol><li><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="noopener">HTML和CSS高级指南之二——定位详解</a></li></ol><h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><p><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task4" target="_blank" rel="noopener">Centering in CSS</a>(unfinished)</p><h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>This world doesn’t deserve Superman. </p><p>Men are not good enough.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Centering-in-CSS&quot;&gt;&lt;a href=&quot;#Centering-in-CSS&quot;
       
     
     </summary>
