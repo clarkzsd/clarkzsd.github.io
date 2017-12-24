@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhoushidong.cc/"/>
-  <updated>2017-12-22T15:48:11.391Z</updated>
+  <updated>2017-12-24T16:10:55.978Z</updated>
   <id>http://zhoushidong.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20171224</title>
+    <link href="http://zhoushidong.cc/2017/12/24/20171224/"/>
+    <id>http://zhoushidong.cc/2017/12/24/20171224/</id>
+    <published>2017-12-24T15:52:09.000Z</published>
+    <updated>2017-12-24T16:10:55.978Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天晚上看了《海边的曼彻斯特》，看完之后心情太丧，导致没写日记……</p><p>喜欢卡西·阿弗莱克的眼神和嗓音，感觉他天生具有忧郁气质。《星际穿越》里，他与库珀的感情铺垫远没有女儿的足，但是最催泪的还是卡西饰演的儿子对他父亲的独白，那段卡西的表演让人动情。《海边》让卡西当男主真的再适合不过了。虽然这部电影很丧，但电影落幕时还是不舍，相比现实我还是更愿意沉浸于这部悲伤的电影，想知道男主最后到底有没有和过去的自己和解。</p><p>最近的状态一直是[电影，大作业，游荡]这三个状态来回切换，效率太低，到现在大作业一个都没写完。</p><p>今天参加了工作室今年最后一次招新分享，大二他们准备了一些 Web 安全知识小游戏，做的挺不错，很有想法。感觉自己对代码的热情没有他们足了，最近一直沉迷于电影和摄影……</p><p>在写 HTML5 大作业（使用 React 构建）的时候尝试了使用高阶组件来处理条件性渲染，实在太优雅太方便了。后悔没早点去了解使用高阶组件。</p><p>今天在网上看到一段话，感觉很在理:</p><blockquote><p>我越来越觉得，你想要做成什么事情，或者得到什么东西，你就按部就班做自己该做的。安静点，也用心点，渴求别那么强烈。慢慢地，一段时间过后，水到渠成是件非常自然的事。但你要是特别心急，特别用力，手忙脚乱，最后往往什么都得不到，还搞得一团糟。真的。生活就是这样，特别用力，就特别容易完蛋。 </p></blockquote><p>反思一下自己，真的太用力了。用力到连说的话都变得沉重。</p><p>今天是圣诞，再没几天 2017 就过去了。希望明年能过得开心些。</p><p>这两个月真的过的一团糟。</p><p>晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      昨晚心情太丧，导致没写日记……
+    
+    </summary>
+    
+      <category term="日记" scheme="http://zhoushidong.cc/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>20171222</title>
@@ -438,31 +458,6 @@
     
       <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Log:2017-4-7</title>
-    <link href="http://zhoushidong.cc/2017/04/07/Log-2017-4-7/"/>
-    <id>http://zhoushidong.cc/2017/04/07/Log-2017-4-7/</id>
-    <published>2017-04-07T02:49:10.000Z</published>
-    <updated>2017-04-07T15:40:40.901Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Read-📖"><a href="#Read-📖" class="headerlink" title="Read 📖"></a>Read 📖</h2><h3 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h3><ol><li><a href="https://segmentfault.com/a/1190000002910324" target="_blank" rel="noopener">Flexbox 详解</a></li><li><a href="https://www.w3cplus.com/css3/a-visual-guide-to-css3-flexbox-properties.html" target="_blank" rel="noopener">a-visual-guide-to-css3-flexbox-properties</a></li></ol><h2 id="Practice-⚽"><a href="#Practice-⚽" class="headerlink" title="Practice ⚽"></a>Practice ⚽</h2><ol><li><a href="https://github.com/clarkzsd/IFE-2017/tree/master/html%26css/task4" target="_blank" rel="noopener">Centering in CSS</a></li><li>Meet Flexbox(unfinished)</li></ol><h2 id="Thought-💭"><a href="#Thought-💭" class="headerlink" title="Thought 💭"></a>Thought 💭</h2><p>The world has become flat. So how can you stand out in comparison with the others?</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Read-📖&quot;&gt;&lt;a href=&quot;#Read-📖&quot; class=&quot;headerlink&quot; title=&quot;Read 📖&quot;&gt;&lt;/a&gt;Read 📖&lt;/h2&gt;&lt;h3 id=&quot;Flexbox&quot;&gt;&lt;a href=&quot;#Flexbox&quot; class=&quot;headerlink
-      
-    
-    </summary>
-    
-      <category term="Log" scheme="http://zhoushidong.cc/categories/Log/"/>
-    
-    
-      <category term="css" scheme="http://zhoushidong.cc/tags/css/"/>
     
   </entry>
   
