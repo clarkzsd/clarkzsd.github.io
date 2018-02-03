@@ -1,229 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="VENI VIDI VICI.">
+    <meta name="keyword"  content="Sytone&#39;s Blog">
+    
+    <title>windows-ubuntu双系统问题 | Impromptu</title>
+    
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     
 
-    <title>
-      windows-ubuntu双系统问题 | Sytone&#39;s Blog 
-    </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-      <meta name="author" content="Sytone">
-    
-    
-
-    <meta name="description" content="问题1：开机默认进入grub引导装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。 然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。太麻烦……一点都不优雅！后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：  Ubuntu ">
-<meta name="keywords" content="windows,ubuntu">
-<meta property="og:type" content="article">
-<meta property="og:title" content="windows-ubuntu双系统问题 | Sytone&#39;s Blog">
-<meta property="og:url" content="http://zhoushidong.cc/2016/05/30/windows-ubuntu双系统问题/index.html">
-<meta property="og:site_name" content="Sytone&#39;s Blog">
-<meta property="og:description" content="问题1：开机默认进入grub引导装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。 然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。太麻烦……一点都不优雅！后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：  Ubuntu Windows Boot Manager UEFI:LITEON  所以说，Ub">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png">
-<meta property="og:updated_time" content="2017-02-22T10:09:42.676Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows-ubuntu双系统问题 | Sytone&#39;s Blog">
-<meta name="twitter:description" content="问题1：开机默认进入grub引导装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。 然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。太麻烦……一点都不优雅！后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：  Ubuntu Windows Boot Manager UEFI:LITEON  所以说，Ub">
-<meta name="twitter:image" content="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png">
-    
-    
-    
-      <link rel="icon" type="image/x-icon" href="/favicon.png">
-    
-    <link rel="stylesheet" href="/css/uno.css">
+    <!-- font-awosome -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/highlight.css">
-    <link rel="stylesheet" href="/css/archive.css">
-    <link rel="stylesheet" href="/css/china-social-icon.css">
-
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
-
-    
-
-<header class="panel-cover panel-cover--collapsed">
-
-
-  <div class="panel-main">
-
-  
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-
-        
-
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Sytone&#39;s Blog</a></h1>
-        <hr class="panel-cover__divider" />
-
-        
-
-        <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-
-              
-                
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
-              
-                
-                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
-              
-                
-                <li class="navigation__item"><a href="/archives" title="" class="">归档</a></li>
-              
-
-            </ul>
-          </nav>
-
-          <!-- ----------------------------
-To add a new social icon simply duplicate one of the list items from below
-and change the class in the <i> tag to match the desired social network
-and then add your link to the <a>. Here is a full list of social network
-classes that you can use:
-
-    icon-social-500px
-    icon-social-behance
-    icon-social-delicious
-    icon-social-designer-news
-    icon-social-deviant-art
-    icon-social-digg
-    icon-social-dribbble
-    icon-social-facebook
-    icon-social-flickr
-    icon-social-forrst
-    icon-social-foursquare
-    icon-social-github
-    icon-social-google-plus
-    icon-social-hi5
-    icon-social-instagram
-    icon-social-lastfm
-    icon-social-linkedin
-    icon-social-medium
-    icon-social-myspace
-    icon-social-path
-    icon-social-pinterest
-    icon-social-rdio
-    icon-social-reddit
-    icon-social-skype
-    icon-social-spotify
-    icon-social-stack-overflow
-    icon-social-steam
-    icon-social-stumbleupon
-    icon-social-treehouse
-    icon-social-tumblr
-    icon-social-twitter
-    icon-social-vimeo
-    icon-social-xbox
-    icon-social-yelp
-    icon-social-youtube
-    icon-social-zerply
-    icon-mail
-
--------------------------------->
-
-<!-- add social info here -->
-
-
-
-<nav class="cover-navigation navigation--social">
-  <ul class="navigation">
-
-    
-      <!-- Github -->
-      <li class="navigation__item">
-        <a href="https://github.com/clarkzsd" title="GitHub">
-          <i class='icon icon-social-github'></i>
-          <span class="label">GitHub</span>
-        </a>
-      </li>
-    
-
-    
-      <!-- instagram -->
-      <li class="navigation__item">
-        <a href="https://www.instagram.com/sytone" title="instagram">
-          <i class='icon icon-social-instagram'></i>
-          <span class="label">instagram</span>
-        </a>
-      </li>
-    
-
-    
-      <!-- instagram -->
-      <li class="navigation__item">
-        <a href="https://twitter.com/sytonechou" title="twitter">
-          <i class='icon icon-social-twitter'></i>
-          <span class="label">twitter</span>
-        </a>
-      </li>
-    
-
-
-  </ul>
-</nav>
-
-
-
+    <main class="site-main">
+        <header class="post-header outer ">
+    <div class="inner">
+        <div class="blog-logo-wrapper">
+            <a href="/" class="blog-logo">
+                Impromptu
+            </a>
         </div>
-
-      </div>
-
+        <div class="post-header-content">
+            <h1 class="post-title">
+                windows-ubuntu双系统问题
+            </h1>
+            <p class="post-meta">
+                <span>
+                    2016-05-30
+                </span>
+                
+                    <span class="meta-divider">/</span>
+                    <span>
+                        
+                            <a class="tag" href="/tags/windows" title="windows">windows</a>
+                        
+                            <a class="tag" href="/tags/ubuntu" title="ubuntu">ubuntu</a>
+                        
+                    </span>
+                
+            </p>
+            
+        </div>
     </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
 </header>
 
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner entry">
-            
-
-<article class="post-container post-container--single">
-
-  <header class="post-header">
-    
-    <h1 class="post-title">windows-ubuntu双系统问题</h1>
-
-    
-
-    <div class="post-meta">
-      <time datetime="2016-05-30" class="post-meta__date date">2016-05-30</time> 
-
-      <span class="post-meta__tags tags">
-
-          
-            <font class="categories">
-            &#8226; 分类:
-            <a class="categories-link" href="/categories/Tech/">Tech</a>
-            </font>
-          
-
-          
-             &#8226; 标签:
-            <font class="tags">
-              <a class="tags-link" href="/tags/ubuntu/">ubuntu</a>, <a class="tags-link" href="/tags/windows/">windows</a>
-            </font>
-          
-
-      </span>
-    </div>
-    
-    
-
-  </header>
-
-  <section id="post-content" class="article-content post">
-    <h3 id="问题1：开机默认进入grub引导"><a href="#问题1：开机默认进入grub引导" class="headerlink" title="问题1：开机默认进入grub引导"></a>问题1：开机默认进入grub引导</h3><p>装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。</p>
+<article class="post outer">
+    <div class="inner">
+        <section class="post-content">
+            <h3 id="问题1：开机默认进入grub引导"><a href="#问题1：开机默认进入grub引导" class="headerlink" title="问题1：开机默认进入grub引导"></a>问题1：开机默认进入grub引导</h3><p>装完ubuntu、windows双系统之后发现重启竟然默认是grub引导。</p>
 <p>然后就去网上搜各种“如何换成windows引导”，大多都是需要一个系统安装盘来重建MBR。<br>太麻烦……一点都不优雅！<br>后来我就想到，我是通过UEFI来搞双系统的，开机按F12进入的时候有启动项如下：</p>
 <ol>
 <li>Ubuntu</li>
@@ -235,82 +67,42 @@ classes that you can use:
 <p><a href="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" target="_blank" rel="noopener"><img src="http://o6ljw8wcq.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png" alt="img"></a>img</p>
 <h3 id="问题2：没有声音！！！"><a href="#问题2：没有声音！！！" class="headerlink" title="问题2：没有声音！！！"></a>问题2：没有声音！！！</h3><p>蛤，这个问题一搜一大片呀。有位机智的网友答道：这就是双系统常见的蜜汁bug，只要盒上电脑盖子再打开就行了。<br><em>虽然不知道什么原理，但亲测有效！</em></p>
 
-  </section>
+        </section>
+        <section class="post-comment">
+  
 
-  <section class="post-comments">
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
-    <div id="disqus_thread"></div>
-        <script>
-
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://clarkzsd.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
-
-
-</article>
-
-
-            <footer class="footer">
-
-    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
-    
-</footer>
-        </div>
     </div>
-
-    <!-- js files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/scale.fix.js"></script>
+</article>
+    </main>
+    <footer>
+    <div class="blog-footer site-footer">
+      <span class="copyright">
+        Copyright © Impromptu 2018
+      </span>
+      <nav class="footer-nav nav-links">
+        
+            <a class="footer-nav-link" href="/">Home</a>
+        
+            <a class="footer-nav-link" href="/about">About</a>
+        
+            <a class="footer-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+    </div>
+    <div class="credits-footer site-footer">
+      <span class="credit-theme">
+         Theme - 
+        <a href="https://github.com/clarkzsd/hexo-theme-impromptu">Impromptu</a> By <a href="https://github.com/clarkzsd">Sytone</a>
+      </span>
+      <span class="credit-platform">
+          Published with Hexo
+      </span>
+    </div>
+</footer>
     
 
-    
-
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function(){
-            MathJax.Hub.Config({ 
-                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
-            });
-        });
-    </script>
-
-
-    
-
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
-    
-    
-    <!--kill ie6 -->
-<!--[if IE 6]>
-  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
 
 </body>
 </html>

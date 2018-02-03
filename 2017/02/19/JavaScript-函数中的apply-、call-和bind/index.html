@@ -1,227 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="VENI VIDI VICI.">
+    <meta name="keyword"  content="Sytone&#39;s Blog">
+    
+    <title>JavaScript 函数中的apply()、call()和bind() | Impromptu</title>
+    
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     
 
-    <title>
-      JavaScript 函数中的apply()、call()和bind() | Sytone&#39;s Blog 
-    </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-      <meta name="author" content="Sytone">
-    
-    
-
-    <meta name="description" content="第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。">
-<meta name="keywords" content="JavaScript">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript 函数中的apply()、call()和bind() | Sytone&#39;s Blog">
-<meta property="og:url" content="http://zhoushidong.cc/2017/02/19/JavaScript-函数中的apply-、call-和bind/index.html">
-<meta property="og:site_name" content="Sytone&#39;s Blog">
-<meta property="og:description" content="第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-02-22T10:09:07.807Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript 函数中的apply()、call()和bind() | Sytone&#39;s Blog">
-<meta name="twitter:description" content="第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。">
-    
-    
-    
-      <link rel="icon" type="image/x-icon" href="/favicon.png">
-    
-    <link rel="stylesheet" href="/css/uno.css">
+    <!-- font-awosome -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/highlight.css">
-    <link rel="stylesheet" href="/css/archive.css">
-    <link rel="stylesheet" href="/css/china-social-icon.css">
-
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
-
-    
-
-<header class="panel-cover panel-cover--collapsed">
-
-
-  <div class="panel-main">
-
-  
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-
-        
-
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Sytone&#39;s Blog</a></h1>
-        <hr class="panel-cover__divider" />
-
-        
-
-        <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-
-              
-                
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
-              
-                
-                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
-              
-                
-                <li class="navigation__item"><a href="/archives" title="" class="">归档</a></li>
-              
-
-            </ul>
-          </nav>
-
-          <!-- ----------------------------
-To add a new social icon simply duplicate one of the list items from below
-and change the class in the <i> tag to match the desired social network
-and then add your link to the <a>. Here is a full list of social network
-classes that you can use:
-
-    icon-social-500px
-    icon-social-behance
-    icon-social-delicious
-    icon-social-designer-news
-    icon-social-deviant-art
-    icon-social-digg
-    icon-social-dribbble
-    icon-social-facebook
-    icon-social-flickr
-    icon-social-forrst
-    icon-social-foursquare
-    icon-social-github
-    icon-social-google-plus
-    icon-social-hi5
-    icon-social-instagram
-    icon-social-lastfm
-    icon-social-linkedin
-    icon-social-medium
-    icon-social-myspace
-    icon-social-path
-    icon-social-pinterest
-    icon-social-rdio
-    icon-social-reddit
-    icon-social-skype
-    icon-social-spotify
-    icon-social-stack-overflow
-    icon-social-steam
-    icon-social-stumbleupon
-    icon-social-treehouse
-    icon-social-tumblr
-    icon-social-twitter
-    icon-social-vimeo
-    icon-social-xbox
-    icon-social-yelp
-    icon-social-youtube
-    icon-social-zerply
-    icon-mail
-
--------------------------------->
-
-<!-- add social info here -->
-
-
-
-<nav class="cover-navigation navigation--social">
-  <ul class="navigation">
-
-    
-      <!-- Github -->
-      <li class="navigation__item">
-        <a href="https://github.com/clarkzsd" title="GitHub">
-          <i class='icon icon-social-github'></i>
-          <span class="label">GitHub</span>
-        </a>
-      </li>
-    
-
-    
-      <!-- instagram -->
-      <li class="navigation__item">
-        <a href="https://www.instagram.com/sytone" title="instagram">
-          <i class='icon icon-social-instagram'></i>
-          <span class="label">instagram</span>
-        </a>
-      </li>
-    
-
-    
-      <!-- instagram -->
-      <li class="navigation__item">
-        <a href="https://twitter.com/sytonechou" title="twitter">
-          <i class='icon icon-social-twitter'></i>
-          <span class="label">twitter</span>
-        </a>
-      </li>
-    
-
-
-  </ul>
-</nav>
-
-
-
+    <main class="site-main">
+        <header class="post-header outer ">
+    <div class="inner">
+        <div class="blog-logo-wrapper">
+            <a href="/" class="blog-logo">
+                Impromptu
+            </a>
         </div>
-
-      </div>
-
+        <div class="post-header-content">
+            <h1 class="post-title">
+                JavaScript 函数中的apply()、call()和bind()
+            </h1>
+            <p class="post-meta">
+                <span>
+                    2017-02-19
+                </span>
+                
+                    <span class="meta-divider">/</span>
+                    <span>
+                        
+                            <a class="tag" href="/tags/JavaScript" title="JavaScript">JavaScript</a>
+                        
+                    </span>
+                
+            </p>
+            
+        </div>
     </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
 </header>
 
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner entry">
-            
-
-<article class="post-container post-container--single">
-
-  <header class="post-header">
-    
-    <h1 class="post-title">JavaScript 函数中的apply()、call()和bind()</h1>
-
-    
-
-    <div class="post-meta">
-      <time datetime="2017-02-19" class="post-meta__date date">2017-02-19</time> 
-
-      <span class="post-meta__tags tags">
-
-          
-            <font class="categories">
-            &#8226; 分类:
-            <a class="categories-link" href="/categories/Tech/">Tech</a>
-            </font>
-          
-
-          
-             &#8226; 标签:
-            <font class="tags">
-              <a class="tags-link" href="/tags/JavaScript/">JavaScript</a>
-            </font>
-          
-
-      </span>
-    </div>
-    
-    
-
-  </header>
-
-  <section id="post-content" class="article-content post">
-    <p>第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。</p>
+<article class="post outer">
+    <div class="inner">
+        <section class="post-content">
+            <p>第一次接触这三个方法时，我还没怎么写过 js，一直无法理解这三个方法的作用，MDN 上的资料也看不懂。现在回过头来继续啃这些知识点，顿时就有豁然开朗之感了。</p>
 <h1 id="函数属性和方法"><a href="#函数属性和方法" class="headerlink" title="函数属性和方法"></a>函数属性和方法</h1><p>ECMAScript 中的函数是对象，因此函数也有属性和方法。每个函数包含两个属性：length 和 prototype。length 表示函数的参数个数：</p>
 <figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1,num2)</span> &#123;</span></span><br><span class="line">  <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.<span class="built_in">log</span>(sum.<span class="built_in">length</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 <p>而 prototype 所对应的就是该对象传说中的原型了。对于 ECMAScript 中的引用类型而言，prototype 保存着它们所有实例方法，对于函数来讲，其 prototype 中就包括 apply()、call() 和 bind()。</p>
@@ -234,9 +66,9 @@ classes that you can use:
 <p>在第三次调用 saySomething() 时，该函数的执行环境变了，this 指向了 o，所以打印出来的是 “World”。</p>
 <p>使用 apply() 和 call() 来扩充函数赖以运行的作用域的好处是，对象不需要与方法有任何耦合关系，这样能大大增加代码的复用性。</p>
 <h2 id="call"><a href="#call" class="headerlink" title="call()"></a>call()</h2><p>call() 与 apply() 大同小异，它的作用与 apply() 是相同的。只是传递给 call() 的参数必须逐个列举出来：</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span><span class="params">(num1,num2)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> sum.call(<span class="keyword">this</span>,num1,num2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1,num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> sum.call(<span class="keyword">this</span>,num1,num2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="bind"><a href="#bind" class="headerlink" title="bind()"></a>bind()</h1><p>bind() 方法会新建一个函数的实例，这个函数实例的 this 值会被绑定到传给 bind() 函数的值。</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span></span>() &#123;</span><br><span class="line">  console.log(<span class="built_in">this</span> === obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const <span class="keyword">new</span><span class="type">Test</span> = test.bind(obj);</span><br><span class="line">test(); <span class="comment">// false</span></span><br><span class="line"><span class="keyword">new</span><span class="type">Test</span>(); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span> === obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> newTest = test.bind(obj);</span><br><span class="line">test(); <span class="comment">// false</span></span><br><span class="line">newTest(); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
 <p>newTest() 函数中的 this 始终指向 obj，无论在哪里调用，其输出结果始终是 true。</p>
 <h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>JS 中 this 是动态指向的，而 bind() 便可以把 this 固定住。我们来看一个具体例子：</p>
 <h3 id="click-事件处理"><a href="#click-事件处理" class="headerlink" title="click 事件处理"></a>click 事件处理</h3><p>定义一个日志对象来记录 click 的次数：</p>
@@ -249,82 +81,42 @@ classes that you can use:
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.handleClick = <span class="keyword">this</span>.handleClick.bind(<span class="keyword">this</span>)</span><br><span class="line">&#125;</span><br><span class="line">handleClick(e) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line">render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;button onClick=&#123;<span class="keyword">this</span>.handleClick&#125;&gt;点击&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>div&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>而用 ES5 写时， 使用 React.createClass() 来建立组件时，React 会帮你自动绑定函数的 this。</p>
 
-  </section>
+        </section>
+        <section class="post-comment">
+  
 
-  <section class="post-comments">
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
-    <div id="disqus_thread"></div>
-        <script>
-
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://clarkzsd.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
-
-
-</article>
-
-
-            <footer class="footer">
-
-    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
-    
-</footer>
-        </div>
     </div>
-
-    <!-- js files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/scale.fix.js"></script>
+</article>
+    </main>
+    <footer>
+    <div class="blog-footer site-footer">
+      <span class="copyright">
+        Copyright © Impromptu 2018
+      </span>
+      <nav class="footer-nav nav-links">
+        
+            <a class="footer-nav-link" href="/">Home</a>
+        
+            <a class="footer-nav-link" href="/about">About</a>
+        
+            <a class="footer-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+    </div>
+    <div class="credits-footer site-footer">
+      <span class="credit-theme">
+         Theme - 
+        <a href="https://github.com/clarkzsd/hexo-theme-impromptu">Impromptu</a> By <a href="https://github.com/clarkzsd">Sytone</a>
+      </span>
+      <span class="credit-platform">
+          Published with Hexo
+      </span>
+    </div>
+</footer>
     
 
-    
-
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function(){
-            MathJax.Hub.Config({ 
-                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
-            });
-        });
-    </script>
-
-
-    
-
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
-    
-    
-    <!--kill ie6 -->
-<!--[if IE 6]>
-  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
 
 </body>
 </html>
